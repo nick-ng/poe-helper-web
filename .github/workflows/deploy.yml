@@ -13,8 +13,9 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+      - name: Set git settings
+        run: git config user.name "<user name>" && git config user.email "test@example.com"
       - name: Deploy
-        run: |
-          git config --local user.email "test@example.com"
-          git config --local user.name "test"
-          npm run deploy
+        run: npm run deploy
+      env:
+            GH_TOKEN: ${{secrets.GH_TOKEN}}
