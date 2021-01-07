@@ -9,13 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install
-        run: npm ci
-      - name: Build
-        run: npm run build
-      - name: Set git settings
-        run: git config user.name "<user name>" && git config user.email "test@example.com"
-      - name: Deploy
-        run: npm run deploy
-      env:
-            GH_TOKEN: ${{secrets.GH_TOKEN}}
+      - run: npm ci
+      - run: npm run build
+      - run: git config user.name "<user name>" && git config user.email "test@example.com"
+      - run: npm run deploy
+        env:
+          GH_TOKEN: ${{secrets.GH_TOKEN}}
