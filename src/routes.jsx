@@ -13,7 +13,7 @@ export default function App() {
           <div>bbb</div>
         </R>
         <R path="/">
-          <div>___</div>
+          <div>__</div>
         </R>
       </Switch>
     </Router>
