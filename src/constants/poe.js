@@ -1,8 +1,4 @@
 // Item Types
-export const BOOT = ["greaves", "boots", "shoes", "slippers"];
-
-export const GLOVE = ["gauntlets", "gloves", "mitts"];
-
 export const BODY = [
   "armour",
   "brigandine",
@@ -29,6 +25,10 @@ export const BODY = [
   "wrap",
   "wyrmscale",
 ];
+
+export const BOOT = ["greaves", "boots", "shoes", "slippers"];
+
+export const GLOVE = ["gauntlets", "gloves", "mitts"];
 
 export const HELM = [
   "hat",
