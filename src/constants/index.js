@@ -1,4 +1,5 @@
 export const FETCH_URL_KEY = "FETCH_URL";
+export const MAX_FETCH_RETRIES = 5000;
 export const DEFAULT_FETCH_URL = "https://example-fetch.herokuapp.com/";
 export const CHARACTER_NAME_KEY = "CHARACTER_NAME";
 export const ACCOUNT_KEY = "ACCOUNT";
