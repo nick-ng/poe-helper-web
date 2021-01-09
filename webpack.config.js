@@ -11,7 +11,7 @@ module.exports = {
     port: 23224,
   },
   mode: process.env.NODE_ENV || "production",
-  devtool: "source-map",
+  devtool: process.env.NODE_ENV !== "production" ? "source-map" : undefined,
   entry: "./src/entry.jsx",
   output: {
     path: `${__dirname}/dist`,
