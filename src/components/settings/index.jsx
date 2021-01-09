@@ -17,11 +17,6 @@ const Container = styled.div`
       font-size: 16pt;
       margin-left: 0.5em;
     }
-
-    input[type="password"] {
-      color: white;
-      background-color: white;
-    }
   }
 
   button {
@@ -95,7 +90,6 @@ export default function Home() {
               <td>Account</td>
               <td>
                 <input
-                  type="password"
                   value={account}
                   onChange={(event) => {
                     setAccount(event.target.value);
