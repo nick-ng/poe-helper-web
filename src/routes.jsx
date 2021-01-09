@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
 body {
   color: white;
   background-color: black;
+  font-family: sans-serif;
 }
 
 a {
