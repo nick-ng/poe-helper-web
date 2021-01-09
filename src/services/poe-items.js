@@ -8,9 +8,10 @@ import {
   BELT,
   TWO_HANDED_WEAPON,
 } from "../constants/poe";
+import { hydrateTabList } from "./poe-stash-tab";
 
-export const chaosRecipeTabIds = (tabs) =>
-  tabs.filter((tab) => tab.n.includes("chaos_")).map((tab) => tab.i);
+export const getChaosRecipeTabs = (tabs) =>
+  tabs.filter((tab) => tab.n.includes("chaos_"));
 
 export const chaosRecipeItemSlot = (item) => {
   const { typeLine } = item;
@@ -95,42 +96,67 @@ export const chaosRecipeItemValue = (item) => {
   };
 };
 
-export const chaosRecipeTabContents = (items) => {
-  return items.reduce(
-    (prev, curr) => {
-      const value = chaosRecipeItemValue(curr);
-
-      if (!value || value.recipeType === "chance") {
-        return prev;
-      }
-
-      const { recipeType, slot } = value;
-
-      prev[recipeType][slot] = (prev[recipeType][slot] || 0) + info.count;
-
-      return prev;
+export const getChaosRecipeTabContents = (
+  otherContents = {
+    regal: {
+      weapon: 0,
+      boot: 0,
+      glove: 0,
+      body: 0,
+      helm: 0,
+      ring: 0,
+      amulet: 0,
+      belt: 0,
     },
-    {
-      regal: {
-        weapon: 0,
-        boot: 0,
-        glove: 0,
-        body: 0,
-        helm: 0,
-        ring: 0,
-        amulet: 0,
-        belt: 0,
-      },
-      chaos: {
-        weapon: 0,
-        boot: 0,
-        glove: 0,
-        body: 0,
-        helm: 0,
-        ring: 0,
-        amulet: 0,
-        belt: 0,
-      },
+    chaos: {
+      weapon: 0,
+      boot: 0,
+      glove: 0,
+      body: 0,
+      helm: 0,
+      ring: 0,
+      amulet: 0,
+      belt: 0,
+    },
+  },
+  { items }
+) => {
+  return items.reduce((prev, curr) => {
+    const value = chaosRecipeItemValue(curr);
+
+    if (!value || value.recipeType === "chance") {
+      return prev;
     }
-  );
+
+    const { recipeType, slot, count } = value;
+
+    prev[recipeType][slot] = (prev[recipeType][slot] || 0) + count;
+
+    return prev;
+  }, otherContents);
+};
+
+export const getChaosRecipeTabsValue = (hydratedTabs) => {
+  return hydratedTabs.reduce(getChaosRecipeTabContents, {
+    regal: {
+      weapon: 0,
+      boot: 0,
+      glove: 0,
+      body: 0,
+      helm: 0,
+      ring: 0,
+      amulet: 0,
+      belt: 0,
+    },
+    chaos: {
+      weapon: 0,
+      boot: 0,
+      glove: 0,
+      body: 0,
+      helm: 0,
+      ring: 0,
+      amulet: 0,
+      belt: 0,
+    },
+  });
 };

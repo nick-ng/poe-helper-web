@@ -6,6 +6,7 @@ import Nav from "./components/nav";
 
 import Dashboard from "./components/dashboard";
 import NotFound from "./components/not-found";
+import Settings from "./components/settings";
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -31,11 +32,8 @@ export default function App() {
       <Container>
         <Nav />
         <Switch>
-          <R path="/aaa">
-            <div>aaa</div>
-          </R>
-          <R path="/bbb">
-            <div>bbb</div>
+          <R path="/settings">
+            <Settings />
           </R>
           <R path="/" exact>
             <Dashboard />

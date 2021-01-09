@@ -1,0 +1,160 @@
+{
+  "chaosRecipeTab": {
+    "regal": {
+      "weapon": 14,
+      "boot": 4,
+      "glove": 10,
+      "body": 2,
+      "helm": 6,
+      "ring": 12.5,
+      "amulet": 34,
+      "belt": 15
+    },
+    "chaos": {
+      "weapon": 5,
+      "boot": 0,
+      "glove": 0,
+      "body": 2,
+      "helm": 0,
+      "ring": 2,
+      "amulet": 5,
+      "belt": 10
+    }
+  },
+  "specialTab": {
+    "tabs": [
+      {
+        "tabName": "$$$",
+        "chaosValue": 1179.57,
+        "exValue": 10.72238887373875,
+        "mostExpensiveStack": {
+          "typeLine": "Rogue's Marker",
+          "stackSize": 35758,
+          "value": 357.58
+        }
+      },
+      {
+        "tabName": "[][]",
+        "chaosValue": 791.2299999999999,
+        "exValue": 7.192346150349967,
+        "mostExpensiveStack": {
+          "typeLine": "Abandoned Wealth",
+          "stackSize": 1,
+          "value": 50.69
+        }
+      },
+      {
+        "tabName": "Frag",
+        "chaosValue": 645.99,
+        "exValue": 5.872102536133078,
+        "mostExpensiveStack": {
+          "typeLine": "Chayula's Breachstone",
+          "stackSize": 2,
+          "value": 216.28
+        }
+      },
+      {
+        "tabName": "Ess",
+        "chaosValue": 431,
+        "exValue": 3.917825652213435,
+        "mostExpensiveStack": {
+          "typeLine": "Screaming Essence of Dread",
+          "stackSize": 13,
+          "value": 13
+        }
+      },
+      {
+        "tabName": "Foss",
+        "chaosValue": 197.41000000000003,
+        "exValue": 1.7944732297063906,
+        "mostExpensiveStack": {
+          "typeLine": "Jagged Fossil",
+          "stackSize": 19,
+          "value": 34.77
+        }
+      },
+      {
+        "tabName": "Meta",
+        "chaosValue": 51.09,
+        "exValue": 0.464412326152168,
+        "mostExpensiveStack": {
+          "typeLine": "Fertile Catalyst",
+          "stackSize": 8,
+          "value": 31.28
+        }
+      },
+      {
+        "tabName": "Oil",
+        "chaosValue": 80,
+        "exValue": 0.72720661758022,
+        "mostExpensiveStack": {
+          "typeLine": "Silver Oil",
+          "stackSize": 1,
+          "value": 25
+        }
+      },
+      {
+        "tabName": "Delirum",
+        "chaosValue": 106.69999999999999,
+        "exValue": 0.9699118261976183,
+        "mostExpensiveStack": {
+          "typeLine": "Simulacrum Splinter",
+          "stackSize": 130,
+          "value": 63.699999999999996
+        }
+      }
+    ],
+    "timestamp": 1610185347388
+  },
+  "chaosPerEx": 110.01,
+  "chaosItems": 24,
+  "lowestSlot": 4,
+  "recipeInChaos": 30.375,
+  "regalAndChaos": [
+    {
+      "slot": "weapon",
+      "count": 19,
+      "chaosCount": 5
+    },
+    {
+      "slot": "boot",
+      "count": 4,
+      "chaosCount": 0
+    },
+    {
+      "slot": "glove",
+      "count": 10,
+      "chaosCount": 0
+    },
+    {
+      "slot": "body",
+      "count": 4,
+      "chaosCount": 2
+    },
+    {
+      "slot": "helm",
+      "count": 6,
+      "chaosCount": 0
+    },
+    {
+      "slot": "ring",
+      "count": 14.5,
+      "chaosCount": 2
+    },
+    {
+      "slot": "amulet",
+      "count": 39,
+      "chaosCount": 5
+    },
+    {
+      "slot": "belt",
+      "count": 25,
+      "chaosCount": 10
+    }
+  ],
+  "totalChaosNetWorth": 3482.99,
+  "totalChaosNetWorthB": 3513.365,
+  "recipeInEx": 0.27611126261248975,
+  "totalExNetWorth": 31.660667212071623,
+  "totalExNetWorthB": 31.93677847468411
+}

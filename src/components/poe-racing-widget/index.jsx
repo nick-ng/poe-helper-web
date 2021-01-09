@@ -1,4 +1,5 @@
 import React from "react";
+import { getSettings } from "../../utils";
 
 const SIZES = {
   1: {
@@ -15,10 +16,11 @@ const SIZES = {
   },
 };
 
-export default function PoeRacingWidget({ league, character, size }) {
-  return league && character ? (
+export default function PoeRacingWidget({ size }) {
+  const { characterName, league } = getSettings();
+  return league && characterName && size ? (
     <iframe
-      src={`https://tracker.poe-racing.com/?event=${league}&character=${character}&size=${size}`}
+      src={`https://tracker.poe-racing.com/?event=${league}&character=${characterName}&size=${size}`}
       width={SIZES[size]?.width || "350px"}
       height={SIZES[size]?.height || "220px"}
     />

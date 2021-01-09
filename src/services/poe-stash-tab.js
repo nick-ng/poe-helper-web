@@ -13,6 +13,8 @@ export const fetchStashTabHeaders = async ({ account, league, poesessid }) => {
     {
       credentials: "include",
       headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0",
         cookie: `POESESSID=${poesessid}`,
       },
       method: "GET",
@@ -42,6 +44,8 @@ export const fetchStashTabItems = async (
     {
       credentials: "include",
       headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0",
         cookie: `POESESSID=${poesessid}`,
       },
       method: "GET",
@@ -70,7 +74,7 @@ export const hydrateTabList = (tabs, { account, league, poesessid }) => {
   );
 };
 
-export const specialTabValue = (hydratedTabs) => {
+export const getSpecialTabsValue = (hydratedTabs) => {
   const result = [];
   let chaosPerEx = getPoeNinjaDatum("Exalted Orb").each;
 

@@ -6,6 +6,7 @@ import {
   POE_NINJA_TIMESTAMP_KEY,
   POE_NINJA_REFRESH_AGE,
 } from "../constants";
+import { fetcher } from "../utils";
 
 export const getPoeNinjaData = () =>
   JSON.parse(localStorage.getItem(POE_NINJA_DATA_KEY) || "[]");
@@ -36,7 +37,7 @@ export const updatePoeNinjaData = async ({ league }) => {
   for (const type of POE_NINJA_CURRENCY) {
     const requestType = "currency";
     try {
-      const res = await fetch(
+      const res = await fetcher(
         `https://poe.ninja/api/data/${requestType}overview?league=${league}&type=${type}&language=en`,
         {
           method: "GET",
@@ -60,7 +61,7 @@ export const updatePoeNinjaData = async ({ league }) => {
   for (const type of POE_NINJA_ITEM) {
     const requestType = "item";
     try {
-      const res = await fetch(
+      const res = await fetcher(
         `https://poe.ninja/api/data/${requestType}overview?league=${league}&type=${type}&language=en`,
         {
           method: "GET",
