@@ -5,10 +5,10 @@ import {
   getSpecialTabsValue,
 } from "./poe-stash-tab";
 import { getChaosRecipeTabs, getChaosRecipeTabsValue } from "./poe-items";
-import { updatePoeNinjaData } from "./poe-ninja";
+import { updatePoeNinjaData, getPoeNinjaDatum } from "./poe-ninja";
 import { getSettings } from "../utils";
 
-export const summary = (chaosRecipeTab, specialTab) => {
+export const summary = async (chaosRecipeTab, specialTab) => {
   const regalAndChaos = [];
   let chaosItems = 0;
   const { chaos, regal } = chaosRecipeTab;
@@ -21,13 +21,10 @@ export const summary = (chaosRecipeTab, specialTab) => {
   const lowestSlot = Math.min(...regalAndChaos.map((a) => a.count));
   const regalAndChaosCount = regalAndChaos.reduce((p, c) => p + c.count, 0);
 
-  let chaosPerEx = 0;
+  const chaosPerEx = (await getPoeNinjaDatum("Exalted Orb")).each;
   let totalChaosNetWorth = 0;
   let totalExNetWorth = 0;
   specialTab?.tabs?.forEach((curr) => {
-    if (curr.exValue > 0) {
-      chaosPerEx = curr.chaosValue / curr.exValue;
-    }
     totalChaosNetWorth = totalChaosNetWorth + curr.chaosValue;
     totalExNetWorth = totalExNetWorth + curr.exValue;
   });
@@ -74,7 +71,7 @@ export const getSummary = async () => {
     poesessid,
   });
 
-  const special = getSpecialTabsValue(specialHydratedTabs);
+  const special = await getSpecialTabsValue(specialHydratedTabs);
   const chaos = getChaosRecipeTabsValue(chaosHydratedTabs);
 
   return summary(chaos, special);

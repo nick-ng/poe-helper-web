@@ -1,3 +1,5 @@
+import localforage from "localforage";
+
 import {
   NON_CURRENCY_THRESHOLD,
   POE_NINJA_CURRENCY,
@@ -8,17 +10,25 @@ import {
 } from "../constants";
 import { fetcher } from "../utils";
 
-export const getPoeNinjaData = () =>
-  JSON.parse(localStorage.getItem(POE_NINJA_DATA_KEY) || "[]");
-
-export const getPoeNinjaDatum = (typeLine) =>
-  getPoeNinjaData().find((a) => a.typeLine === typeLine) || {
+export const getPoeNinjaDatum = async (typeLine) => {
+  const each = await localforage.getItem(
+    `${POE_NINJA_DATA_KEY}-${typeLine.replace(/ /g, "_")}`
+  );
+  return {
     typeLine,
-    each: -1,
+    each: each ?? 0,
   };
+};
 
-export const setPoeNinjaData = (data) => {
-  localStorage.setItem(POE_NINJA_DATA_KEY, JSON.stringify(data));
+export const setPoeNinjaData = async (data) => {
+  await Promise.all(
+    data.map(({ typeLine, each }) =>
+      localforage.setItem(
+        `${POE_NINJA_DATA_KEY}-${typeLine.replace(/ /g, "_")}`,
+        each
+      )
+    )
+  );
   localStorage.setItem(POE_NINJA_TIMESTAMP_KEY, Date.now());
 };
 
@@ -48,7 +58,6 @@ export const updatePoeNinjaData = async ({ league }) => {
 
       newData = newData.concat(
         resJson.lines.map((a) => ({
-          ...a,
           typeLine: a.currencyTypeName,
           each: a.chaosEquivalent,
         }))
@@ -73,7 +82,6 @@ export const updatePoeNinjaData = async ({ league }) => {
       newData = newData.concat(
         resJson.lines
           .map((a) => ({
-            ...a,
             typeLine: a.name,
             each: a.chaosValue,
           }))
@@ -84,5 +92,5 @@ export const updatePoeNinjaData = async ({ league }) => {
     }
   }
 
-  setPoeNinjaData(newData);
+  await setPoeNinjaData(newData);
 };

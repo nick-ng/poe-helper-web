@@ -74,55 +74,93 @@ export const hydrateTabList = (tabs, { account, league, poesessid }) => {
   );
 };
 
-export const getSpecialTabsValue = (hydratedTabs) => {
-  const result = [];
-  let chaosPerEx = getPoeNinjaDatum("Exalted Orb").each;
+export const getSpecialTabsValue = async (hydratedTabs) => {
+  const chaosPerEx = (await getPoeNinjaDatum("Exalted Orb")).each;
 
-  for (const tab of hydratedTabs) {
-    if (!SUPPORTED_TAB_TYPES.includes(tab.type)) {
-      continue;
-    }
-
-    let mostExpensiveStack = { value: -1 };
-    const { items } = tab;
-
-    let chaosValue = 0;
-    items.forEach((item) => {
-      const { typeLine, stackSize } = item;
-
-      if (EXCLUDED_CURRENCY.includes(typeLine)) {
-        return;
-      }
-
-      const { each } = getPoeNinjaDatum(typeLine);
-
-      if (each < 0) {
-        return;
-      }
-
-      const stackValue = stackSize * each;
-
-      if (stackValue < MIN_STACK_VALUE) {
-        return;
-      }
-
-      if (mostExpensiveStack.value < stackValue) {
-        mostExpensiveStack = {
-          typeLine,
-          stackSize,
-          value: stackValue,
+  const result = await Promise.all(
+    hydratedTabs.map(async (tab) => {
+      if (!SUPPORTED_TAB_TYPES.includes(tab.type)) {
+        return {
+          tabName: tab.n,
+          chaosValue: 0,
+          exValue: 0,
+          mostExpensiveStack: { value: -1 },
         };
       }
-      chaosValue = chaosValue + each * stackSize;
-    });
 
-    result.push({
-      tabName: tab.n,
-      chaosValue,
-      exValue: chaosValue / chaosPerEx,
-      mostExpensiveStack,
-    });
-  }
+      const items = await Promise.all(
+        tab.items.map(async (item) => {
+          const { typeLine, stackSize } = item;
+
+          if (EXCLUDED_CURRENCY.includes(typeLine)) {
+            return {
+              ...item,
+              stackValue: 0,
+              each: 0,
+            };
+          }
+
+          const { each } = await getPoeNinjaDatum(typeLine);
+
+          if (each < 0) {
+            return {
+              ...item,
+              stackValue: 0,
+              each: 0,
+            };
+          }
+
+          const stackValue = stackSize * each;
+
+          return {
+            ...item,
+            stackValue,
+            each,
+          };
+        })
+      );
+
+      const { chaosValue, mostExpensiveStack } = items.reduce(
+        (prev, item) => {
+          const { chaosValue, mostExpensiveStack } = prev;
+          const { typeLine, stackSize, stackValue } = item;
+
+          if (!stackValue || stackValue < MIN_STACK_VALUE) {
+            return prev;
+          }
+
+          const newChaosValue = chaosValue + stackValue;
+
+          if (mostExpensiveStack.value < stackValue) {
+            return {
+              chaosValue: newChaosValue,
+              mostExpensiveStack: {
+                typeLine,
+                stackSize,
+                value: stackValue,
+              },
+            };
+          }
+
+          return {
+            chaosValue: newChaosValue,
+            mostExpensiveStack,
+          };
+        },
+        {
+          chaosValue: 0,
+          mostExpensiveStack: { value: -1 },
+        }
+      );
+
+      return {
+        tabName: tab.n,
+        chaosValue,
+        exValue: chaosValue / chaosPerEx,
+        mostExpensiveStack,
+      };
+    })
+  );
 
   return {
     tabs: result,

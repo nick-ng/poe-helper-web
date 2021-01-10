@@ -8,7 +8,8 @@ import {
   POESESSID_KEY,
 } from "../constants";
 
-let ratio = 1;
+const ratio = 1.01;
+let counter = 1;
 
 export const wait = (ms) =>
   new Promise((resolve, reject) => {
@@ -40,15 +41,14 @@ export const fetcher = async (url, options) => {
     });
 
     if (res.status === 400 && res.headers.get("x-ms-per-request")) {
-      const ms =
-        (parseInt(res.headers.get("x-ms-per-request"), 10) || 1000) * ratio;
-      ratio = ratio * 1.1;
-      console.log(`limit hit. waiting for ${ms} ms`);
+      const msPer = parseInt(res.headers.get("x-ms-per-request"), 10) || 1000;
+      const ms = msPer * counter++ * ratio;
+      console.log(`Fetch limit hit. Waiting for ${ms} ms`);
       await wait(ms);
       continue;
     }
 
-    ratio = 1;
+    counter = 1;
     return res;
   }
 };

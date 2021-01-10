@@ -2,8 +2,55 @@ import React from "react";
 
 import { getStyle } from "./style";
 
-export default function ({ chaosItems, lowestSlot, regalAndChaos }) {
-  return chaosItems && lowestSlot && regalAndChaos ? (
+const defaultRegalAndChaos = [
+  {
+    slot: "boot",
+    count: 0,
+    chaosCount: 0,
+  },
+  {
+    slot: "body",
+    count: 0,
+    chaosCount: 0,
+  },
+  {
+    slot: "helm",
+    count: 0,
+    chaosCount: 0,
+  },
+  {
+    slot: "glove",
+    count: 0,
+    chaosCount: 0,
+  },
+  {
+    slot: "ring",
+    count: 0,
+    chaosCount: 0,
+  },
+  {
+    slot: "weapon",
+    count: 0,
+    chaosCount: 0,
+  },
+  {
+    slot: "belt",
+    count: 0,
+    chaosCount: 0,
+  },
+  {
+    slot: "amulet",
+    count: 0,
+    chaosCount: 0,
+  },
+];
+
+export default function ({
+  chaosItems = 0,
+  lowestSlot = 0,
+  regalAndChaos = defaultRegalAndChaos,
+}) {
+  return (
     <div>
       <h2
         style={{
@@ -30,7 +77,5 @@ export default function ({ chaosItems, lowestSlot, regalAndChaos }) {
           ))}
       </div>
     </div>
-  ) : (
-    <div />
   );
 }

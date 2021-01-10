@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { STASH_REFRESH_TIMEOUT, SNAPSHOTS_KEY } from "../../constants";
 import { getSummary } from "../../services/poe-stash-valuation";
+import { getSnapshots, saveSnapshot } from "../../services/snapshots";
 
 import { DashboardContainer, Information, Card } from "./style";
 import NetWorth from "./net-worth";
@@ -11,9 +12,7 @@ import PoeRacingWidget from "../poe-racing-widget";
 
 export default function Dashboard() {
   const [summary, setSummary] = useState({});
-  const [snapshots, setSnapshots] = useState(
-    JSON.parse(localStorage.getItem(SNAPSHOTS_KEY) || "[]")
-  );
+  const [snapshots, setSnapshots] = useState([]);
 
   useEffect(() => {
     let running = true;
@@ -24,15 +23,9 @@ export default function Dashboard() {
 
       const newSummary = await getSummary();
       setSummary(newSummary);
-      setSnapshots((prevSnapshots) =>
-        [
-          {
-            timestamp: Date.now(),
-            data: newSummary,
-          },
-          ...prevSnapshots,
-        ].slice(0, 1000)
-      );
+      await saveSnapshot(newSummary);
+      const allSnapshots = await getSnapshots();
+      setSnapshots(allSnapshots);
 
       setTimeout(refresher, STASH_REFRESH_TIMEOUT);
     }
@@ -42,10 +35,6 @@ export default function Dashboard() {
       running = false;
     };
   }, []);
-
-  useEffect(() => {
-    localStorage.setItem(SNAPSHOTS_KEY, JSON.stringify(snapshots));
-  }, [snapshots]);
 
   return (
     <DashboardContainer>

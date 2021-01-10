@@ -10,17 +10,8 @@ export default function NetWorth({
   recipeInChaos,
   recipeInEx,
 }) {
-  if (
-    ![
-      chaosPerEx,
-      specialTab,
-      totalChaosNetWorthB,
-      totalExNetWorthB,
-      recipeInChaos,
-      recipeInEx,
-    ].every((a) => a)
-  ) {
-    return <div />;
+  if (![chaosPerEx, specialTab].every((a) => a)) {
+    return <div>Net worth summary loading...</div>;
   }
   return (
     <table>
@@ -52,9 +43,13 @@ export default function NetWorth({
               <Tdr>{chaosValue.toFixed(2)}</Tdr>
               <Tdr>{exValue.toFixed(3)}</Tdr>
               <Tdl>
-                {mostExpensiveStack.stackSize} {mostExpensiveStack.typeLine} ={" "}
-                {mostExpensiveStack.value.toFixed(2)} c (
-                {(mostExpensiveStack.value / chaosPerEx).toFixed(3)} ex)
+                {mostExpensiveStack.value > 0
+                  ? `${mostExpensiveStack.stackSize} ${
+                      mostExpensiveStack.typeLine
+                    } = ${mostExpensiveStack.value.toFixed(2)} c (${(
+                      mostExpensiveStack.value / chaosPerEx
+                    ).toFixed(3)} ex)`
+                  : ""}
               </Tdl>
             </tr>
           )

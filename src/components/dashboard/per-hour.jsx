@@ -1,42 +1,19 @@
 import React from "react";
 import moment from "moment";
 
+import { snapshotDiff } from "../../services/snapshots";
+
 import { Thl, Thc, Thr, Tdl, Tdr } from "./style";
 
 export default function PerHour({ snapshots }) {
   const rates = [];
   for (let n = 1; n < snapshots.length; n++) {
-    const newer = snapshots[n - 1];
-    const older = snapshots[n];
-    const durationMs = newer?.timestamp - older?.timestamp;
-    const durationHr = durationMs / (1000 * 60 * 60);
-    const midTime = moment((newer?.timestamp + older?.timestamp) / 2);
-    const chaos =
-      (newer?.data?.totalChaosNetWorth - older?.data?.totalChaosNetWorth) /
-      durationHr;
-    const chaosB =
-      (newer?.data?.totalChaosNetWorthB - older?.data?.totalChaosNetWorthB) /
-      durationHr;
-    const ex =
-      (newer?.data?.totalExNetWorth - older?.data?.totalExNetWorth) /
-      durationHr;
-    const exB =
-      (newer?.data?.totalExNetWorthB - older?.data?.totalExNetWorthB) /
-      durationHr;
-
-    rates.push({
-      durationMs,
-      midTime,
-      chaos,
-      chaosB,
-      ex,
-      exB,
-    });
+    rates.push(snapshotDiff(snapshots[n - 1], snapshots[n]));
   }
 
   const someRates = rates.slice(0, 3);
 
-  return (
+  return rates.length > 0 ? (
     <table>
       <thead>
         <tr>
@@ -52,18 +29,33 @@ export default function PerHour({ snapshots }) {
         </tr>
       </thead>
       <tbody>
-        {someRates.map(({ midTime, chaos, chaosB, ex, exB }) => {
-          return (
-            <tr>
-              <Tdl>{midTime.format("LT")}</Tdl>
-              <Tdr>{chaosB}</Tdr>
-              <Tdr>{chaos}</Tdr>
-              <Tdr>{exB}</Tdr>
-              <Tdr>{ex}</Tdr>
-            </tr>
-          );
-        })}
+        {someRates.map(
+          ({
+            startTime,
+            midTime,
+            endTime,
+            chaosPerHr,
+            chaosPerHrB,
+            exPerHr,
+            exPerHrB,
+          }) => {
+            return (
+              <tr key={midTime}>
+                <Tdl>
+                  {moment(startTime).format("LT")} -{" "}
+                  {moment(endTime).format("LT")}
+                </Tdl>
+                <Tdr>{chaosPerHrB.toFixed(2)}</Tdr>
+                <Tdr>{chaosPerHr.toFixed(2)}</Tdr>
+                <Tdr>{exPerHrB.toFixed(3)}</Tdr>
+                <Tdr>{exPerHr.toFixed(3)}</Tdr>
+              </tr>
+            );
+          }
+        )}
       </tbody>
     </table>
+  ) : (
+    <div>Per hour loading...</div>
   );
 }
