@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { STASH_REFRESH_TIMEOUT, SNAPSHOTS_KEY } from "../../constants";
+import { STASH_REFRESH_TIMEOUT } from "../../constants";
 import { getSummary } from "../../services/poe-stash-valuation";
 import { getSnapshots, saveSnapshot } from "../../services/snapshots";
 
@@ -15,6 +15,12 @@ export default function Dashboard() {
   const [snapshots, setSnapshots] = useState([]);
 
   useEffect(() => {
+    (async () => {
+      const allSnapshots = await getSnapshots();
+      setSnapshots(allSnapshots);
+      setSummary(allSnapshots[0]?.data);
+    })();
+
     let running = true;
     async function refresher() {
       if (!running) {
@@ -39,7 +45,10 @@ export default function Dashboard() {
   return (
     <DashboardContainer>
       <Information>
-        <Card>
+        <Card style={{ flexShrink: 1 }}>
+          <p>The chaos recipe helper looks for tabs that start with "chaos_"</p>
+        </Card>
+        <Card style={{ flexShrink: 0 }}>
           <h3>Chaos/Ex: {summary?.chaosPerEx}</h3>
           <NetWorth {...summary} />
           <h4>Per Hour</h4>
@@ -47,6 +56,7 @@ export default function Dashboard() {
         </Card>
         <Card
           style={{
+            flexShrink: 0,
             textAlign: "center",
           }}
         >

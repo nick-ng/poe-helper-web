@@ -1,6 +1,6 @@
 import localforage from "localforage";
 
-import { SNAPSHOTS_KEY } from "../constants";
+import { SNAPSHOTS_KEY, MAX_SNAPSHOTS } from "../constants";
 
 export const getSnapshotKeys = async () => {
   const keys = await localforage.keys();
@@ -14,7 +14,7 @@ export const getSnapshotKeys = async () => {
 };
 
 export const getSnapshots = async () => {
-  const someSnapshotkeys = (await getSnapshotKeys()).slice(0, 500);
+  const someSnapshotkeys = (await getSnapshotKeys()).slice(0, MAX_SNAPSHOTS);
 
   return Promise.all(someSnapshotkeys.map((key) => localforage.getItem(key)));
 };
@@ -42,7 +42,10 @@ export const snapshotCleaner = async () => {
       bb?.data?.totalExNetWorthB - cc?.data?.totalExNetWorthB,
     ];
 
-    if (comparisons.every((a) => Math.abs(a) < threshold)) {
+    if (
+      n > MAX_SNAPSHOTS ||
+      comparisons.every((a) => Math.abs(a) < threshold)
+    ) {
       const localforageKey = `${SNAPSHOTS_KEY}-${bb.timestamp}`;
       localforage.removeItem(localforageKey);
     }
