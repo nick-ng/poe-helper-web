@@ -40,17 +40,11 @@ export const fetcher = async (url, options) => {
       }),
     });
 
-    if (res.status === 400 && res.headers.get("x-ms-per-request")) {
-      const msPer = parseInt(res.headers.get("x-ms-per-request"), 10) || 1000;
-      const ms = msPer * counter++ * ratio + 50 * Math.random();
-      console.log(`Fetch limit hit. Waiting for ${ms} ms`);
-      await wait(ms);
-      continue;
-    }
-
     if (res.status === 429) {
-      const ms = 30000;
-      console.log(`Rate limit hit. Waiting for ${ms} ms`);
+      const msPer = parseInt(res.headers.get("x-ms-per-request"), 10) || 30000;
+      const ms =
+        Math.min(msPer * counter++ * ratio, 30000) + 50 * Math.random();
+      console.log(`Fetch limit hit. Waiting for ${ms} ms`);
       await wait(ms);
       continue;
     }
