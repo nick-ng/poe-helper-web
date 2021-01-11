@@ -32,6 +32,12 @@ export const Card = styled.div`
   }
 `;
 
+export const DesktopOnlyCard = styled(Card)`
+  @media (max-device-width: 1439px) {
+    display: none;
+  }
+`;
+
 export const LoadingBar = styled.div`
   height: 0.3rem;
   position: relative;

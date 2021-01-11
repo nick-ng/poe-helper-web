@@ -42,7 +42,7 @@ export const fetcher = async (url, options) => {
 
     if (res.status === 400 && res.headers.get("x-ms-per-request")) {
       const msPer = parseInt(res.headers.get("x-ms-per-request"), 10) || 1000;
-      const ms = msPer * counter++ * ratio;
+      const ms = msPer * counter++ * ratio + 50 * Math.random();
       console.log(`Fetch limit hit. Waiting for ${ms} ms`);
       await wait(ms);
       continue;

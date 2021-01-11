@@ -17,7 +17,7 @@ const StyledNavLink = styled(NavLinkRRD)`
   }
 `;
 
-const StyledIcon = styled(Icon)`
+export const StyledIcon = styled(Icon)`
   font-size: 28px;
 `;
 

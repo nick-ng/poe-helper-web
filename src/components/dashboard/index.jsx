@@ -4,11 +4,17 @@ import { STASH_REFRESH_TIMEOUT } from "../../constants";
 import { getSummary } from "../../services/poe-stash-valuation";
 import { getSnapshots, saveSnapshot } from "../../services/snapshots";
 
-import { DashboardContainer, Information, Card } from "./style";
+import {
+  DashboardContainer,
+  Information,
+  Card,
+  DesktopOnlyCard,
+} from "./style";
 import NetWorth from "./net-worth";
 import ChaosRecipe from "./chaos-recipe";
 import PerHour from "./per-hour";
 import PoeRacingWidget from "../poe-racing-widget";
+import ManualSnapshot from "./manual-snapshot";
 
 export default function Dashboard() {
   const [summary, setSummary] = useState({});
@@ -45,9 +51,12 @@ export default function Dashboard() {
   return (
     <DashboardContainer>
       <Information>
-        <Card style={{ flexShrink: 1 }}>
+        <DesktopOnlyCard style={{ flexShrink: 1 }}>
+          <h3>Manual Snapshots</h3>
+          <ManualSnapshot summary={summary} />
           <p>The chaos recipe helper looks for tabs that start with "chaos_"</p>
-        </Card>
+          <PoeRacingWidget size={3} />
+        </DesktopOnlyCard>
         <Card style={{ flexShrink: 0 }}>
           <h3>Chaos/Ex: {summary?.chaosPerEx}</h3>
           <NetWorth {...summary} />

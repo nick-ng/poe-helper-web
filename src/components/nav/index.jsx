@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import NavLink from "./nav-link";
+import NavLink, { StyledIcon } from "./nav-link";
 
 const NavContainer = styled.div`
   padding: 5px;
@@ -12,17 +12,28 @@ const NavContainer = styled.div`
   gap: 12px;
 `;
 
+const GithubLink = styled.a`
+  position: fixed;
+  bottom: 14px;
+  left: 14px;
+  text-decoration: none;
+  color: #cccccc;
+`;
+
 const Nav = () => (
   <NavContainer>
     <NavLink icon="fa-table" to="/" exact>
       Dashboard
     </NavLink>
-    <NavLink icon="fa-line-chart" to="/charts">
-      Charts
-    </NavLink>
     <NavLink icon="fa-cog" to="/settings">
       Settings
     </NavLink>
+    <GithubLink
+      target="_blank"
+      href="https://github.com/nick-ng/poe-helper-web"
+    >
+      <StyledIcon icon="fa-github" />
+    </GithubLink>
   </NavContainer>
 );
 

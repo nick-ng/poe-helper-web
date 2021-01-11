@@ -1,11 +1,18 @@
 import localforage from "localforage";
+import ManualSnapshot from "../components/dashboard/manual-snapshot";
 
-import { SNAPSHOTS_KEY, MAX_SNAPSHOTS } from "../constants";
+import {
+  SNAPSHOTS_KEY,
+  MANUAL_SNAPSHOTS_KEY,
+  MAX_SNAPSHOTS,
+} from "../constants";
 
-export const getSnapshotKeys = async () => {
+export const getSnapshotKeys = async (isManual = false) => {
   const keys = await localforage.keys();
   return keys
-    .filter((a) => a.startsWith(SNAPSHOTS_KEY))
+    .filter((a) =>
+      a.startsWith(isManual ? MANUAL_SNAPSHOTS_KEY : SNAPSHOTS_KEY)
+    )
     .sort((a, b) => {
       const [_a, aTimestampString] = a.split("-");
       const [_b, bTimestampString] = b.split("-");
@@ -13,8 +20,11 @@ export const getSnapshotKeys = async () => {
     });
 };
 
-export const getSnapshots = async () => {
-  const someSnapshotkeys = (await getSnapshotKeys()).slice(0, MAX_SNAPSHOTS);
+export const getSnapshots = async (isManual = false) => {
+  const someSnapshotkeys = (await getSnapshotKeys(isManual)).slice(
+    0,
+    MAX_SNAPSHOTS
+  );
 
   return Promise.all(someSnapshotkeys.map((key) => localforage.getItem(key)));
 };
@@ -52,14 +62,22 @@ export const snapshotCleaner = async () => {
   }
 };
 
-export const saveSnapshot = async (data) => {
-  const timestamp = Date.now();
-  const localforageKey = `${SNAPSHOTS_KEY}-${timestamp}`;
+export const saveSnapshot = async (data, isManual = false, id = null) => {
+  const timestamp = id || Date.now();
+  const localforageKey = isManual
+    ? `${MANUAL_SNAPSHOTS_KEY}-${timestamp}`
+    : `${SNAPSHOTS_KEY}-${timestamp}`;
   await localforage.setItem(localforageKey, {
     timestamp,
     data,
   });
   await snapshotCleaner();
+};
+
+export const deleteManualSnapshot = async (timestamp) => {
+  const localforageKey = `${MANUAL_SNAPSHOTS_KEY}-${timestamp}`;
+  await localforage.removeItem(localforageKey);
+  return getSnapshots(true);
 };
 
 export const snapshotDiff = (snapshotA, snapshotB) => {
@@ -77,23 +95,6 @@ export const snapshotDiff = (snapshotA, snapshotB) => {
     newer?.data?.totalChaosNetWorthB - older?.data?.totalChaosNetWorthB;
   const ex = newer?.data?.totalExNetWorth - older?.data?.totalExNetWorth;
   const exB = newer?.data?.totalExNetWorthB - older?.data?.totalExNetWorthB;
-
-  if (exB > 1000) {
-    console.log("a", {
-      durationMs,
-      startTime: older?.timestamp,
-      endTime: newer?.timestamp,
-      midTime,
-      chaos,
-      chaosPerHr: chaos / durationHr,
-      chaosB,
-      chaosPerHrB: chaosB / durationHr,
-      ex,
-      exPerHr: ex / durationHr,
-      exB,
-      exPerHrB: exB / durationHr,
-    });
-  }
 
   return {
     durationMs,

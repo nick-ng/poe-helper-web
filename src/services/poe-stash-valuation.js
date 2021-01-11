@@ -35,6 +35,7 @@ export const summary = async (chaosRecipeTab, specialTab) => {
   const totalExNetWorthB = totalExNetWorth + recipeInEx;
 
   return {
+    timestamp: Date.now(),
     chaosRecipeTab,
     specialTab,
     chaosPerEx,
