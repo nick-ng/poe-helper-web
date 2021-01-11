@@ -48,6 +48,13 @@ export const fetcher = async (url, options) => {
       continue;
     }
 
+    if (res.status === 429) {
+      const ms = 30000;
+      console.log(`Rate limit hit. Waiting for ${ms} ms`);
+      await wait(ms);
+      continue;
+    }
+
     counter = 1;
     return res;
   }
