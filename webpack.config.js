@@ -9,6 +9,7 @@ module.exports = {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
     port: 23224,
+    historyApiFallback: true,
   },
   mode: process.env.NODE_ENV || "production",
   devtool: process.env.NODE_ENV !== "production" ? "source-map" : undefined,
