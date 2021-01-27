@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route as R } from "react-router-dom";
 import Nav from "./components/nav";
 
 import Dashboard from "./components/dashboard";
+import ItemSearch from "./components/item-search";
 import NotFound from "./components/not-found";
 import Settings from "./components/settings";
 
@@ -35,6 +36,9 @@ export default function App() {
         <Switch>
           <R path="/settings">
             <Settings />
+          </R>
+          <R path="/item-search">
+            <ItemSearch />
           </R>
           <R path="/" exact>
             <Dashboard />
