@@ -11,6 +11,9 @@ object-assign
     (c) 2013-2017 Mozilla, Apache License 2.0
 */
 
+/*! Case - v1.6.2 - 2020-03-24
+* Copyright (c) 2020 Nathan Bubna; Licensed MIT, GPL */
+
 /** @license React v0.20.1
  * scheduler.production.min.js
  *
