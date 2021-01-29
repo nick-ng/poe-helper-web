@@ -17,14 +17,17 @@ export const wait = (ms) =>
     setTimeout(resolve, ms);
   });
 
-export const getSettings = () => ({
-  account: localStorage.getItem(ACCOUNT_KEY),
-  characterName: localStorage.getItem(CHARACTER_NAME_KEY),
-  fetchUrl: localStorage.getItem(FETCH_URL_KEY) || DEFAULT_FETCH_URL,
-  league: localStorage.getItem(LEAGUE_KEY),
-  poesessid: localStorage.getItem(POESESSID_KEY),
-  searchRedirect: localStorage.getItem(SEARCH_REDIRECT_KEY) === "true" || false,
-});
+export const getSettings = () => {
+  const searchRedirectRaw = localStorage.getItem(SEARCH_REDIRECT_KEY);
+  return {
+    account: localStorage.getItem(ACCOUNT_KEY),
+    characterName: localStorage.getItem(CHARACTER_NAME_KEY),
+    fetchUrl: localStorage.getItem(FETCH_URL_KEY) || DEFAULT_FETCH_URL,
+    league: localStorage.getItem(LEAGUE_KEY),
+    poesessid: localStorage.getItem(POESESSID_KEY),
+    searchRedirect: searchRedirectRaw ? searchRedirectRaw === "true" : true,
+  };
+};
 
 export const fetcher = async (url, options) => {
   const { fetchUrl } = getSettings();
