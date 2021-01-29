@@ -5,6 +5,7 @@ export const CHARACTER_NAME_KEY = "CHARACTER_NAME";
 export const ACCOUNT_KEY = "ACCOUNT";
 export const LEAGUE_KEY = "LEAGUE";
 export const POESESSID_KEY = "POESESSID";
+export const SEARCH_REDIRECT_KEY = "SEARCH_REDIRECT";
 
 export const STASH_REFRESH_TIMEOUT = 2.5 * 60 * 1000;
 

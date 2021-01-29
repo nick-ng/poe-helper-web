@@ -7,6 +7,7 @@ import {
   ACCOUNT_KEY,
   LEAGUE_KEY,
   POESESSID_KEY,
+  SEARCH_REDIRECT_KEY,
 } from "../../constants";
 import { getSettings } from "../../utils";
 
@@ -31,6 +32,7 @@ export default function Home() {
   const [fetchUrl, setFetchUrl] = useState("");
   const [league, setLeague] = useState("");
   const [poesessid, setPoesessid] = useState("");
+  const [searchRedirect, setSearchRedirect] = useState(false);
 
   const resetSettings = () => {
     const settings = getSettings();
@@ -39,6 +41,7 @@ export default function Home() {
     setFetchUrl(settings.fetchUrl || "");
     setLeague(settings.league || "");
     setPoesessid(settings.poesessid || "");
+    setSearchRedirect(settings.searchRedirect);
   };
 
   useEffect(() => {
@@ -49,10 +52,14 @@ export default function Home() {
     localStorage.setItem(CHARACTER_NAME_KEY, characterName);
   }, [characterName]);
 
+  useEffect(() => {
+    localStorage.setItem(SEARCH_REDIRECT_KEY, searchRedirect);
+  }, [searchRedirect]);
+
   return (
     <Container>
       <h1>Path of Exile Tools</h1>
-      <p>Enter you details below and click save.</p>
+      <h2>Main Settings</h2>
       <form
         onSubmit={(event) => {
           event.preventDefault();
@@ -64,17 +71,6 @@ export default function Home() {
       >
         <table>
           <tbody>
-            <tr>
-              <td>Character</td>
-              <td>
-                <input
-                  value={characterName}
-                  onChange={(event) => {
-                    setCharacterName(event.target.value);
-                  }}
-                />
-              </td>
-            </tr>
             <tr>
               <td>League</td>
               <td>
@@ -128,6 +124,39 @@ export default function Home() {
           Cancel
         </button>
       </form>
+      <h2>poe-racing Settings</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td>Character</td>
+            <td>
+              <input
+                value={characterName}
+                onChange={(event) => {
+                  setCharacterName(event.target.value);
+                }}
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Item Search Settings</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td>Auto-redirect</td>
+            <td>
+              <input
+                type="checkbox"
+                checked={searchRedirect}
+                onChange={() => {
+                  setSearchRedirect(!searchRedirect);
+                }}
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </Container>
   );
 }
