@@ -6,6 +6,7 @@ import {
   ACCOUNT_KEY,
   LEAGUE_KEY,
   POESESSID_KEY,
+  SEARCH_REDIRECT_KEY,
 } from "../constants";
 
 const ratio = 1.01;
@@ -22,6 +23,7 @@ export const getSettings = () => ({
   fetchUrl: localStorage.getItem(FETCH_URL_KEY) || DEFAULT_FETCH_URL,
   league: localStorage.getItem(LEAGUE_KEY),
   poesessid: localStorage.getItem(POESESSID_KEY),
+  searchRedirect: localStorage.getItem(SEARCH_REDIRECT_KEY) === "true" || false,
 });
 
 export const fetcher = async (url, options) => {

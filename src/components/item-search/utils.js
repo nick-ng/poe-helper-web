@@ -1,4 +1,5 @@
 import { snake } from "case";
+import { itemMap, poeNinjaMap } from "../../constants/poe-item-slot";
 
 const trim = (a) => {
   return a.trim();
@@ -36,11 +37,13 @@ export const parseItem = (itemString) => {
     rarity: null,
     name: null,
     baseType: null,
+    class: null,
     slot: null,
     maxLink: 0,
     identified: null,
     corrupted: false,
     influence: [],
+    poeNinjaClass: null,
   };
 
   // Do some stuff
@@ -63,6 +66,14 @@ export const parseItem = (itemString) => {
     item.rarity = itemGroups[0][0].toLowerCase().replace("rarity: ", "");
     item.name = itemGroups[0][1];
     item.baseType = snake(itemGroups[0][2]);
+  }
+
+  if (item.baseType) {
+    item.class = itemMap[item.baseType] || null;
+  }
+
+  if (item.class) {
+    item.poeNinjaClass = poeNinjaMap[item.class] || null;
   }
 
   return item;
