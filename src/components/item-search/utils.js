@@ -1,9 +1,21 @@
+import { snake } from "case";
+
+const trim = (a) => {
+  return a.trim();
+};
 const itemStringToArray = (itemString) => {
   return itemString
     .trim()
     .split("\n")
-    .map((a) => a.trim())
+    .map(trim)
     .filter((a) => a !== "--------");
+};
+
+export const itemStringToGroups = (itemString) => {
+  return itemString
+    .split("--------")
+    .map(trim)
+    .map((a) => a.split("\n").map(trim));
 };
 
 export const getMaxLink = (itemString) => {
@@ -16,4 +28,42 @@ export const getMaxLink = (itemString) => {
   }
   const b = a.replace("Sockets: ", "").split(" ");
   console.log("b", b);
+  return itemStringToGroups(itemString);
+};
+
+export const parseItem = (itemString) => {
+  const item = {
+    rarity: null,
+    name: null,
+    baseType: null,
+    slot: null,
+    maxLink: 0,
+    identified: null,
+    corrupted: false,
+    influence: [],
+  };
+
+  // Do some stuff
+  const itemGroups = itemStringToGroups(itemString);
+  if (itemGroups[0][0] === "Rarity: Magic") {
+    item.identified = true;
+    item.rarity = "magic";
+    item.name = itemGroups[0][1];
+    // const temp = itemGroups[0][1]
+    //   .replace("'", "")
+    //   .replace(/(^\S+)|(of.+)/g, "")
+    //   .trim();
+    item.baseType = snake(itemGroups[0][1]);
+  } else if (itemGroups[0].length === 2) {
+    item.identified = false;
+    item.rarity = itemGroups[0][0].toLowerCase().replace("rarity: ", "");
+    item.baseType = snake(itemGroups[0][1]);
+  } else {
+    item.identified = true;
+    item.rarity = itemGroups[0][0].toLowerCase().replace("rarity: ", "");
+    item.name = itemGroups[0][1];
+    item.baseType = snake(itemGroups[0][2]);
+  }
+
+  return item;
 };
