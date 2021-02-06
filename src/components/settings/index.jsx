@@ -8,6 +8,7 @@ import {
   LEAGUE_KEY,
   POESESSID_KEY,
   SEARCH_REDIRECT_KEY,
+  TWITCH_CHANNEL_KEY,
 } from "../../constants";
 import { getSettings } from "../../utils";
 
@@ -33,6 +34,7 @@ export default function Home() {
   const [league, setLeague] = useState("");
   const [poesessid, setPoesessid] = useState("");
   const [searchRedirect, setSearchRedirect] = useState(false);
+  const [twitchChannel, setTwitchChannel] = useState("");
 
   const resetSettings = () => {
     const settings = getSettings();
@@ -42,6 +44,7 @@ export default function Home() {
     setLeague(settings.league || "");
     setPoesessid(settings.poesessid || "");
     setSearchRedirect(settings.searchRedirect);
+    setTwitchChannel(settings.twitchChannel);
   };
 
   useEffect(() => {
@@ -55,6 +58,10 @@ export default function Home() {
   useEffect(() => {
     localStorage.setItem(SEARCH_REDIRECT_KEY, searchRedirect);
   }, [searchRedirect]);
+
+  useEffect(() => {
+    localStorage.setItem(TWITCH_CHANNEL_KEY, twitchChannel);
+  }, [twitchChannel]);
 
   return (
     <Container>
@@ -151,6 +158,22 @@ export default function Home() {
                 checked={searchRedirect}
                 onChange={() => {
                   setSearchRedirect(!searchRedirect);
+                }}
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Twitch Settings</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td>Channel Name</td>
+            <td>
+              <input
+                value={twitchChannel}
+                onChange={(event) => {
+                  setTwitchChannel(event.target.value);
                 }}
               />
             </td>

@@ -53,6 +53,16 @@ export const AnchorList = styled.div`
   }
 `;
 
+export const LabelList = styled.div`
+  label {
+    display: block;
+  }
+
+  label + label {
+    margin-top: 0.5em;
+  }
+`;
+
 export const LoadingBar = styled.div`
   height: 0.3rem;
   position: relative;

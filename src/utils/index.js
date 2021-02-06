@@ -7,6 +7,7 @@ import {
   LEAGUE_KEY,
   POESESSID_KEY,
   SEARCH_REDIRECT_KEY,
+  TWITCH_CHANNEL_KEY,
 } from "../constants";
 
 const ratio = 1.01;
@@ -26,6 +27,7 @@ export const getSettings = () => {
     league: localStorage.getItem(LEAGUE_KEY),
     poesessid: localStorage.getItem(POESESSID_KEY),
     searchRedirect: searchRedirectRaw ? searchRedirectRaw === "true" : true,
+    twitchChannel: localStorage.getItem(TWITCH_CHANNEL_KEY),
   };
 };
 
