@@ -61,23 +61,20 @@ export default function NetWorth({ chaosPerEx, specialTab }) {
         </thead>
         <tbody>
           {getTopNExpensiveItems(specialTab?.combinedItems).map(
-            ({ typeLine, icon, each, inTabs, stackSize, stackValue }) => {
-              console.log("typeLine", typeLine);
-              return (
-                <tr key={typeLine}>
-                  <Tdl>
-                    <ItemName>
-                      <ItemIcon src={icon} />
-                      {typeLine}
-                    </ItemName>
-                  </Tdl>
-                  <Tdr>{stackSize}</Tdr>
-                  <Tdr>{each.toFixed(2)} c</Tdr>
-                  <Tdr>{stackValue.toFixed(2)} c</Tdr>
-                  <Tdl>{inTabs.join(", ")}</Tdl>
-                </tr>
-              );
-            }
+            ({ typeLine, icon, each, inTabs, stackSize, stackValue }) => (
+              <tr key={typeLine}>
+                <Tdl>
+                  <ItemName>
+                    <ItemIcon src={icon} />
+                    {typeLine}
+                  </ItemName>
+                </Tdl>
+                <Tdr>{stackSize}</Tdr>
+                <Tdr>{each.toFixed(2)} c</Tdr>
+                <Tdr>{stackValue.toFixed(2)} c</Tdr>
+                <Tdl>{inTabs.join(", ")}</Tdl>
+              </tr>
+            )
           )}
         </tbody>
       </table>
@@ -93,23 +90,20 @@ export default function NetWorth({ chaosPerEx, specialTab }) {
         </thead>
         <tbody>
           {getTopNExpensiveStacks(specialTab?.combinedItems).map(
-            ({ typeLine, icon, each, inTabs, stackSize, stackValue }) => {
-              console.log("typeLine", typeLine);
-              return (
-                <tr key={typeLine}>
-                  <Tdl>
-                    <ItemName>
-                      <ItemIcon src={icon} />
-                      {typeLine}
-                    </ItemName>
-                  </Tdl>
-                  <Tdr>{stackSize}</Tdr>
-                  <Tdr>{each.toFixed(2)} c</Tdr>
-                  <Tdr>{stackValue.toFixed(2)} c</Tdr>
-                  <Tdl>{inTabs.join(", ")}</Tdl>
-                </tr>
-              );
-            }
+            ({ typeLine, icon, each, inTabs, stackSize, stackValue }) => (
+              <tr key={typeLine}>
+                <Tdl>
+                  <ItemName>
+                    <ItemIcon src={icon} />
+                    {typeLine}
+                  </ItemName>
+                </Tdl>
+                <Tdr>{stackSize}</Tdr>
+                <Tdr>{each.toFixed(2)} c</Tdr>
+                <Tdr>{stackValue.toFixed(2)} c</Tdr>
+                <Tdl>{inTabs.join(", ")}</Tdl>
+              </tr>
+            )
           )}
         </tbody>
       </table>

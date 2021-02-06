@@ -29,7 +29,7 @@ const Controls = styled.form`
   }
 `;
 
-export default function ManualSnapshot({ summary }) {
+export default function ManualSnapshot({ summary, showChaosRecipe }) {
   const [manualSnapshots, setManualSnapshots] = useState([]);
   const [newSnapshotNote, setNewSnapshotNote] = useState("");
 
@@ -44,11 +44,7 @@ export default function ManualSnapshot({ summary }) {
       <Controls
         onSubmit={async (e) => {
           e.preventDefault();
-          console.log("summary", summary);
-          console.log("a", {
-            ...summary,
-            snapshotNote: newSnapshotNote,
-          });
+
           await saveSnapshot(
             {
               ...summary,
@@ -71,21 +67,29 @@ export default function ManualSnapshot({ summary }) {
       </Controls>
       <table>
         <thead>
-          <tr>
-            <Thl rowSpan={2}>Ago (Hours)</Thl>
-            <Thl rowSpan={2}>Notes</Thl>
-            <Thc colSpan={2}>Chaos Difference</Thc>
-            <Thc colSpan={2}>Ex Difference</Thc>
-            <Thc rowSpan={2}>
-              <Icon icon="fa-trash" />
-            </Thc>
-          </tr>
-          <tr>
-            <Thr>With Recipe</Thr>
-            <Thr>No Recipe</Thr>
-            <Thr>With Recipe</Thr>
-            <Thr>No Recipe</Thr>
-          </tr>
+          {showChaosRecipe ? (
+            <tr>
+              <Thl rowSpan={2}>Ago (Hours)</Thl>
+              <Thl rowSpan={2}>Notes</Thl>
+              <Thc colSpan={2}>Chaos Difference</Thc>
+              <Thc colSpan={2}>Ex Difference</Thc>
+            </tr>
+          ) : (
+            <tr>
+              <Thl>Ago (Hours)</Thl>
+              <Thl>Notes</Thl>
+              <Thr>Chaos Diff.</Thr>
+              <Thr>Ex Diff.</Thr>
+            </tr>
+          )}
+          {showChaosRecipe && (
+            <tr>
+              <Thr>With Recipe</Thr>
+              <Thr>No Recipe</Thr>
+              <Thr>With Recipe</Thr>
+              <Thr>No Recipe</Thr>
+            </tr>
+          )}
         </thead>
         <tbody>
           {manualSnapshots.map((snapshot) => {
@@ -97,21 +101,36 @@ export default function ManualSnapshot({ summary }) {
               snapshot
             );
 
+            const hoursAgo = moment().diff(
+              moment(snapshot?.timestamp),
+              "hours",
+              true
+            );
+
             return (
               snapshot?.timestamp && (
                 <tr key={snapshot?.timestamp}>
                   <Tdl>
                     {moment(snapshot?.timestamp).fromNow()} (
-                    {moment()
-                      .diff(moment(snapshot?.timestamp), "hours", true)
-                      .toFixed(2)}
-                    )
+                    {hoursAgo.toFixed(2)})
                   </Tdl>
                   <Tdl>{snapshot?.data?.snapshotNote}</Tdl>
-                  <Tdr>{chaosB.toFixed(2)}</Tdr>
-                  <Tdr>{chaos.toFixed(2)}</Tdr>
-                  <Tdr>{exB.toFixed(3)}</Tdr>
-                  <Tdr>{ex.toFixed(3)}</Tdr>
+                  {showChaosRecipe && (
+                    <Tdr>
+                      {chaosB.toFixed(2)} ({(chaosB / hoursAgo).toFixed(2)}/hr)
+                    </Tdr>
+                  )}
+                  <Tdr>
+                    {chaos.toFixed(2)} ({(chaos / hoursAgo).toFixed(2)}/hr)
+                  </Tdr>
+                  {showChaosRecipe && (
+                    <Tdr>
+                      {exB.toFixed(2)} ({(exB / hoursAgo).toFixed(2)}/hr)
+                    </Tdr>
+                  )}
+                  <Tdr>
+                    {ex.toFixed(2)} ({(ex / hoursAgo).toFixed(2)}/hr)
+                  </Tdr>
                   <Tdc style={{ padding: "0" }}>
                     <button
                       style={{

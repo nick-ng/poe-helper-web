@@ -23,13 +23,13 @@ export const fetchStashTabHeaders = async ({ account, league, poesessid }) => {
   try {
     const jsonRes = await res.json();
     if (jsonRes?.error) {
-      console.log("[stash] error when fetching tab headers", jsonRes);
+      console.warn("[stash] error when fetching tab headers", jsonRes);
       return [];
     }
 
     return jsonRes.tabs;
   } catch (e) {
-    console.log("[stash] error when fetching tab headers", e);
+    console.warn("[stash] error when fetching tab headers", e);
     return [];
   }
 };
@@ -54,7 +54,7 @@ export const fetchStashTabItems = async (
     const jsonRes = await res.json();
     return jsonRes.items || [];
   } catch (e) {
-    console.log("[stash] error when fetching tab contents", e);
+    console.warn("[stash] error when fetching tab contents", e);
     return [];
   }
 };

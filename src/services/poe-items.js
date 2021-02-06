@@ -67,7 +67,7 @@ export const chaosRecipeItemSlot = (item) => {
     return { slot: "body", count: 1 };
   }
 
-  console.log("[stash] Unknown item", item);
+  console.warn("[stash] Unknown item", item);
   return { slot: "unknown", count: 0 };
 };
 

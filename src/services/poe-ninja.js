@@ -69,7 +69,7 @@ export const updatePoeNinjaData = async ({ league }) => {
         }))
       );
     } catch (e) {
-      console.log("[stash] error when fetching from poe.ninja", e);
+      console.warn("[stash] error when fetching from poe.ninja", e);
     }
   }
 
@@ -94,7 +94,7 @@ export const updatePoeNinjaData = async ({ league }) => {
           .filter((a) => a.each > NON_CURRENCY_THRESHOLD)
       );
     } catch (e) {
-      console.log("[stash] error when fetching from poe.ninja", e);
+      console.warn("[stash] error when fetching from poe.ninja", e);
     }
   }
 

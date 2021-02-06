@@ -4,12 +4,13 @@ import styled from "styled-components";
 export const DashboardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: stretch;
 `;
 
 export const Information = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
 `;
 
 export const Card = styled.div`
@@ -32,9 +33,23 @@ export const Card = styled.div`
   }
 `;
 
+export const LeftCard = styled(Card)`
+  flex-grow 1;
+`;
+
 export const DesktopOnlyCard = styled(Card)`
   @media (max-device-width: 1439px) {
     display: none;
+  }
+`;
+
+export const AnchorList = styled.div`
+  a {
+    display: block;
+  }
+
+  a + a {
+    margin-top: 0.5em;
   }
 `;
 
