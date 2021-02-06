@@ -59,6 +59,10 @@ export default function Dashboard() {
         </DesktopOnlyCard>
         <Card style={{ flexShrink: 0 }}>
           <h3>Chaos/Ex: {summary?.chaosPerEx}</h3>
+          <p>
+            Net Worth: {summary?.totalChaosNetWorth?.toFixed(1)} c (
+            {summary?.totalExNetWorth?.toFixed(2)} ex)
+          </p>
           <NetWorth {...summary} />
           <h4>Per Hour</h4>
           <PerHour snapshots={snapshots} />

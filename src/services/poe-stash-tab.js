@@ -74,6 +74,7 @@ export const hydrateTabList = (tabs, { account, league, poesessid }) => {
 
 export const getSpecialTabsValue = async (hydratedTabs) => {
   const chaosPerEx = (await getPoeNinjaDatum("Exalted Orb")).each;
+  const combinedItems = {};
 
   const result = await Promise.all(
     hydratedTabs.map(async (tab) => {
@@ -123,6 +124,24 @@ export const getSpecialTabsValue = async (hydratedTabs) => {
           const { chaosValue, mostExpensiveStack } = prev;
           const { typeLine, stackSize, stackValue } = item;
 
+          if (!combinedItems[typeLine]) {
+            const { each, icon } = item;
+            combinedItems[typeLine] = {
+              typeLine,
+              each,
+              icon,
+              stackSize,
+              stackValue,
+              inTabs: [tab.n],
+            };
+          } else {
+            combinedItems[typeLine].stackSize += stackSize;
+            combinedItems[typeLine].inTabs = [
+              ...combinedItems[typeLine].inTabs,
+              tab.n,
+            ];
+          }
+
           if (!stackValue || stackValue < MIN_STACK_VALUE) {
             return prev;
           }
@@ -162,6 +181,7 @@ export const getSpecialTabsValue = async (hydratedTabs) => {
 
   return {
     tabs: result,
+    combinedItems: Object.values(combinedItems),
     timestamp: Date.now(),
   };
 };

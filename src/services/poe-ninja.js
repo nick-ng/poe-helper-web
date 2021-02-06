@@ -11,6 +11,12 @@ import {
 import { fetcher } from "../utils";
 
 export const getPoeNinjaDatum = async (typeLine) => {
+  if (typeLine === "Chaos Orb") {
+    return {
+      typeLine,
+      each: 1,
+    };
+  }
   const each = await localforage.getItem(
     `${POE_NINJA_DATA_KEY}-${typeLine.replace(/ /g, "_")}`
   );

@@ -1,60 +1,118 @@
 import React from "react";
+import styled from "styled-components";
 
 import { Thl, Thr, Tdl, Tdr } from "./style";
 
-export default function NetWorth({
-  chaosPerEx,
-  specialTab,
-  totalChaosNetWorthB,
-  totalExNetWorthB,
-  recipeInChaos,
-  recipeInEx,
-}) {
+const ItemName = styled.div`
+  position: relative;
+  padding-left: 1.5em;
+`;
+
+const ItemIcon = styled.img`
+  position: absolute;
+  left: -5px;
+  top: 0px;
+  bottom: 0;
+  margin: auto;
+  height: 1.6em;
+  margin-right: 0.5em;
+`;
+
+const itemBlackList = ["Exalted Orb", "Chaos Orb"];
+
+const getTopNExpensiveItems = (combinedItems, n = 5) => {
+  if (!Array.isArray(combinedItems)) {
+    return [];
+  }
+  const sortedItems = [...combinedItems]
+    .filter((a) => !itemBlackList.includes(a.typeLine))
+    .sort((a, b) => b.each - a.each);
+
+  return sortedItems.slice(0, n);
+};
+
+const getTopNExpensiveStacks = (combinedItems, n = 5) => {
+  if (!Array.isArray(combinedItems)) {
+    return [];
+  }
+  const sortedItems = [...combinedItems]
+    .filter((a) => !itemBlackList.includes(a.typeLine))
+    .sort((a, b) => b.stackValue - a.stackValue);
+
+  return sortedItems.slice(0, n);
+};
+
+export default function NetWorth({ chaosPerEx, specialTab }) {
   if (![chaosPerEx, specialTab].every((a) => a)) {
     return <div>Net worth summary loading...</div>;
   }
+
   return (
-    <table>
-      <thead>
-        <tr>
-          <Thl>Stash Tab</Thl>
-          <Thr>Chaos</Thr>
-          <Thr>Ex</Thr>
-          <Thl>Notes</Thl>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <Tdl>Total</Tdl>
-          <Tdr>{totalChaosNetWorthB.toFixed(2)}</Tdr>
-          <Tdr>{totalExNetWorthB.toFixed(3)}</Tdr>
-          <Tdl></Tdl>
-        </tr>
-        <tr>
-          <Tdl>Chaos Recipe</Tdl>
-          <Tdr>{recipeInChaos.toFixed(2)}</Tdr>
-          <Tdr>{recipeInEx.toFixed(3)}</Tdr>
-          <Tdl></Tdl>
-        </tr>
-        {specialTab?.tabs?.map(
-          ({ tabName, chaosValue, exValue, mostExpensiveStack }) => (
-            <tr key={tabName}>
-              <Tdl>{tabName}</Tdl>
-              <Tdr>{chaosValue.toFixed(2)}</Tdr>
-              <Tdr>{exValue.toFixed(3)}</Tdr>
-              <Tdl>
-                {mostExpensiveStack.value > 0
-                  ? `${mostExpensiveStack.stackSize} ${
-                      mostExpensiveStack.typeLine
-                    } = ${mostExpensiveStack.value.toFixed(2)} c (${(
-                      mostExpensiveStack.value / chaosPerEx
-                    ).toFixed(3)} ex)`
-                  : ""}
-              </Tdl>
-            </tr>
-          )
-        )}
-      </tbody>
-    </table>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <Thl>Most Expensive Items</Thl>
+            <Thr>#</Thr>
+            <Thr>Each</Thr>
+            <Thr>Total</Thr>
+            <Thr>Tabs</Thr>
+          </tr>
+        </thead>
+        <tbody>
+          {getTopNExpensiveItems(specialTab?.combinedItems).map(
+            ({ typeLine, icon, each, inTabs, stackSize, stackValue }) => {
+              console.log("typeLine", typeLine);
+              return (
+                <tr key={typeLine}>
+                  <Tdl>
+                    <ItemName>
+                      <ItemIcon src={icon} />
+                      {typeLine}
+                    </ItemName>
+                  </Tdl>
+                  <Tdr>{stackSize}</Tdr>
+                  <Tdr>{each.toFixed(2)} c</Tdr>
+                  <Tdr>{stackValue.toFixed(2)} c</Tdr>
+                  <Tdl>{inTabs.join(", ")}</Tdl>
+                </tr>
+              );
+            }
+          )}
+        </tbody>
+      </table>
+      <table style={{ marginTop: "0.5em" }}>
+        <thead>
+          <tr>
+            <Thl>Most Expensive Stacks</Thl>
+            <Thr>#</Thr>
+            <Thr>Each</Thr>
+            <Thr>Total</Thr>
+            <Thr>Tabs</Thr>
+          </tr>
+        </thead>
+        <tbody>
+          {getTopNExpensiveStacks(specialTab?.combinedItems).map(
+            ({ typeLine, icon, each, inTabs, stackSize, stackValue }) => {
+              console.log("typeLine", typeLine);
+              return (
+                <tr key={typeLine}>
+                  <Tdl>
+                    <ItemName>
+                      <ItemIcon src={icon} />
+                      {typeLine}
+                    </ItemName>
+                  </Tdl>
+                  <Tdr>{stackSize}</Tdr>
+                  <Tdr>{each.toFixed(2)} c</Tdr>
+                  <Tdr>{stackValue.toFixed(2)} c</Tdr>
+                  <Tdl>{inTabs.join(", ")}</Tdl>
+                </tr>
+              );
+            }
+          )}
+        </tbody>
+      </table>
+    </div>
   );
 }
