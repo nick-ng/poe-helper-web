@@ -118,7 +118,7 @@ export default function Dashboard() {
           <DesktopOnlyCard
             style={{ order: twitchChatFirst ? -1 : 0, width: "350px" }}
           >
-            <h3>Twitch Chat</h3>
+            <h3>Twitch Chat - {getSettings()?.twitchChannel}</h3>
             <TwitchChatWidget />
           </DesktopOnlyCard>
         )}
