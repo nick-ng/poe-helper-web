@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { getSettings } from "../../utils";
 
 const SIZES = {
@@ -25,6 +27,9 @@ export default function PoeRacingWidget({ size }) {
       height={SIZES[size]?.height || "220px"}
     />
   ) : (
-    <div />
+    <p>
+      Please enter at Character name on the{" "}
+      <Link to="/settings">Settings page</Link>.
+    </p>
   );
 }
