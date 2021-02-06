@@ -103,7 +103,7 @@ export default function Dashboard() {
                   checked={twitchChatFirst}
                   onChange={() => {
                     localStorage.setItem(
-                      SHOW_TWITCH_CHAT_KEY,
+                      TWITCH_CHAT_FIRST_KEY,
                       !twitchChatFirst
                     );
                     setTwitchChatFirst(!twitchChatFirst);
@@ -115,7 +115,9 @@ export default function Dashboard() {
           </LabelList>
         </LeftCard>
         {showTwitchChat && (
-          <DesktopOnlyCard style={{ order: twitchChatFirst ? -1 : 0 }}>
+          <DesktopOnlyCard
+            style={{ order: twitchChatFirst ? -1 : 0, width: "350px" }}
+          >
             <h3>Twitch Chat</h3>
             <TwitchChatWidget />
           </DesktopOnlyCard>

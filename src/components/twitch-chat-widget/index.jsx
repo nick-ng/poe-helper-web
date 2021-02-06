@@ -8,6 +8,7 @@ export default function TwitchChatWidget() {
     <iframe
       src={`https://www.twitch.tv/embed/${twitchChannel}/chat?parent=${parent}&darkpopout`}
       height="100%"
+      width="345px"
     />
   ) : (
     <div />
