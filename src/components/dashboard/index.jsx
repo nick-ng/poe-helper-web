@@ -150,6 +150,9 @@ export default function Dashboard() {
             <a href="https://www.craftofexile.com/" target="_blank">
               Craft of Exile
             </a>
+            <a href="https://poedb.tw/us/" target="_blank">
+              PoEDB
+            </a>
           </AnchorList>
           {showChaosRecipe && (
             <p>
