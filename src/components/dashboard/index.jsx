@@ -28,6 +28,7 @@ import ManualSnapshot from "./manual-snapshot";
 export default function Dashboard() {
   const [summary, setSummary] = useState({});
   const [snapshots, setSnapshots] = useState([]);
+  const [fetching, setFetching] = useState(false);
 
   // Controls
   const [showChaosRecipe, setShowChaosRecipe] = useState(
@@ -53,11 +54,13 @@ export default function Dashboard() {
         return;
       }
 
+      setFetching(true);
       const newSummary = await getSummary();
       setSummary(newSummary);
       await saveSnapshot(newSummary);
       const allSnapshots = await getSnapshots();
       setSnapshots(allSnapshots);
+      setFetching(false);
 
       setTimeout(refresher, STASH_REFRESH_TIMEOUT);
     }
@@ -164,7 +167,8 @@ export default function Dashboard() {
           <h3>Chaos per Ex: {summary?.chaosPerEx}</h3>
           <p>
             Net Worth: {summary?.totalChaosNetWorth?.toFixed(1)} c (
-            {summary?.totalExNetWorth?.toFixed(2)} ex)
+            {summary?.totalExNetWorth?.toFixed(2)} ex){" "}
+            {fetching && <span>...</span>}
           </p>
           <NetWorth {...summary} />
           <h4>Snapshots</h4>
