@@ -156,6 +156,9 @@ export default function Dashboard() {
             <a href="https://poedb.tw/us/" target="_blank">
               PoEDB
             </a>
+            <a href="https://i.redd.it/qb1m5qhjb3a21.png" target="_blank">
+              Syndicate Cheatsheet
+            </a>
           </AnchorList>
           {showChaosRecipe && (
             <p>
