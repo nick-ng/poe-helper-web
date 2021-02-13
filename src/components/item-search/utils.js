@@ -36,7 +36,9 @@ const getPoeNinjaUrl = (item) => {
   const name = encodeURIComponent(item.name || "");
 
   if (item.rarity === "unique") {
-    return `https://poe.ninja/challenge/unique-${item.poeNinjaClass}?name=${name}`;
+    return `https://poe.ninja/challenge/unique-${
+      item.poeNinjaClass || "weapons"
+    }?name=${name}`;
   }
   if (item.rarity === "gem") {
     return `https://poe.ninja/challenge/skill-gems?name=${name}`;
