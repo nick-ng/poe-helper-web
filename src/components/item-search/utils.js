@@ -59,6 +59,9 @@ export const parseItem = (itemString) => {
     influence: [],
     poeNinjaClass: null,
     poeNinjaUrl: null,
+    poeappUrl: `https://poeapp.com/#/item-import/${encodeURIComponent(
+      itemString
+    )}`,
   };
 
   // Do some stuff

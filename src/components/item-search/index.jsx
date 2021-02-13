@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from "react";
+import styled from "styled-components";
 import { parseItem, itemStringToGroups } from "./utils";
 import { getSettings } from "../../utils";
+
+const Container = styled.div`
+  overflow-wrap: break-word;
+  pre {
+    overflow: hidden;
+    width: 90vw;
+  }
+`;
 
 export default function ItemSearch() {
   const [itemText, setItemText] = useState(null);
@@ -23,24 +32,27 @@ export default function ItemSearch() {
     const tempItem = parseItem(itemText);
     setItem(tempItem);
     setItemArray(itemStringToGroups(itemText));
-    setPoeNinjaLink(tempItem.poeNinjaUrl);
+    setPoeNinjaLink(tempItem.poeNinjaUrl || tempItem.poeappUrl);
 
-    if (tempItem.poeNinjaUrl && getSettings().searchRedirect) {
+    if (
+      (tempItem.poeNinjaUrl || tempItem.poeappUrl) &&
+      getSettings().searchRedirect
+    ) {
       setTimeout(() => {
-        window.location.replace(tempItem.poeNinjaUrl);
+        window.location.replace(tempItem.poeNinjaUrl || tempItem.poeappUrl);
       }, 100);
     }
   }, [itemText]);
 
   return (
-    <div>
+    <Container>
       <textarea
         onChange={(event) => {
           if (event.target.value) {
             setItemText(event.target.value);
           }
         }}
-        value={itemText}
+        value={itemText || ""}
         rows={1}
         cols={50}
       />
@@ -52,6 +64,6 @@ export default function ItemSearch() {
       <pre>{JSON.stringify(itemArray, null, "  ")}</pre>
       <hr />
       <pre>{itemText}</pre>
-    </div>
+    </Container>
   );
 }
