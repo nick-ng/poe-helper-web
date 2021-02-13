@@ -27,6 +27,21 @@ export const poeNinjaMap = {
   flask: "flasks",
   jewel: "jewels",
 };
+export const poeNinjaRegex = [
+  {
+    regex: /^\S+ Delirium Orb$/i,
+    class: "delirium-orbs",
+  },
+  { regex: / Oil$/i, class: "oils" },
+  { regex: / Catalyst$/i, class: "currency" },
+  { regex: /^Splinter of /i, class: "currency" },
+  { regex: / Breachstone$/i, class: "fragments" },
+  { regex: / Splinter$/, class: "fragments" },
+  { regex: / Scarab$/i, class: "scarabs" },
+  { regex: / Fossil$/i, class: "fossils" },
+  { regex: /Essence of /i, class: "essences" },
+  { regex: /^Remnant of Corruption$/, class: "essences" },
+];
 
 // Gloves
 [

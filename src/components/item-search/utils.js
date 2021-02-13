@@ -1,5 +1,9 @@
 import { snake } from "case";
-import { itemMap, poeNinjaMap } from "../../constants/poe-item-slot";
+import {
+  itemMap,
+  poeNinjaMap,
+  poeNinjaRegex,
+} from "../../constants/poe-item-slot";
 
 const trim = (a) => {
   return a.trim();
@@ -32,6 +36,29 @@ export const getMaxLink = (itemString) => {
   return itemStringToGroups(itemString);
 };
 
+const getPoeNinjaClass = (item) => {
+  if (item.class) {
+    return poeNinjaMap[item.class] || null;
+  }
+
+  switch (item.rarity) {
+    case "gem":
+      return "skill-gems";
+    case "divination card":
+      return "divination-cards";
+    default:
+    // nothing
+  }
+
+  for (const entry of poeNinjaRegex) {
+    if (item?.name.match(entry.regex)) {
+      return entry.class;
+    }
+  }
+
+  return null;
+};
+
 const getPoeNinjaUrl = (item) => {
   const name = encodeURIComponent(item.name || "");
 
@@ -40,8 +67,8 @@ const getPoeNinjaUrl = (item) => {
       item.poeNinjaClass || "weapons"
     }?name=${name}`;
   }
-  if (item.rarity === "gem") {
-    return `https://poe.ninja/challenge/skill-gems?name=${name}`;
+  if (item.poeNinjaClass) {
+    return `https://poe.ninja/challenge/${item.poeNinjaClass}?name=${name}`;
   }
   return null;
 };
@@ -86,7 +113,7 @@ export const parseItem = (itemString) => {
     item.baseType = snake(itemGroups[0][2]);
   }
 
-  if (item.rarity === "gem") {
+  if (!item.name) {
     item.name = itemGroups[0][1];
   }
 
@@ -94,10 +121,7 @@ export const parseItem = (itemString) => {
     item.class = itemMap[item.baseType] || null;
   }
 
-  if (item.class) {
-    item.poeNinjaClass = poeNinjaMap[item.class] || null;
-  }
-
+  item.poeNinjaClass = getPoeNinjaClass(item);
   item.poeNinjaUrl = getPoeNinjaUrl(item);
 
   return item;
