@@ -1,9 +1,14 @@
-import { fetcher } from "../utils";
+import localforage from "localforage";
+
+import { fetcher, wait } from "../utils";
 import {
   EXCLUDED_CURRENCY,
   MIN_STACK_VALUE,
   NORMAL_STASH_TABS,
   SUPPORTED_TAB_TYPES,
+  LAST_MAP_STASH_KEY,
+  NEXT_CHANGE_ID_KEY,
+  NEXT_CHANGE_ID_AGE_KEY,
 } from "../constants";
 import { getPoeNinjaDatum } from "./poe-ninja";
 
@@ -59,16 +64,77 @@ export const fetchStashTabItems = async (
   }
 };
 
+const fetchMapTabItemsA = async ({ account, league }) => {
+  let nextChangeId = localStorage.getItem(NEXT_CHANGE_ID_KEY);
+  const nextChangeIdAge = localStorage.getItem(NEXT_CHANGE_ID_AGE_KEY) || 0;
+  if (Date.now() - nextChangeIdAge > 1000 * 60 * 60) {
+    const resA = await fetcher("https://poe.ninja/api/Data/GetStats", {
+      method: "GET",
+    });
+    const jsonResA = await resA.json();
+    console.log("jsonResA", jsonResA);
+    nextChangeId = jsonResA.next_change_id;
+  }
+  const nextChangeQuery = nextChangeId ? `?id=${nextChangeId}` : "";
+  const res = await fetcher(
+    `http://www.pathofexile.com/api/public-stash-tabs${nextChangeQuery}`,
+    {
+      headers: {
+        "User-Agent": navigator.userAgent,
+      },
+      method: "GET",
+    }
+  );
+
+  try {
+    const jsonRes = await res.json();
+    console.log("next_change_id", jsonRes.next_change_id);
+    localStorage.setItem(NEXT_CHANGE_ID_KEY, jsonRes.next_change_id);
+    localStorage.setItem(NEXT_CHANGE_ID_AGE_KEY, Date.now());
+    const yourMapTabs = jsonRes?.stashes?.filter(
+      (b) => b.accountName === account
+    );
+    if (yourMapTabs.length > 0) {
+      return yourMapTabs;
+    }
+  } catch (e) {
+    console.warn("[stash] error when fetching tab contents", e);
+    return [];
+  }
+  return false;
+};
+
+export const fetchMapTabItems = async ({ account, league }) => {
+  for (let i = 0; i < 10; i++) {
+    const a = await fetchMapTabItemsA({ account, league });
+    console.log("i", i);
+    if (a) {
+      console.log("a", a);
+      return [];
+    }
+    await wait(1000);
+  }
+  return [];
+};
+
 export const getSpecialTabs = (tabs) => {
   return tabs.filter((tab) => !NORMAL_STASH_TABS.includes(tab.type));
 };
 
 export const hydrateTabList = (tabs, { account, league, poesessid }) => {
   return Promise.all(
-    tabs.map(async (tab) => ({
-      ...tab,
-      items: await fetchStashTabItems(tab.i, { account, league, poesessid }),
-    }))
+    tabs.map(async (tab) => {
+      if (tab.type === "MapStash") {
+        return {
+          ...tab,
+          items: await fetchMapTabItems({ account, league }),
+        };
+      }
+      return {
+        ...tab,
+        items: await fetchStashTabItems(tab.i, { account, league, poesessid }),
+      };
+    })
   );
 };
 

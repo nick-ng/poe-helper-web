@@ -18,6 +18,10 @@ export const SNAPSHOTS_KEY = "SNAPSHOTS";
 export const MANUAL_SNAPSHOTS_KEY = "MANUAL_SNAPSHOTS";
 export const MAX_SNAPSHOTS = 500;
 
+export const NEXT_CHANGE_ID_KEY = "NEXT_CHANGE_ID";
+export const NEXT_CHANGE_ID_AGE_KEY = "NEXT_CHANGE_ID_AGE";
+export const LAST_MAP_STASH_KEY = "LAST_MAP_STASH";
+
 export const NORMAL_STASH_TABS = ["NormalStash", "QuadStash", "PremiumStash"];
 export const SUPPORTED_TAB_TYPES = [
   "CurrencyStash",
@@ -28,17 +32,18 @@ export const SUPPORTED_TAB_TYPES = [
   "MetamorphStash",
   "BlightStash",
   "DeliriumStash",
+  "MapStash",
 ];
 export const EXCLUDED_CURRENCY = [
   "Armourer's Scrap",
   "Blacksmith's Whetstone",
-  "Chromatic Orb",
+  // "Chromatic Orb",
   "Portal Scroll",
-  "Silver Coin",
+  // "Silver Coin",
   "Scroll of Wisdom",
   "Glassblower's Bauble",
-  "Perandus Coin",
-  "Orb of Transmutation",
+  // "Perandus Coin",
+  // "Orb of Transmutation",
 ];
 
 export const POE_NINJA_DATA_KEY = "POE_NINJA_DATA";

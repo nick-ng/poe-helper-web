@@ -1,5 +1,4 @@
 import localforage from "localforage";
-import ManualSnapshot from "../components/dashboard/manual-snapshot";
 
 import {
   SNAPSHOTS_KEY,
