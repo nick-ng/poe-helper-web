@@ -9,6 +9,7 @@ import {
 import { getSummary } from "../../../services/poe-stash-valuation";
 import { getSnapshots, saveSnapshot } from "../../../services/snapshots";
 import { getSettings } from "../../../utils";
+import { getUrls } from "./url-list";
 
 import {
   DashboardContainer,
@@ -136,29 +137,11 @@ export default function DefaultDashboard() {
           {!showChaosRecipe && <PoeRacingWidget size={3} />}
           <h3>Links</h3>
           <AnchorList>
-            <a
-              href={`https://www.pathofexile.com/trade/search/${
-                getSettings()?.league
-              }`}
-              target="_blank"
-            >
-              Trade - Path of Exile
-            </a>
-            <a href="https://www.poelab.com/" target="_blank">
-              PoELab
-            </a>
-            <a href="https://poe.ninja/" target="_blank">
-              poe.ninja
-            </a>
-            <a href="https://www.craftofexile.com/" target="_blank">
-              Craft of Exile
-            </a>
-            <a href="https://poedb.tw/us/" target="_blank">
-              PoEDB
-            </a>
-            <a href="https://i.redd.it/qb1m5qhjb3a21.png" target="_blank">
-              Syndicate Cheatsheet
-            </a>
+            {getUrls(getSettings).map(({ url, title }) => (
+              <a key={url} href={url} target="_blank">
+                {title}
+              </a>
+            ))}
           </AnchorList>
           {showChaosRecipe && (
             <p>
