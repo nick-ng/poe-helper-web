@@ -32,6 +32,18 @@ export const getMaxLink = (itemString) => {
   return itemStringToGroups(itemString);
 };
 
+const getPoeNinjaUrl = (item) => {
+  const name = encodeURIComponent(item.name || "");
+
+  if (item.rarity === "unique") {
+    return `https://poe.ninja/challenge/unique-${item.poeNinjaClass}?name=${name}`;
+  }
+  if (item.rarity === "gem") {
+    return `https://poe.ninja/challenge/skill-gems?name=${name}`;
+  }
+  return null;
+};
+
 export const parseItem = (itemString) => {
   const item = {
     rarity: null,
@@ -44,6 +56,7 @@ export const parseItem = (itemString) => {
     corrupted: false,
     influence: [],
     poeNinjaClass: null,
+    poeNinjaUrl: null,
   };
 
   // Do some stuff
@@ -68,6 +81,10 @@ export const parseItem = (itemString) => {
     item.baseType = snake(itemGroups[0][2]);
   }
 
+  if (item.rarity === "gem") {
+    item.name = itemGroups[0][1];
+  }
+
   if (item.baseType) {
     item.class = itemMap[item.baseType] || null;
   }
@@ -75,6 +92,8 @@ export const parseItem = (itemString) => {
   if (item.class) {
     item.poeNinjaClass = poeNinjaMap[item.class] || null;
   }
+
+  item.poeNinjaUrl = getPoeNinjaUrl(item);
 
   return item;
 };

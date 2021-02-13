@@ -3,34 +3,48 @@ import { parseItem, itemStringToGroups } from "./utils";
 import { getSettings } from "../../utils";
 
 export default function ItemSearch() {
-  const [itemText, setItemText] = useState("");
+  const [itemText, setItemText] = useState(null);
   const [itemArray, setItemArray] = useState({});
   const [item, setItem] = useState({});
   const [poeNinjaLink, setPoeNinjaLink] = useState("");
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
-    const itemParam = urlParams.get("item").trim();
-    const tempItem = parseItem(itemParam);
-
-    setItemText(itemParam);
-    setItem(tempItem);
-    setItemArray(itemStringToGroups(itemParam));
-
-    const poeNinjaClass = tempItem.poeNinjaClass || "weapons";
-    const name = encodeURIComponent(tempItem.name || "");
-    const url = `https://poe.ninja/challenge/unique-${poeNinjaClass}?name=${name}`;
-    setPoeNinjaLink(url);
-
-    if (tempItem.rarity === "unique" && getSettings().searchRedirect) {
-      setTimeout(() => {
-        window.location.replace(url);
-      }, 100);
+    const itemParam = urlParams.get("item")?.trim();
+    if (itemParam) {
+      setItemText(itemParam);
     }
   }, []);
 
+  useEffect(() => {
+    if (!itemText) {
+      return;
+    }
+    const tempItem = parseItem(itemText);
+    setItem(tempItem);
+    setItemArray(itemStringToGroups(itemText));
+    setPoeNinjaLink(tempItem.poeNinjaUrl);
+
+    if (tempItem.poeNinjaUrl && getSettings().searchRedirect) {
+      setTimeout(() => {
+        window.location.replace(tempItem.poeNinjaUrl);
+      }, 100);
+    }
+  }, [itemText]);
+
   return (
     <div>
+      <textarea
+        onChange={(event) => {
+          if (event.target.value) {
+            setItemText(event.target.value);
+          }
+        }}
+        value={itemText}
+        rows={1}
+        cols={50}
+      />
+      <hr />
       <a href={poeNinjaLink} target="_blank">
         {poeNinjaLink}
       </a>
