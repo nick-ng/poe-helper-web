@@ -9,6 +9,8 @@ import {
   POESESSID_KEY,
   SEARCH_REDIRECT_KEY,
   TWITCH_CHANNEL_KEY,
+  DASHBOARD_LAYOUT_KEY,
+  DASHBOARD_LAYOUTS,
 } from "../../constants";
 import { getSettings } from "../../utils";
 
@@ -35,6 +37,9 @@ export default function Home() {
   const [poesessid, setPoesessid] = useState("");
   const [searchRedirect, setSearchRedirect] = useState(false);
   const [twitchChannel, setTwitchChannel] = useState("");
+  const [dashboardLayout, setDashboardLayout] = useState(
+    DASHBOARD_LAYOUTS.default
+  );
 
   const resetSettings = () => {
     const settings = getSettings();
@@ -44,24 +49,13 @@ export default function Home() {
     setLeague(settings.league || "");
     setPoesessid(settings.poesessid || "");
     setSearchRedirect(settings.searchRedirect);
-    setTwitchChannel(settings.twitchChannel);
+    setTwitchChannel(settings.twitchChannel || "");
+    setDashboardLayout(settings.dashboardLayout);
   };
 
   useEffect(() => {
     resetSettings();
   }, []);
-
-  useEffect(() => {
-    localStorage.setItem(CHARACTER_NAME_KEY, characterName);
-  }, [characterName]);
-
-  useEffect(() => {
-    localStorage.setItem(SEARCH_REDIRECT_KEY, searchRedirect);
-  }, [searchRedirect]);
-
-  useEffect(() => {
-    localStorage.setItem(TWITCH_CHANNEL_KEY, twitchChannel);
-  }, [twitchChannel]);
 
   return (
     <Container>
@@ -131,6 +125,34 @@ export default function Home() {
           Cancel
         </button>
       </form>
+      <h2>Dashboard</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td>Layout</td>
+            <td>
+              <select
+                value={dashboardLayout}
+                onChange={(event) => {
+                  localStorage.setItem(
+                    DASHBOARD_LAYOUT_KEY,
+                    event.target.value
+                  );
+                  setDashboardLayout(event.target.value);
+                }}
+              >
+                {Object.values(DASHBOARD_LAYOUTS).map((value) => {
+                  return (
+                    <option key={value} value={value}>
+                      {value}
+                    </option>
+                  );
+                })}
+              </select>
+            </td>
+          </tr>
+        </tbody>
+      </table>
       <h2>poe-racing Settings</h2>
       <table>
         <tbody>
@@ -140,6 +162,7 @@ export default function Home() {
               <input
                 value={characterName}
                 onChange={(event) => {
+                  localStorage.setItem(CHARACTER_NAME_KEY, event.target.value);
                   setCharacterName(event.target.value);
                 }}
               />
@@ -157,6 +180,7 @@ export default function Home() {
                 type="checkbox"
                 checked={searchRedirect}
                 onChange={() => {
+                  localStorage.setItem(SEARCH_REDIRECT_KEY, !searchRedirect);
                   setSearchRedirect(!searchRedirect);
                 }}
               />
@@ -173,6 +197,7 @@ export default function Home() {
               <input
                 value={twitchChannel}
                 onChange={(event) => {
+                  localStorage.setItem(TWITCH_CHANNEL_KEY, event.target.value);
                   setTwitchChannel(event.target.value);
                 }}
               />

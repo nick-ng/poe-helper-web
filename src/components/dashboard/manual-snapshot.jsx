@@ -13,12 +13,10 @@ import Icon from "../icon";
 import { Thl, Thc, Thr, Tdl, Tdr, Tdc } from "./style";
 
 const Controls = styled.form`
-  display: flex;
-  flex-direction: row;
-  margin: 5px 0;
+  margin: 0 0 5px;
 
   input {
-    flex-grow: 1;
+    min-width: 50%;
     align-self: center;
     padding: 6px;
   }

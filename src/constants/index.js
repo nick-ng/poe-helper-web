@@ -10,6 +10,7 @@ export const SHOW_CHAOS_RECIPE_KEY = "SHOW_CHAOS_RECIPE";
 export const TWITCH_CHANNEL_KEY = "TWITCH_CHANNEL";
 export const SHOW_TWITCH_CHAT_KEY = "SHOW_TWITCH_CHAT";
 export const TWITCH_CHAT_FIRST_KEY = "TWITCH_CHAT_FIRST";
+export const DASHBOARD_LAYOUT_KEY = "DASHBOARD_LAYOUT";
 
 export const STASH_REFRESH_TIMEOUT = 2.5 * 60 * 1000;
 
@@ -60,3 +61,8 @@ export const POE_NINJA_REFRESH_AGE = 30 * 60 * 1000;
 
 export const NON_CURRENCY_THRESHOLD = 0.5;
 export const MIN_STACK_VALUE = 1;
+
+export const DASHBOARD_LAYOUTS = {
+  default: "Default",
+  streamlabs: "Stream Labs",
+};

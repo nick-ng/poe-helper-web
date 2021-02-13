@@ -8,6 +8,8 @@ import {
   POESESSID_KEY,
   SEARCH_REDIRECT_KEY,
   TWITCH_CHANNEL_KEY,
+  DASHBOARD_LAYOUT_KEY,
+  DASHBOARD_LAYOUTS,
 } from "../constants";
 
 const ratio = 1.01;
@@ -28,6 +30,8 @@ export const getSettings = () => {
     poesessid: localStorage.getItem(POESESSID_KEY),
     searchRedirect: searchRedirectRaw ? searchRedirectRaw === "true" : true,
     twitchChannel: localStorage.getItem(TWITCH_CHANNEL_KEY),
+    dashboardLayout:
+      localStorage.getItem(DASHBOARD_LAYOUT_KEY) || DASHBOARD_LAYOUTS.default,
   };
 };
 
