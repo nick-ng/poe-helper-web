@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
+import { TOP_N_MOST_EXPENSIVE_KEY } from "../../constants";
+import { getSettings } from "../../utils";
 import { Thl, Thr, Tdl, Tdr } from "./style";
+
+const Container = styled.div`
+  table {
+    margin-top: 0.5em;
+  }
+`;
 
 const ItemName = styled.div`
   position: relative;
@@ -47,8 +55,22 @@ export default function NetWorth({ chaosPerEx, specialTab }) {
     return <div>Net worth summary loading...</div>;
   }
 
+  const [topNMostExpensive, setTopNMostExpensive] = useState(
+    getSettings()?.topNMostExpensive ?? 5
+  );
+
   return (
-    <div>
+    <Container>
+      <input
+        style={{ fontSize: "11pt", width: "5em" }}
+        onChange={(event) => {
+          const value = parseInt(event.target.value);
+          localStorage.setItem(TOP_N_MOST_EXPENSIVE_KEY, value);
+          setTopNMostExpensive(value);
+        }}
+        value={topNMostExpensive}
+        type="number"
+      ></input>
       <table>
         <thead>
           <tr>
@@ -60,25 +82,26 @@ export default function NetWorth({ chaosPerEx, specialTab }) {
           </tr>
         </thead>
         <tbody>
-          {getTopNExpensiveItems(specialTab?.combinedItems).map(
-            ({ typeLine, icon, each, inTabs, stackSize, stackValue }) => (
-              <tr key={typeLine}>
-                <Tdl>
-                  <ItemName>
-                    <ItemIcon src={icon} />
-                    {typeLine}
-                  </ItemName>
-                </Tdl>
-                <Tdr>{stackSize}</Tdr>
-                <Tdr>{each.toFixed(2)} c</Tdr>
-                <Tdr>{stackValue.toFixed(2)} c</Tdr>
-                <Tdl>{inTabs.join(", ")}</Tdl>
-              </tr>
-            )
-          )}
+          {getTopNExpensiveItems(
+            specialTab?.combinedItems,
+            topNMostExpensive
+          ).map(({ typeLine, icon, each, inTabs, stackSize, stackValue }) => (
+            <tr key={typeLine}>
+              <Tdl>
+                <ItemName>
+                  <ItemIcon src={icon} />
+                  {typeLine}
+                </ItemName>
+              </Tdl>
+              <Tdr>{stackSize}</Tdr>
+              <Tdr>{each.toFixed(2)} c</Tdr>
+              <Tdr>{stackValue.toFixed(2)} c</Tdr>
+              <Tdl>{inTabs.join(", ")}</Tdl>
+            </tr>
+          ))}
         </tbody>
       </table>
-      <table style={{ marginTop: "0.5em" }}>
+      <table>
         <thead>
           <tr>
             <Thl>Most Expensive Stacks</Thl>
@@ -89,24 +112,25 @@ export default function NetWorth({ chaosPerEx, specialTab }) {
           </tr>
         </thead>
         <tbody>
-          {getTopNExpensiveStacks(specialTab?.combinedItems).map(
-            ({ typeLine, icon, each, inTabs, stackSize, stackValue }) => (
-              <tr key={typeLine}>
-                <Tdl>
-                  <ItemName>
-                    <ItemIcon src={icon} />
-                    {typeLine}
-                  </ItemName>
-                </Tdl>
-                <Tdr>{stackSize}</Tdr>
-                <Tdr>{each.toFixed(2)} c</Tdr>
-                <Tdr>{stackValue.toFixed(2)} c</Tdr>
-                <Tdl>{inTabs.join(", ")}</Tdl>
-              </tr>
-            )
-          )}
+          {getTopNExpensiveStacks(
+            specialTab?.combinedItems,
+            topNMostExpensive
+          ).map(({ typeLine, icon, each, inTabs, stackSize, stackValue }) => (
+            <tr key={typeLine}>
+              <Tdl>
+                <ItemName>
+                  <ItemIcon src={icon} />
+                  {typeLine}
+                </ItemName>
+              </Tdl>
+              <Tdr>{stackSize}</Tdr>
+              <Tdr>{each.toFixed(2)} c</Tdr>
+              <Tdr>{stackValue.toFixed(2)} c</Tdr>
+              <Tdl>{inTabs.join(", ")}</Tdl>
+            </tr>
+          ))}
         </tbody>
       </table>
-    </div>
+    </Container>
   );
 }

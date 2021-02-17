@@ -10,6 +10,7 @@ import {
   TWITCH_CHANNEL_KEY,
   DASHBOARD_LAYOUT_KEY,
   DASHBOARD_LAYOUTS,
+  TOP_N_MOST_EXPENSIVE_KEY,
 } from "../constants";
 
 const ratio = 1.01;
@@ -32,6 +33,7 @@ export const getSettings = () => {
     twitchChannel: localStorage.getItem(TWITCH_CHANNEL_KEY),
     dashboardLayout:
       localStorage.getItem(DASHBOARD_LAYOUT_KEY) || DASHBOARD_LAYOUTS.default,
+    topNMostExpensive: localStorage.getItem(TOP_N_MOST_EXPENSIVE_KEY) ?? 5,
   };
 };
 
