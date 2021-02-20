@@ -59,18 +59,6 @@ export const TWO_HANDED_WEAPON = ["two handed", "staff", "bow"];
 // Stash Tab
 export const NORMAL_STASH_TABS = ["NormalStash", "QuadStash", "PremiumStash"];
 
-export const EXCLUDED_CURRENCY = [
-  "Armourer's Scrap",
-  "Blacksmith's Whetstone",
-  "Chromatic Orb",
-  "Portal Scroll",
-  "Silver Coin",
-  "Scroll of Wisdom",
-  "Glassblower's Bauble",
-  "Perandus Coin",
-  "Orb of Transmutation",
-];
-
 export const POE_NINJA_CURRENCY = ["Currency", "Fragment"];
 
 export const POE_NINJA_ITEM = [

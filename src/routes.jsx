@@ -6,6 +6,7 @@ import Nav from "./components/nav";
 
 import Dashboard from "./components/dashboard";
 import ItemSearch from "./components/item-search";
+import StashDetails from "./components/stash-details";
 import NotFound from "./components/not-found";
 import Settings from "./components/settings";
 
@@ -42,6 +43,9 @@ export default function App() {
           </R>
           <R path="/" exact>
             <Dashboard />
+          </R>
+          <R path="/stash-details">
+            <StashDetails />
           </R>
           <R>
             <NotFound />

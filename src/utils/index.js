@@ -11,6 +11,8 @@ import {
   DASHBOARD_LAYOUT_KEY,
   DASHBOARD_LAYOUTS,
   TOP_N_MOST_EXPENSIVE_KEY,
+  IGNORED_ITEMS_KEY,
+  EXCLUDED_CURRENCY,
 } from "../constants";
 
 const ratio = 1.01;
@@ -23,6 +25,7 @@ export const wait = (ms) =>
 
 export const getSettings = () => {
   const searchRedirectRaw = localStorage.getItem(SEARCH_REDIRECT_KEY);
+  const ignoredItemRaw = localStorage.getItem(IGNORED_ITEMS_KEY);
   return {
     account: localStorage.getItem(ACCOUNT_KEY),
     characterName: localStorage.getItem(CHARACTER_NAME_KEY),
@@ -34,6 +37,9 @@ export const getSettings = () => {
     dashboardLayout:
       localStorage.getItem(DASHBOARD_LAYOUT_KEY) || DASHBOARD_LAYOUTS.default,
     topNMostExpensive: localStorage.getItem(TOP_N_MOST_EXPENSIVE_KEY) ?? 5,
+    ignoredItems: ignoredItemRaw
+      ? JSON.parse(ignoredItemRaw)
+      : EXCLUDED_CURRENCY,
   };
 };
 

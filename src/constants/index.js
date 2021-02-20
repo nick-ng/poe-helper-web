@@ -12,6 +12,7 @@ export const SHOW_TWITCH_CHAT_KEY = "SHOW_TWITCH_CHAT";
 export const TWITCH_CHAT_FIRST_KEY = "TWITCH_CHAT_FIRST";
 export const DASHBOARD_LAYOUT_KEY = "DASHBOARD_LAYOUT";
 export const TOP_N_MOST_EXPENSIVE_KEY = "TOP_N_MOST_EXPENSIVE";
+export const IGNORED_ITEMS_KEY = "IGNORED_ITEMS";
 
 export const STASH_REFRESH_TIMEOUT = 2 * 60 * 1000;
 
@@ -33,13 +34,19 @@ export const SUPPORTED_TAB_TYPES = [
 export const EXCLUDED_CURRENCY = [
   "Armourer's Scrap",
   "Blacksmith's Whetstone",
-  "Chromatic Orb",
   "Portal Scroll",
-  "Silver Coin",
-  "Scroll of Wisdom",
-  "Glassblower's Bauble",
   "Perandus Coin",
-  "Orb of Transmutation",
+  "Alteration Shard",
+  "Chaos Shard",
+  "Binding Shard",
+  "Harbinger's Shard",
+  "Scroll Fragment",
+  "Horizon Shard",
+  "Engineer's Shard",
+  "Alchemy Shard",
+  "Ancient Shard",
+  "Regal Shard",
+  "Transmutation Shard",
 ];
 
 export const POE_NINJA_DATA_KEY = "POE_NINJA_DATA";

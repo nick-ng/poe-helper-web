@@ -1,6 +1,5 @@
-import { fetcher } from "../utils";
+import { fetcher, getSettings } from "../utils";
 import {
-  EXCLUDED_CURRENCY,
   MIN_STACK_VALUE,
   NORMAL_STASH_TABS,
   SUPPORTED_TAB_TYPES,
@@ -91,7 +90,7 @@ export const getSpecialTabsValue = async (hydratedTabs) => {
         tab.items.map(async (item) => {
           const { typeLine, stackSize } = item;
 
-          if (EXCLUDED_CURRENCY.includes(typeLine)) {
+          if (getSettings().ignoredItems.includes(typeLine)) {
             return {
               ...item,
               stackValue: 0,
