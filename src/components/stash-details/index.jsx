@@ -6,10 +6,11 @@ import { getSnapshots, saveSnapshot } from "../../services/snapshots";
 import { STASH_REFRESH_TIMEOUT } from "../../constants";
 
 import StashTab from "./stash-tab";
+import StashTabManager from "./stash-tab-manager";
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 1fr auto;
   gap: 1em;
 `;
 
@@ -42,6 +43,16 @@ export default function StashDetails() {
   const [fetching, setFetching] = useState(false);
   const [activeTabName, setActiveTabName] = useState(null);
 
+  const refresh = async () => {
+    setFetching(true);
+    const newSummary = await getSummary();
+    setSummary(newSummary);
+    await saveSnapshot(newSummary);
+    const allSnapshots = await getSnapshots();
+    setSnapshots(allSnapshots);
+    setFetching(false);
+  };
+
   useEffect(() => {
     (async () => {
       const allSnapshots = await getSnapshots();
@@ -55,13 +66,7 @@ export default function StashDetails() {
         return;
       }
 
-      setFetching(true);
-      const newSummary = await getSummary(true);
-      setSummary(newSummary);
-      await saveSnapshot(newSummary);
-      const allSnapshots = await getSnapshots();
-      setSnapshots(allSnapshots);
-      setFetching(false);
+      await refresh();
 
       setTimeout(refresher, STASH_REFRESH_TIMEOUT);
     }
@@ -96,6 +101,7 @@ export default function StashDetails() {
         })}
       </StashTabNav>
       <StashTab tab={getActiveTab(fullTabs, activeTabName)} />
+      <StashTabManager refresh={refresh} />
     </Container>
   );
 }

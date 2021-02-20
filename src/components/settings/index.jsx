@@ -14,6 +14,7 @@ import {
   TOP_N_MOST_EXPENSIVE_KEY,
 } from "../../constants";
 import { getSettings } from "../../utils";
+import StashTabManager from "../stash-details/stash-tab-manager";
 
 const Container = styled.div``;
 
@@ -143,6 +144,7 @@ export default function Home() {
               Cancel
             </button>
           </form>
+          <hr />
           <h2>Dashboard</h2>
           <table>
             <tbody>
@@ -186,6 +188,7 @@ export default function Home() {
               </tr>
             </tbody>
           </table>
+          <hr />
           <h2>Item Search Settings</h2>
           <table>
             <tbody>
@@ -209,6 +212,10 @@ export default function Home() {
           </table>
         </Column>
         <Column>
+          <h2>Stash Tab Settings</h2>
+          <StashTabManager refresh={() => {}} autoSave />
+        </Column>
+        <Column>
           <h2>Path of Exile Racing Settings</h2>
           <table>
             <tbody>
@@ -229,6 +236,7 @@ export default function Home() {
               </tr>
             </tbody>
           </table>
+          <hr />
           <h2>Twitch Settings</h2>
           <table>
             <tbody>

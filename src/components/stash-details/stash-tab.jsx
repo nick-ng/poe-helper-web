@@ -102,7 +102,7 @@ export default function StashTab({ tab }) {
     };
 
     priceItems();
-  }, [tab?.n, ignoredItems]);
+  }, [tab, ignoredItems]);
 
   useEffect(() => {
     localStorage.setItem(IGNORED_ITEMS_KEY, JSON.stringify(ignoredItems));

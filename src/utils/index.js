@@ -13,9 +13,12 @@ import {
   TOP_N_MOST_EXPENSIVE_KEY,
   IGNORED_ITEMS_KEY,
   EXCLUDED_CURRENCY,
+  STARTS_WITH_TABS_KEY,
+  INCLUDES_TABS_KEY,
+  ENDS_WITH_TABS_KEY,
 } from "../constants";
 
-const ratio = 1.01;
+const ratio = 1.05;
 let counter = 1;
 
 export const wait = (ms) =>
@@ -26,6 +29,7 @@ export const wait = (ms) =>
 export const getSettings = () => {
   const searchRedirectRaw = localStorage.getItem(SEARCH_REDIRECT_KEY);
   const ignoredItemRaw = localStorage.getItem(IGNORED_ITEMS_KEY);
+
   return {
     account: localStorage.getItem(ACCOUNT_KEY),
     characterName: localStorage.getItem(CHARACTER_NAME_KEY),
@@ -40,6 +44,11 @@ export const getSettings = () => {
     ignoredItems: ignoredItemRaw
       ? JSON.parse(ignoredItemRaw)
       : EXCLUDED_CURRENCY,
+    startsWithTabs: JSON.parse(
+      localStorage.getItem(STARTS_WITH_TABS_KEY) || "[]"
+    ),
+    includesTabs: JSON.parse(localStorage.getItem(INCLUDES_TABS_KEY) || "[]"),
+    endsWithTabs: JSON.parse(localStorage.getItem(ENDS_WITH_TABS_KEY) || "[]"),
   };
 };
 
@@ -62,7 +71,7 @@ export const fetcher = async (url, options) => {
     if (res.status === 429) {
       const msPer = parseInt(res.headers.get("x-ms-per-request"), 10) || 30000;
       const ms =
-        Math.min(msPer * counter++ * ratio, 120000) + 50 * Math.random();
+        Math.min(msPer * counter++ * ratio, 240000) + 500 * Math.random();
       console.log(`Fetch limit hit. Waiting for ${ms} ms`);
       await wait(ms);
       continue;

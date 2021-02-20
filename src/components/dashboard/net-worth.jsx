@@ -51,6 +51,8 @@ const getTopNExpensiveStacks = (combinedItems, n = 5) => {
 };
 
 export default function NetWorth({ chaosPerEx, specialTab }) {
+  console.log("chaosPerEx", chaosPerEx);
+  console.log("special tab", specialTab);
   if (![chaosPerEx, specialTab].every((a) => a)) {
     return <div>Net worth summary loading...</div>;
   }

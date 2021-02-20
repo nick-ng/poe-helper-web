@@ -51,7 +51,7 @@ export const summary = async (chaosRecipeTab, specialTab) => {
   };
 };
 
-export const getSummary = async (fullTabs = false) => {
+export const getSummary = async () => {
   const { account, league, poesessid } = getSettings();
 
   if (!account || !league || !poesessid) {
@@ -75,12 +75,8 @@ export const getSummary = async (fullTabs = false) => {
   const special = await getSpecialTabsValue(specialHydratedTabs);
   const chaos = getChaosRecipeTabsValue(chaosHydratedTabs);
 
-  if (fullTabs) {
-    return {
-      ...summary(chaos, special),
-      fullTabs: specialHydratedTabs,
-    };
-  }
-
-  return summary(chaos, special);
+  return {
+    ...(await summary(chaos, special)),
+    fullTabs: specialHydratedTabs,
+  };
 };

@@ -59,7 +59,19 @@ export const fetchStashTabItems = async (
 };
 
 export const getSpecialTabs = (tabs) => {
-  return tabs.filter((tab) => !NORMAL_STASH_TABS.includes(tab.type));
+  const { startsWithTabs, includesTabs, endsWithTabs } = getSettings();
+  return tabs.filter((tab) => {
+    return (
+      !NORMAL_STASH_TABS.includes(tab.type) ||
+      startsWithTabs
+        .filter((a) => a)
+        .some((pattern) => tab?.n.startsWith(pattern)) ||
+      includesTabs
+        .filter((a) => a)
+        .some((pattern) => tab?.n.includes(pattern)) ||
+      endsWithTabs.filter((a) => a).some((pattern) => tab?.n.includes(pattern))
+    );
+  });
 };
 
 export const hydrateTabList = (tabs, { account, league, poesessid }) => {
