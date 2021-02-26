@@ -24,6 +24,7 @@ export const MANUAL_SNAPSHOTS_KEY = "MANUAL_SNAPSHOTS";
 export const MAX_SNAPSHOTS = 500;
 
 export const NORMAL_STASH_TABS = ["NormalStash", "QuadStash", "PremiumStash"];
+export const MINIMUM_TABS = 10;
 export const SUPPORTED_TAB_TYPES = [
   "CurrencyStash",
   "FragmentStash",

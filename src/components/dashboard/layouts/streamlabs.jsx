@@ -36,10 +36,7 @@ export default function StreamlabsDashboard() {
       }
 
       setFetching(true);
-      console.log("a");
       const newSummary = await getSummary();
-      console.log("b");
-      console.log("newSummary", newSummary);
       setSummary(newSummary);
       await saveSnapshot(newSummary);
       const allSnapshots = await getSnapshots();

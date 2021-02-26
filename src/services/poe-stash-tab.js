@@ -3,6 +3,7 @@ import {
   MIN_STACK_VALUE,
   NORMAL_STASH_TABS,
   SUPPORTED_TAB_TYPES,
+  MINIMUM_TABS,
 } from "../constants";
 import { getPoeNinjaDatum } from "./poe-ninja";
 
@@ -60,7 +61,7 @@ export const fetchStashTabItems = async (
 
 export const getSpecialTabs = (tabs) => {
   const { startsWithTabs, includesTabs, endsWithTabs } = getSettings();
-  return tabs.filter((tab) => {
+  const specialTabs = tabs.filter((tab) => {
     return (
       !NORMAL_STASH_TABS.includes(tab.type) ||
       startsWithTabs
@@ -72,6 +73,17 @@ export const getSpecialTabs = (tabs) => {
       endsWithTabs.filter((a) => a).some((pattern) => tab?.n.includes(pattern))
     );
   });
+
+  if (specialTabs.length < MINIMUM_TABS) {
+    const remainingTabs = tabs
+      .filter((tab) => !specialTabs.map((tab2) => tab2.id).includes(tab.id))
+      .filter((tab) => !tab.n.includes("(Remove-only)"));
+    return specialTabs.concat(
+      remainingTabs.slice(0, MINIMUM_TABS - specialTabs.length)
+    );
+  }
+
+  return specialTabs;
 };
 
 export const hydrateTabList = (tabs, { account, league, poesessid }) => {
