@@ -66,6 +66,7 @@ export const getSummary = async () => {
     league,
     poesessid,
   });
+
   const chaosHydratedTabs = await hydrateTabList(getChaosRecipeTabs(allTabs), {
     account,
     league,

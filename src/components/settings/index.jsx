@@ -213,7 +213,7 @@ export default function Home() {
         </Column>
         <Column>
           <h2>Stash Tab Settings</h2>
-          <StashTabManager refresh={() => {}} autoSave />
+          <StashTabManager refresh={() => {}} autoSave showChaos />
         </Column>
         <Column>
           <h2>Path of Exile Racing Settings</h2>

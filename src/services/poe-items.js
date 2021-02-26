@@ -8,10 +8,23 @@ import {
   BELT,
   TWO_HANDED_WEAPON,
 } from "../constants/poe";
-import { hydrateTabList } from "./poe-stash-tab";
+import { getSettings } from "../utils";
 
-export const getChaosRecipeTabs = (tabs) =>
-  tabs.filter((tab) => tab.n.includes("chaos_"));
+export const getChaosRecipeTabs = (tabs) => {
+  const chaosRecipeTabs = getSettings().chaosRecipeTabs.filter((a) => a);
+  const defaultChaosTabs = tabs.filter((tab) => tab.n.includes("chaos_"));
+  const normalTabs = tabs.filter(
+    (tab) => tab.type === "NormalStash" && !tab.n.includes("(Remove-only)")
+  );
+  if (chaosRecipeTabs.length > 0) {
+    return tabs.filter((tab) => chaosRecipeTabs.includes(tab.n));
+  }
+  if (defaultChaosTabs.length > 0) {
+    return defaultChaosTabs;
+  }
+
+  return normalTabs;
+};
 
 export const chaosRecipeItemSlot = (item) => {
   const { typeLine } = item;

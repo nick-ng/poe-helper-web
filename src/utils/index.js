@@ -16,6 +16,7 @@ import {
   STARTS_WITH_TABS_KEY,
   INCLUDES_TABS_KEY,
   ENDS_WITH_TABS_KEY,
+  CHAOS_RECIPE_TABS_KEY,
 } from "../constants";
 
 const ratio = 1.05;
@@ -49,6 +50,9 @@ export const getSettings = () => {
     ),
     includesTabs: JSON.parse(localStorage.getItem(INCLUDES_TABS_KEY) || "[]"),
     endsWithTabs: JSON.parse(localStorage.getItem(ENDS_WITH_TABS_KEY) || "[]"),
+    chaosRecipeTabs: JSON.parse(
+      localStorage.getItem(CHAOS_RECIPE_TABS_KEY) || "[]"
+    ),
   };
 };
 
