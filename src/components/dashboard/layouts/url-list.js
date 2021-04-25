@@ -26,7 +26,7 @@ export const getUrls = ({ league }) => {
     },
     {
       url:
-        "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/b/bf/Syndicate_Rewards_Chart_with_economy_tiers.png/revision/latest?cb=20200424145213",
+        "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/b/bf/Syndicate_Rewards_Chart_with_economy_tiers.png",
       title: "Syndicate Cheatsheet",
     },
   ];
