@@ -149,13 +149,25 @@ export default function DefaultDashboard() {
             </p>
           )}
         </DesktopOnlyCard>
-        <Card style={{ flexShrink: 0 }}>
+        <DesktopOnlyCard>
           <h3>Chaos per Ex: {summary?.chaosPerEx}</h3>
-          <p>
+          <table>
+            <tbody>
+              {[9, 8, 7, 6, 5, 4, 3, 2, 1].map((a) => (
+                <tr key={`partial-ex-${a}`}>
+                  <td>{a / 10} ex</td>
+                  <td>{(summary?.chaosPerEx * (a / 10)).toFixed(2)} c</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </DesktopOnlyCard>
+        <Card style={{ flexShrink: 0 }}>
+          <h3>
             Net Worth: {summary?.totalChaosNetWorth?.toFixed(1)} c (
             {summary?.totalExNetWorth?.toFixed(2)} ex){" "}
             {fetching && <span>...</span>}
-          </p>
+          </h3>
           <NetWorth {...summary} />
           <h4>Snapshots</h4>
           <ManualSnapshot summary={summary} showChaosRecipe={showChaosRecipe} />
