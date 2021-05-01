@@ -155,8 +155,10 @@ export default function DefaultDashboard() {
             <tbody>
               {[9, 8, 7, 6, 5, 4, 3, 2, 1].map((a) => (
                 <tr key={`partial-ex-${a}`}>
-                  <td>{a / 10} ex</td>
-                  <td>{(summary?.chaosPerEx * (a / 10)).toFixed(2)} c</td>
+                  <td style={{ textAlign: "right" }}>{a / 10} ex</td>
+                  <td style={{ textAlign: "right" }}>
+                    {(summary?.chaosPerEx * (a / 10)).toFixed(2)} c
+                  </td>
                 </tr>
               ))}
             </tbody>
