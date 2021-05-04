@@ -31,11 +31,7 @@ export default function StashTabManager({ refresh, autoSave, showChaos }) {
     getSettings().chaosRecipeTabs
   );
 
-  useEffect(() => {
-    if (!autoSave) {
-      return;
-    }
-
+  const save = () => {
     localStorage.setItem(STARTS_WITH_TABS_KEY, JSON.stringify(startsWithTabs));
     localStorage.setItem(INCLUDES_TABS_KEY, JSON.stringify(includesTabs));
     localStorage.setItem(ENDS_WITH_TABS_KEY, JSON.stringify(endsWithTabs));
@@ -43,6 +39,14 @@ export default function StashTabManager({ refresh, autoSave, showChaos }) {
       CHAOS_RECIPE_TABS_KEY,
       JSON.stringify(chaosRecipeTabs)
     );
+  };
+
+  useEffect(() => {
+    if (!autoSave) {
+      return;
+    }
+
+    save();
   }, [startsWithTabs, includesTabs, endsWithTabs, chaosRecipeTabs]);
 
   return (
