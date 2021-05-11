@@ -25,8 +25,7 @@ export const getUrls = ({ league }) => {
       title: "Syndicate Rewards",
     },
     {
-      url:
-        "https://static.wikia.nocookie.net/pathofexile_gamepedia/images/b/bf/Syndicate_Rewards_Chart_with_economy_tiers.png",
+      url: "https://i.redd.it/dx3ivjjwp0v61.png",
       title: "Syndicate Cheatsheet",
     },
   ];
