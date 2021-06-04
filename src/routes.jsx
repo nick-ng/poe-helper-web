@@ -7,6 +7,7 @@ import Nav from "./components/nav";
 import Dashboard from "./components/dashboard";
 import ItemSearch from "./components/item-search";
 import StashDetails from "./components/stash-details";
+import AtlasHelper from "./components/atlas-helper";
 import NotFound from "./components/not-found";
 import Settings from "./components/settings";
 
@@ -46,6 +47,9 @@ export default function App() {
           </R>
           <R path="/stash-details">
             <StashDetails />
+          </R>
+          <R path="/atlas-helper">
+            <AtlasHelper />
           </R>
           <R>
             <NotFound />

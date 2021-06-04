@@ -28,6 +28,9 @@ const Nav = () => (
     <NavLink icon="fa-list-ul" to="/stash-details">
       Stash Details
     </NavLink>
+    <NavLink icon="fa-globe" to="/atlas-helper">
+      Atlas Helper
+    </NavLink>
     <NavLink icon="fa-cog" to="/settings">
       Settings
     </NavLink>
