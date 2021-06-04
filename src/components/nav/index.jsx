@@ -29,7 +29,7 @@ const Nav = () => (
       Stash Details
     </NavLink>
     <NavLink icon="fa-globe" to="/atlas-helper">
-      Atlas Helper
+      Atlas Horizon Orb Helper
     </NavLink>
     <NavLink icon="fa-cog" to="/settings">
       Settings

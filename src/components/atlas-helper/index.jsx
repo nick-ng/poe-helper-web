@@ -89,7 +89,7 @@ export default function AtlasHelper() {
 
   return (
     <Container>
-      <h2>Atlas Helper</h2>
+      <h2>Atlas Horizon Orb Helper</h2>
       <Controls>
         <label>
           <input
