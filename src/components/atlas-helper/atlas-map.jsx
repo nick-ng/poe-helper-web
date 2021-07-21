@@ -15,6 +15,10 @@ const Container = styled.div`
     margin-left: 0;
   }
 
+  input:last-of-type {
+    margin-right: 0;
+  }
+
   div {
     white-space: nowrap;
   }
@@ -33,6 +37,7 @@ export default function ({ mapName, atlas, bonus, awakening, onChange }) {
   return (
     <Container>
       <div>{mapName.replace(/map/i, "").trim()}</div>
+      <div>
       <input
         type="checkbox"
         onChange={() => handleChange({ atlas: !atlas })}
@@ -48,6 +53,7 @@ export default function ({ mapName, atlas, bonus, awakening, onChange }) {
         onChange={() => handleChange({ awakening: !awakening })}
         checked={awakening}
       />
+      </div>
     </Container>
   );
 }
