@@ -44,6 +44,7 @@ export default function ({ onUpdate, onReset }) {
                 const [tier, ...maps] = mapTier;
                 newAtlas[tier] = maps;
               });
+            console.log("New Atlas", JSON.stringify(newAtlas));
             onUpdate(newAtlas);
           }}
         >
