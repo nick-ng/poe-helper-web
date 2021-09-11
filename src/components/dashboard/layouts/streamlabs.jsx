@@ -1,56 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-import {
-  STASH_REFRESH_TIMEOUT,
-  SHOW_CHAOS_RECIPE_KEY,
-} from "../../../constants";
-import { getSummary } from "../../../services/poe-stash-valuation";
-import { getSnapshots, saveSnapshot } from "../../../services/snapshots";
+import { SHOW_CHAOS_RECIPE_KEY } from "../../../constants";
 
 import { DashboardContainer, Information, Card } from "../style";
 import NetWorth from "../net-worth";
 import ChaosRecipe from "../chaos-recipe";
 import ManualSnapshot from "../manual-snapshot";
 
-export default function StreamlabsDashboard() {
-  const [summary, setSummary] = useState({});
-  const [snapshots, setSnapshots] = useState([]);
-  const [fetching, setFetching] = useState(false);
-
+export default function StreamlabsDashboard({ summary }) {
   // Controls
   const [showChaosRecipe, setShowChaosRecipe] = useState(
     localStorage.getItem(SHOW_CHAOS_RECIPE_KEY) === "true"
   );
-
-  useEffect(() => {
-    (async () => {
-      const allSnapshots = await getSnapshots();
-      setSnapshots(allSnapshots);
-      setSummary(allSnapshots[0]?.data);
-    })();
-
-    let running = true;
-    async function refresher() {
-      if (!running) {
-        return;
-      }
-
-      setFetching(true);
-      const newSummary = await getSummary();
-      setSummary(newSummary);
-      await saveSnapshot(newSummary);
-      const allSnapshots = await getSnapshots();
-      setSnapshots(allSnapshots);
-      setFetching(false);
-
-      setTimeout(refresher, STASH_REFRESH_TIMEOUT);
-    }
-    refresher();
-
-    return () => {
-      running = false;
-    };
-  }, []);
 
   return (
     <DashboardContainer>
@@ -64,7 +25,6 @@ export default function StreamlabsDashboard() {
           <p>
             Net Worth: {summary?.totalChaosNetWorth?.toFixed(1)} c (
             {summary?.totalExNetWorth?.toFixed(2)} ex){" "}
-            {fetching && <span>...</span>}
           </p>
           <NetWorth {...summary} />
         </Card>

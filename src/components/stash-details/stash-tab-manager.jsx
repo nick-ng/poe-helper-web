@@ -21,7 +21,7 @@ const Container = styled.div`
   }
 `;
 
-export default function StashTabManager({ refresh, autoSave, showChaos }) {
+export default function StashTabManager({ onSave, autoSave, showChaos }) {
   const [startsWithTabs, setStartsWithTabs] = useState(
     getSettings().startsWithTabs
   );
@@ -90,7 +90,9 @@ export default function StashTabManager({ refresh, autoSave, showChaos }) {
         <button
           onClick={() => {
             save();
-            refresh();
+            if (typeof onSave === "function") {
+              onSave();
+            }
           }}
         >
           Save

@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
-import { getSummary } from "../../services/poe-stash-valuation";
-import { getSnapshots, saveSnapshot } from "../../services/snapshots";
-import { STASH_REFRESH_TIMEOUT } from "../../constants";
+import { getSettings } from "../../utils";
+import { IGNORED_ITEMS_KEY } from "../../constants";
 
-import StashTab from "./stash-tab";
+import StashTab, { priceItems } from "./stash-tab";
 import StashTabManager from "./stash-tab-manager";
 
 const Container = styled.div`
@@ -25,6 +24,14 @@ const StashTabButton = styled.button`
   color: white;
   border: 1px solid grey;
   padding: 0.3em 1em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  & span ~ span {
+    margin-left: 0.5em;
+  }
 `;
 
 const getActiveTab = (tabs, activeTabName) => {
@@ -37,47 +44,44 @@ const getActiveTab = (tabs, activeTabName) => {
   return activeTab || tabs[0];
 };
 
-export default function StashDetails() {
-  const [summary, setSummary] = useState({});
-  const [snapshots, setSnapshots] = useState([]);
-  const [fetching, setFetching] = useState(false);
+export default function StashDetails({ summary }) {
   const [activeTabName, setActiveTabName] = useState(null);
-
-  const refresh = async () => {
-    setFetching(true);
-    const newSummary = await getSummary();
-    setSummary(newSummary);
-    await saveSnapshot(newSummary);
-    const allSnapshots = await getSnapshots();
-    setSnapshots(allSnapshots);
-    setFetching(false);
-  };
-
-  useEffect(() => {
-    (async () => {
-      const allSnapshots = await getSnapshots();
-      setSnapshots(allSnapshots);
-      setSummary(allSnapshots[0]?.data);
-    })();
-
-    let running = true;
-    async function refresher() {
-      if (!running) {
-        return;
-      }
-
-      await refresh();
-
-      setTimeout(refresher, STASH_REFRESH_TIMEOUT);
-    }
-    refresher();
-
-    return () => {
-      running = false;
-    };
-  }, []);
+  const [stashTotals, setStashTotals] = useState({});
+  const [ignoredItems, setIgnoredItems] = useState(getSettings()?.ignoredItems);
 
   const { fullTabs } = summary;
+
+  useEffect(() => {
+    const updateTabTotals = async () => {
+      const { fullTabs } = summary;
+      if (!fullTabs) {
+        return;
+      }
+      const results = await Promise.all(
+        fullTabs.map(async (tab) => {
+          const { totals } = await priceItems(tab.items, ignoredItems);
+          return {
+            id: tab.id,
+            totals,
+          };
+        })
+      );
+
+      const b = results.reduce((prev, curr) => {
+        const { id, totals } = curr;
+        prev[id] = totals;
+        return prev;
+      }, {});
+
+      setStashTotals(b);
+    };
+
+    updateTabTotals();
+  }, [summary]);
+
+  useEffect(() => {
+    localStorage.setItem(IGNORED_ITEMS_KEY, JSON.stringify(ignoredItems));
+  }, [ignoredItems]);
 
   if (!fullTabs) {
     return <div>Loading...</div>;
@@ -87,6 +91,8 @@ export default function StashDetails() {
     <Container>
       <StashTabNav>
         {fullTabs?.map((tab, i) => {
+          const totals = stashTotals[tab.id];
+
           return (
             <StashTabButton
               key={tab.id}
@@ -95,13 +101,18 @@ export default function StashDetails() {
               }}
               active={activeTabName ? activeTabName === tab.n : i === 0}
             >
-              {tab.n}
+              <span>{tab.n}</span>
+              {totals && <span>{`${totals.c.toFixed(0)}c`}</span>}
             </StashTabButton>
           );
         })}
       </StashTabNav>
-      <StashTab tab={getActiveTab(fullTabs, activeTabName)} />
-      <StashTabManager refresh={refresh} />
+      <StashTab
+        tab={getActiveTab(fullTabs, activeTabName)}
+        ignoredItems={ignoredItems}
+        setIgnoredItems={setIgnoredItems}
+      />
+      <StashTabManager />
     </Container>
   );
 }
