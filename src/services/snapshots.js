@@ -35,6 +35,12 @@ export const snapshotCleaner = async () => {
     snapshotKeys.map((key) => localforage.getItem(key))
   );
 
+  if (snapshots.length > MAX_SNAPSHOTS) {
+    const oldestSnapshot = snapshots[snapshots.length - 1];
+    const localforageKey = `${SNAPSHOTS_KEY}-${oldestSnapshot.timestamp}`;
+    localforage.removeItem(localforageKey);
+  }
+
   const threshold = 0.001;
   for (let n = 1; n < snapshots.length - 1; n++) {
     const aa = snapshots[n - 1];

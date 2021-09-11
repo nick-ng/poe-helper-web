@@ -24,7 +24,7 @@ export const STASH_REFRESH_TIMEOUT = 2 * 60 * 1000;
 
 export const SNAPSHOTS_KEY = "SNAPSHOTS";
 export const MANUAL_SNAPSHOTS_KEY = "MANUAL_SNAPSHOTS";
-export const MAX_SNAPSHOTS = 500;
+export const MAX_SNAPSHOTS = 20;
 
 export const NORMAL_STASH_TABS = ["NormalStash", "QuadStash", "PremiumStash"];
 export const MINIMUM_TABS = 10;

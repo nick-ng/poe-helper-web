@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { getSummary } from "./poe-stash-valuation";
-import { saveSnapshot } from "./snapshots";
+import { getSnapshots, saveSnapshot } from "./snapshots";
 import { STASH_REFRESH_TIMEOUT } from "../constants";
 
 export function useStashSummary() {
@@ -9,6 +9,7 @@ export function useStashSummary() {
 
   useEffect(() => {
     let timeoutId = null;
+
     const refresh = async () => {
       const newSummary = await getSummary();
       await saveSnapshot(newSummary);
@@ -17,7 +18,17 @@ export function useStashSummary() {
       timeoutId = setTimeout(refresh, STASH_REFRESH_TIMEOUT);
     };
 
-    refresh();
+    const init = async () => {
+      const snapshots = await getSnapshots();
+
+      if (snapshots.length > 0) {
+        setStashSummary(snapshots[0].data);
+      }
+
+      refresh();
+    };
+
+    init();
 
     return () => {
       if (timeoutId) {
