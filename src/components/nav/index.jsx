@@ -34,6 +34,9 @@ const Nav = () => (
     <NavLink icon="fa-cog" to="/settings">
       Settings
     </NavLink>
+    <NavLink icon="fa-question" to="/help">
+      Help
+    </NavLink>
     <GithubLink
       target="_blank"
       href="https://github.com/nick-ng/poe-helper-web"
