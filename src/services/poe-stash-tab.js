@@ -111,7 +111,7 @@ export const getSpecialTabsValue = async (hydratedTabs) => {
       }
 
       const items = await Promise.all(
-        tab.items.map(async (item) => {
+        tab.items.map(async (item, i) => {
           const { typeLine, stackSize } = item;
 
           if (getSettings().ignoredItems.includes(typeLine)) {
@@ -132,7 +132,7 @@ export const getSpecialTabsValue = async (hydratedTabs) => {
             };
           }
 
-          const stackValue = stackSize * each;
+          const stackValue = (stackSize || 1) * each;
 
           return {
             ...item,

@@ -48,6 +48,7 @@ export default function StashDetails({ summary }) {
   const [activeTabName, setActiveTabName] = useState(null);
   const [stashTotals, setStashTotals] = useState({});
   const [ignoredItems, setIgnoredItems] = useState(getSettings()?.ignoredItems);
+  const [debugMode, setDebugMode] = useState(false);
 
   const { fullTabs } = summary;
 
@@ -103,14 +104,26 @@ export default function StashDetails({ summary }) {
             >
               <span>{tab.n}</span>
               {totals && <span>{`${totals.c.toFixed(0)}c`}</span>}
+              {debugMode && <span>{tab.type}</span>}
             </StashTabButton>
           );
         })}
+        <label>
+          Debug:&nbsp;
+          <input
+            type="checkbox"
+            onChange={() => {
+              setDebugMode((prev) => !prev);
+            }}
+            checked={debugMode}
+          />
+        </label>
       </StashTabNav>
       <StashTab
         tab={getActiveTab(fullTabs, activeTabName)}
         ignoredItems={ignoredItems}
         setIgnoredItems={setIgnoredItems}
+        debugMode={debugMode}
       />
       <StashTabManager />
     </Container>

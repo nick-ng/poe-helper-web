@@ -2,7 +2,11 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 import { getSettings } from "../../utils";
-import { getPoeNinjaDatum, updatePoeNinjaData } from "../../services/poe-ninja";
+import {
+  getPoeNinjaDatum,
+  getPoeNinjaDatumUnique,
+  updatePoeNinjaData,
+} from "../../services/poe-ninja";
 
 const Container = styled.div``;
 
@@ -49,7 +53,7 @@ const groupItems = (items) => {
 };
 
 export const priceItems = async (items, ignoredItems = []) => {
-  updatePoeNinjaData(getSettings());
+  await updatePoeNinjaData(getSettings());
   const chaosPerEx = (await getPoeNinjaDatum("Exalted Orb")).each;
   const groupedItems = groupItems(items);
   let stashTotal = 0;
@@ -66,7 +70,9 @@ export const priceItems = async (items, ignoredItems = []) => {
           sortOrder: -1,
         };
       }
-      const { each } = await getPoeNinjaDatum(item.typeLine);
+      const { each } = item.name
+        ? await getPoeNinjaDatumUnique(item.name)
+        : await getPoeNinjaDatum(item.typeLine);
       const eachEx = each / chaosPerEx;
       const total = each * (item.stackSize || 1);
       stashTotal += total;
@@ -92,7 +98,12 @@ export const priceItems = async (items, ignoredItems = []) => {
   };
 };
 
-export default function StashTab({ tab, ignoredItems, setIgnoredItems }) {
+export default function StashTab({
+  debugMode,
+  tab,
+  ignoredItems,
+  setIgnoredItems,
+}) {
   const [items, setItems] = useState([]);
   const [stashTotals, setStashTotals] = useState({ c: 0, ex: 0 });
 
@@ -126,10 +137,20 @@ export default function StashTab({ tab, ignoredItems, setIgnoredItems }) {
             <th style={{ textAlign: "right" }}>Each</th>
             <th style={{ textAlign: "right" }}>Total</th>
             <th>Ignore</th>
+            {debugMode && <th style={{ textAlign: "left" }}>Debug</th>}
           </tr>
         </thead>
         <tbody>
-          {items.map(({ id, icon, typeLine, stackSize = 1, each, eachEx }) => {
+          {items.map((item) => {
+            const {
+              id,
+              icon,
+              name,
+              typeLine,
+              stackSize = 1,
+              each,
+              eachEx,
+            } = item;
             const total = each * stackSize;
             const totalEx = eachEx * stackSize;
             return (
@@ -138,7 +159,7 @@ export default function StashTab({ tab, ignoredItems, setIgnoredItems }) {
                   <ItemIcon src={icon} />
                 </td>
                 <td style={{ textAlign: "right" }}>{stackSize || 1}</td>
-                <td>{typeLine}</td>
+                <td>{name || typeLine}</td>
                 <td style={{ textAlign: "right" }}>{each.toFixed(1)}c</td>
                 <td style={{ textAlign: "right" }}>
                   {total.toFixed(0)}c ({totalEx.toFixed(1)}ex)
@@ -158,6 +179,11 @@ export default function StashTab({ tab, ignoredItems, setIgnoredItems }) {
                     }}
                   />
                 </td>
+                {debugMode && (
+                  <td>
+                    <pre>{JSON.stringify(item, null, "  ")}</pre>
+                  </td>
+                )}
               </StashRow>
             );
           })}

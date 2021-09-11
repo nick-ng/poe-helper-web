@@ -29,6 +29,9 @@ export const MAX_SNAPSHOTS = 20;
 export const NORMAL_STASH_TABS = ["NormalStash", "QuadStash", "PremiumStash"];
 export const MINIMUM_TABS = 10;
 export const SUPPORTED_TAB_TYPES = [
+  "NormalStash",
+  "QuadStash",
+  "PremiumStash",
   "CurrencyStash",
   "FragmentStash",
   "DivinationCardStash",
@@ -72,9 +75,16 @@ export const POE_NINJA_ITEM = [
   // "Prophecy",
   // "SkillGem",
 ];
+export const POE_NINJA_UNIQUE = [
+  "UniqueWeapon",
+  "UniqueArmour",
+  "UniqueAccessory",
+  "UniqueFlask",
+  "UniqueJewel",
+];
 export const POE_NINJA_REFRESH_AGE = 30 * 60 * 1000;
 
-export const NON_CURRENCY_THRESHOLD = 0.5;
+export const NON_CURRENCY_THRESHOLD = 1.1;
 export const MIN_STACK_VALUE = 1;
 
 export const DASHBOARD_LAYOUTS = {
