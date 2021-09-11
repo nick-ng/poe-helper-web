@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 import { BrowserRouter as Router, Switch, Route as R } from "react-router-dom";
+
+import { useStashSummary } from "./services/use-stash-summary";
+import { STASH_REFRESH_TIMEOUT } from "./constants";
 
 import Nav from "./components/nav";
 
@@ -29,7 +32,39 @@ const Container = styled.div`
   gap: 0 10px;
 `;
 
+const RefreshBar = styled.div`
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 8px;
+
+  background-color: grey;
+
+  ${(props) =>
+    props.countdown === 0
+      ? `
+  transition: height 0.1s linear;
+  height: 100vh;
+  `
+      : `
+  transition: height ${props.countdown}s linear;
+  height: 0;
+  `}
+`;
+
 export default function App() {
+  const stashSummary = useStashSummary();
+
+  const [countdown, setCountdown] = useState(0);
+
+  useEffect(() => {
+    setCountdown(0);
+
+    setTimeout(() => {
+      setCountdown(STASH_REFRESH_TIMEOUT / 1000);
+    }, 110);
+  }, [stashSummary]);
+
   return (
     <Router>
       <GlobalStyle />
@@ -43,10 +78,10 @@ export default function App() {
             <ItemSearch />
           </R>
           <R path="/" exact>
-            <Dashboard />
+            <Dashboard summary={stashSummary} />
           </R>
           <R path="/stash-details">
-            <StashDetails />
+            <StashDetails summary={stashSummary} />
           </R>
           <R path="/atlas-helper">
             <AtlasHelper />
@@ -56,6 +91,7 @@ export default function App() {
           </R>
         </Switch>
       </Container>
+      <RefreshBar countdown={countdown} />
     </Router>
   );
 }

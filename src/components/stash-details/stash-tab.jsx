@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
-import { IGNORED_ITEMS_KEY } from "../../constants";
 import { getSettings } from "../../utils";
 import { getPoeNinjaDatum, updatePoeNinjaData } from "../../services/poe-ninja";
 
@@ -49,64 +48,69 @@ const groupItems = (items) => {
   return groupedItems.concat(Object.values(stackableItems));
 };
 
-export default function StashTab({ tab }) {
+export const priceItems = async (items, ignoredItems = []) => {
+  updatePoeNinjaData(getSettings());
+  const chaosPerEx = (await getPoeNinjaDatum("Exalted Orb")).each;
+  const groupedItems = groupItems(items);
+  let stashTotal = 0;
+  let stashTotalEx = 0;
+  const pricedItems = await Promise.all(
+    groupedItems.map(async (item) => {
+      if (ignoredItems.includes(item.typeLine)) {
+        return {
+          ...item,
+          each: 0,
+          eachEx: 0,
+          total: 0,
+          totalEx: 0,
+          sortOrder: -1,
+        };
+      }
+      const { each } = await getPoeNinjaDatum(item.typeLine);
+      const eachEx = each / chaosPerEx;
+      const total = each * (item.stackSize || 1);
+      stashTotal += total;
+      const totalEx = eachEx * (item.stackSize || 1);
+      stashTotalEx += totalEx;
+      return {
+        ...item,
+        each,
+        eachEx,
+        total,
+        totalEx,
+        sortOrder: total,
+      };
+    })
+  );
+
+  return {
+    items: pricedItems.sort((a, b) => b.sortOrder - a.sortOrder),
+    totals: {
+      c: stashTotal,
+      ex: stashTotalEx,
+    },
+  };
+};
+
+export default function StashTab({ tab, ignoredItems, setIgnoredItems }) {
   const [items, setItems] = useState([]);
   const [stashTotals, setStashTotals] = useState({ c: 0, ex: 0 });
-  const [ignoredItems, setIgnoredItems] = useState(getSettings()?.ignoredItems);
 
   useEffect(() => {
     if (!tab) {
       return <div>Nothing here</div>;
     }
 
-    const priceItems = async () => {
-      updatePoeNinjaData(getSettings());
-      const chaosPerEx = (await getPoeNinjaDatum("Exalted Orb")).each;
-      const groupedItems = groupItems(tab.items);
-      let stashTotal = 0;
-      let stashTotalEx = 0;
-      const pricedItems = await Promise.all(
-        groupedItems.map(async (item) => {
-          if (ignoredItems.includes(item.typeLine)) {
-            return {
-              ...item,
-              each: 0,
-              eachEx: 0,
-              total: 0,
-              totalEx: 0,
-              sortOrder: -1,
-            };
-          }
-          const { each } = await getPoeNinjaDatum(item.typeLine);
-          const eachEx = each / chaosPerEx;
-          const total = each * (item.stackSize || 1);
-          stashTotal += total;
-          const totalEx = eachEx * (item.stackSize || 1);
-          stashTotalEx += totalEx;
-          return {
-            ...item,
-            each,
-            eachEx,
-            total,
-            totalEx,
-            sortOrder: total,
-          };
-        })
-      );
+    const run = async () => {
+      const { items, totals } = await priceItems(tab.items, ignoredItems);
 
-      setItems(pricedItems.sort((a, b) => b.sortOrder - a.sortOrder));
-      setStashTotals({
-        c: stashTotal,
-        ex: stashTotalEx,
-      });
+      setItems(items);
+      setStashTotals(totals);
     };
 
-    priceItems();
+    run();
+    return;
   }, [tab, ignoredItems]);
-
-  useEffect(() => {
-    localStorage.setItem(IGNORED_ITEMS_KEY, JSON.stringify(ignoredItems));
-  }, [ignoredItems]);
 
   return (
     <Container>
@@ -130,7 +134,7 @@ export default function StashTab({ tab }) {
             const totalEx = eachEx * stackSize;
             return (
               <StashRow key={id} ignored={ignoredItems.includes(typeLine)}>
-                <td>
+                <td style={{ textAlign: "center" }}>
                   <ItemIcon src={icon} />
                 </td>
                 <td style={{ textAlign: "right" }}>{stackSize || 1}</td>

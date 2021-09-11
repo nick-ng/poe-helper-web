@@ -61,16 +61,19 @@ export default function NetWorth({ chaosPerEx, specialTab }) {
 
   return (
     <Container>
-      <input
-        style={{ fontSize: "11pt", width: "5em" }}
-        onChange={(event) => {
-          const value = parseInt(event.target.value);
-          localStorage.setItem(TOP_N_MOST_EXPENSIVE_KEY, value);
-          setTopNMostExpensive(value);
-        }}
-        value={topNMostExpensive}
-        type="number"
-      ></input>
+      <label>
+        Item summary limit:&nbsp;
+        <input
+          style={{ fontSize: "11pt", width: "5em" }}
+          onChange={(event) => {
+            const value = parseInt(event.target.value);
+            localStorage.setItem(TOP_N_MOST_EXPENSIVE_KEY, value);
+            setTopNMostExpensive(value);
+          }}
+          value={topNMostExpensive}
+          type="number"
+        />
+      </label>
       <table>
         <thead>
           <tr>

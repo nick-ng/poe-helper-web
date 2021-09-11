@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import {
-  STASH_REFRESH_TIMEOUT,
   SHOW_CHAOS_RECIPE_KEY,
   SHOW_TWITCH_CHAT_KEY,
   TWITCH_CHAT_FIRST_KEY,
 } from "../../../constants";
-import { getSummary } from "../../../services/poe-stash-valuation";
-import { getSnapshots, saveSnapshot } from "../../../services/snapshots";
+
 import { getSettings } from "../../../utils";
 import { getUrls } from "./url-list";
 
@@ -26,11 +24,7 @@ import PoeRacingWidget from "../../poe-racing-widget";
 import TwitchChatWidget from "../../twitch-chat-widget";
 import ManualSnapshot from "../manual-snapshot";
 
-export default function DefaultDashboard() {
-  const [summary, setSummary] = useState({});
-  const [snapshots, setSnapshots] = useState([]);
-  const [fetching, setFetching] = useState(false);
-
+export default function DefaultDashboard({ summary }) {
   // Controls
   const [showChaosRecipe, setShowChaosRecipe] = useState(
     localStorage.getItem(SHOW_CHAOS_RECIPE_KEY) === "true"
@@ -42,35 +36,7 @@ export default function DefaultDashboard() {
     localStorage.getItem(TWITCH_CHAT_FIRST_KEY) === "true"
   );
 
-  useEffect(() => {
-    (async () => {
-      const allSnapshots = await getSnapshots();
-      setSnapshots(allSnapshots);
-      setSummary(allSnapshots[0]?.data);
-    })();
-
-    let running = true;
-    async function refresher() {
-      if (!running) {
-        return;
-      }
-
-      setFetching(true);
-      const newSummary = await getSummary();
-      setSummary(newSummary);
-      await saveSnapshot(newSummary);
-      const allSnapshots = await getSnapshots();
-      setSnapshots(allSnapshots);
-      setFetching(false);
-
-      setTimeout(refresher, STASH_REFRESH_TIMEOUT);
-    }
-    refresher();
-
-    return () => {
-      running = false;
-    };
-  }, []);
+  const isLoading = Object.keys(summary).length === 0;
 
   return (
     <DashboardContainer>
@@ -165,14 +131,25 @@ export default function DefaultDashboard() {
           </table>
         </DesktopOnlyCard>
         <Card style={{ flexShrink: 0 }}>
-          <h3>
-            Net Worth: {summary?.totalChaosNetWorth?.toFixed(1)} c (
-            {summary?.totalExNetWorth?.toFixed(2)} ex){" "}
-            {fetching && <span>...</span>}
-          </h3>
-          <NetWorth {...summary} />
-          <h4>Snapshots</h4>
-          <ManualSnapshot summary={summary} showChaosRecipe={showChaosRecipe} />
+          {isLoading ? (
+            <>
+              <h3>Net Worth</h3>
+              <div>Please wait, loading...</div>
+            </>
+          ) : (
+            <>
+              <h3>
+                Net Worth: {summary?.totalChaosNetWorth?.toFixed(1)} c (
+                {summary?.totalExNetWorth?.toFixed(2)} ex){" "}
+              </h3>
+              <NetWorth {...summary} />
+              <h4>Snapshots</h4>
+              <ManualSnapshot
+                summary={summary}
+                showChaosRecipe={showChaosRecipe}
+              />
+            </>
+          )}
         </Card>
         {showChaosRecipe && (
           <Card

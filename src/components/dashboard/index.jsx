@@ -6,11 +6,11 @@ import { getSettings } from "../../utils";
 import DefaultDashboard from "./layouts/default";
 import StreamlabsDashboard from "./layouts/streamlabs";
 
-export default function Dashboard() {
+export default function Dashboard(props) {
   switch (getSettings()?.dashboardLayout) {
     case DASHBOARD_LAYOUTS.streamlabs:
-      return <StreamlabsDashboard />;
+      return <StreamlabsDashboard {...props} />;
     default:
-      return <DefaultDashboard />;
+      return <DefaultDashboard {...props} />;
   }
 }
