@@ -52,10 +52,6 @@ export const chaosRecipeItemSlot = (item) => {
     }
   }
 
-  if (RING.some((a) => typeLine.toLowerCase().includes(a))) {
-    return { slot: "ring", count: 0.5 };
-  }
-
   if (AMULET.some((a) => typeLine.toLowerCase().includes(a))) {
     return { slot: "amulet", count: 1 };
   }
@@ -78,6 +74,10 @@ export const chaosRecipeItemSlot = (item) => {
 
   if (BODY.some((a) => typeLine.toLowerCase().includes(a))) {
     return { slot: "body", count: 1 };
+  }
+
+  if (RING.some((a) => typeLine.toLowerCase().includes(a))) {
+    return { slot: "ring", count: 0.5 };
   }
 
   console.warn("[stash] Unknown item", item);
@@ -134,7 +134,18 @@ export const getChaosRecipeTabContents = (
   },
   { items }
 ) => {
-  return items.reduce((prev, curr) => {
+  const itemsBySlot = {
+    weapon: [],
+    boot: [],
+    glove: [],
+    body: [],
+    helm: [],
+    ring: [],
+    amulet: [],
+    belt: [],
+    unknown: [],
+  };
+  const result = items.reduce((prev, curr) => {
     const value = chaosRecipeItemValue(curr);
 
     if (!value || value.recipeType === "chance") {
@@ -143,10 +154,14 @@ export const getChaosRecipeTabContents = (
 
     const { recipeType, slot, count } = value;
 
+    itemsBySlot[slot].push(curr.typeLine);
     prev[recipeType][slot] = (prev[recipeType][slot] || 0) + count;
 
     return prev;
   }, otherContents);
+
+  console.log("itemsBySlot", itemsBySlot);
+  return result;
 };
 
 export const getChaosRecipeTabsValue = (hydratedTabs) => {

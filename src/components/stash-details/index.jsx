@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { getSettings } from "../../utils";
 import { IGNORED_ITEMS_KEY } from "../../constants";
 
+import DebugToggle from "../common/debug-toggle";
 import StashTab, { priceItems } from "./stash-tab";
 import StashTabManager from "./stash-tab-manager";
 
@@ -108,16 +109,6 @@ export default function StashDetails({ summary }) {
             </StashTabButton>
           );
         })}
-        <label>
-          Debug:&nbsp;
-          <input
-            type="checkbox"
-            onChange={() => {
-              setDebugMode((prev) => !prev);
-            }}
-            checked={debugMode}
-          />
-        </label>
       </StashTabNav>
       <StashTab
         tab={getActiveTab(fullTabs, activeTabName)}
@@ -126,6 +117,12 @@ export default function StashDetails({ summary }) {
         debugMode={debugMode}
       />
       <StashTabManager />
+      <DebugToggle
+        onChange={() => {
+          setDebugMode((prev) => !prev);
+        }}
+        checked={debugMode}
+      />
     </Container>
   );
 }

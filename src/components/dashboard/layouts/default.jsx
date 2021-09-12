@@ -9,6 +9,7 @@ import {
 import { getSettings } from "../../../utils";
 import { getUrls } from "./url-list";
 
+import DebugToggle from "../../common/debug-toggle";
 import {
   DashboardContainer,
   Information,
@@ -35,6 +36,7 @@ export default function DefaultDashboard({ summary }) {
   const [twitchChatFirst, setTwitchChatFirst] = useState(
     localStorage.getItem(TWITCH_CHAT_FIRST_KEY) === "true"
   );
+  const [debugMode, setDebugMode] = useState(false);
 
   const isLoading = Object.keys(summary).length === 0;
 
@@ -163,6 +165,12 @@ export default function DefaultDashboard({ summary }) {
           </Card>
         )}
       </Information>
+      <DebugToggle
+        onChange={() => {
+          setDebugMode((prev) => !prev);
+        }}
+        checked={debugMode}
+      />
     </DashboardContainer>
   );
 }
