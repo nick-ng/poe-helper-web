@@ -159,8 +159,6 @@ export const getChaosRecipeTabContents = (
 
     return prev;
   }, otherContents);
-
-  console.log("itemsBySlot", itemsBySlot);
   return result;
 };
 

@@ -60,7 +60,6 @@ export const getSettings = () => {
 
 export const fetcher = async (url, options) => {
   const { fetchUrl, agentPort } = getSettings();
-  console.log("agentPort", agentPort);
 
   let actualFetchUrl = fetchUrl;
 
@@ -70,7 +69,7 @@ export const fetcher = async (url, options) => {
       const res = await fetch(agentUrl, {
         mode: "cors",
       });
-      console.log("res.status", res.status);
+
       if (res.status === 200) {
         actualFetchUrl = agentUrl;
       }
