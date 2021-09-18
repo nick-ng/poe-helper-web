@@ -17,6 +17,7 @@ import {
   INCLUDES_TABS_KEY,
   ENDS_WITH_TABS_KEY,
   CHAOS_RECIPE_TABS_KEY,
+  AGENT_PORT,
 } from "../constants";
 
 const ratio = 1.05;
@@ -53,14 +54,33 @@ export const getSettings = () => {
     chaosRecipeTabs: JSON.parse(
       localStorage.getItem(CHAOS_RECIPE_TABS_KEY) || "[]"
     ),
+    agentPort: localStorage.getItem(AGENT_PORT),
   };
 };
 
 export const fetcher = async (url, options) => {
-  const { fetchUrl } = getSettings();
+  const { fetchUrl, agentPort } = getSettings();
+  console.log("agentPort", agentPort);
+
+  let actualFetchUrl = fetchUrl;
+
+  if (agentPort) {
+    const agentUrl = `http://localhost:${agentPort}`;
+    try {
+      const res = await fetch(agentUrl, {
+        mode: "cors",
+      });
+      console.log("res.status", res.status);
+      if (res.status === 200) {
+        actualFetchUrl = agentUrl;
+      }
+    } catch (e) {
+      console.warn("Agent not started?");
+    }
+  }
 
   for (let n = 0; n < MAX_FETCH_RETRIES; n++) {
-    const res = await fetch(fetchUrl, {
+    const res = await fetch(actualFetchUrl, {
       method: "POST",
       mode: "cors",
       headers: {

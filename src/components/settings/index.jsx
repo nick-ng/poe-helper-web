@@ -12,6 +12,7 @@ import {
   DASHBOARD_LAYOUT_KEY,
   DASHBOARD_LAYOUTS,
   TOP_N_MOST_EXPENSIVE_KEY,
+  AGENT_PORT,
 } from "../../constants";
 import { getSettings } from "../../utils";
 import StashTabManager from "../stash-details/stash-tab-manager";
@@ -47,6 +48,7 @@ export default function Home() {
   const [account, setAccount] = useState("");
   const [characterName, setCharacterName] = useState("");
   const [fetchUrl, setFetchUrl] = useState("");
+  const [agentPort, setAgentPort] = useState("");
   const [league, setLeague] = useState("");
   const [poesessid, setPoesessid] = useState("");
   const [searchRedirect, setSearchRedirect] = useState(false);
@@ -68,6 +70,7 @@ export default function Home() {
     setDashboardLayout(settings.dashboardLayout);
     setTwitchChannel(settings.twitchChannel);
     setTopNMostExpensive(settings.topNMostExpensive);
+    setAgentPort(settings.agentPort);
   };
 
   useEffect(() => {
@@ -87,6 +90,7 @@ export default function Home() {
               localStorage.setItem(FETCH_URL_KEY, fetchUrl);
               localStorage.setItem(LEAGUE_KEY, league);
               localStorage.setItem(POESESSID_KEY, poesessid);
+              localStorage.setItem(AGENT_PORT, agentPort);
             }}
           >
             <table>
@@ -133,6 +137,18 @@ export default function Home() {
                       value={fetchUrl}
                       onChange={(event) => {
                         setFetchUrl(event.target.value);
+                      }}
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Agent Port</td>
+                  <td>
+                    <input
+                      type="number"
+                      value={agentPort || ""}
+                      onChange={(event) => {
+                        setAgentPort(event.target.value);
                       }}
                     />
                   </td>
