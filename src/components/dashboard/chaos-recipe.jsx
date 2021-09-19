@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 
+import { getSettings } from "../../utils";
 import { getStyle } from "./style";
 
 const defaultRegalAndChaos = [
@@ -50,6 +51,28 @@ export default function ({
   lowestSlot = 0,
   regalAndChaos = defaultRegalAndChaos,
 }) {
+  const itemCountsString = JSON.stringify(
+    regalAndChaos.reduce((prev, curr) => {
+      prev[curr.slot] = curr.count;
+      return prev;
+    }, {})
+  );
+
+  useEffect(() => {
+    const { agentPort } = getSettings();
+    if (agentPort) {
+      const url = `http://localhost:${agentPort}/chaos-filter`;
+      fetch(url, {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: itemCountsString,
+      });
+    }
+  }, [itemCountsString]);
+
   return (
     <div>
       <h2
