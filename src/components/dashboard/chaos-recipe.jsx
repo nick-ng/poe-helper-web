@@ -1,10 +1,35 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 
 import { getSettings } from "../../utils";
 import { getVoices, sayWithVoice } from "../../services/text-to-speech";
-import { VOICE_CHARACTER_STORE, VOICE_VOLUME_STORE } from "../../constants";
+import {
+  VOICE_CHARACTER_STORE,
+  VOICE_VOLUME_STORE,
+  LAST_CHAOS_FILTER_SIZES_STORE,
+} from "../../constants";
 import { getStyle } from "./style";
+
+const LOW_ITEM_THRESHOLD = 3;
+const HIGH_ITEM_THRESHOLD = 8;
+const LOW_FONT_SIZE = 15;
+const HIGH_FONT_SIZE = 45;
+
+/**
+ * @param {number} count
+ * @return {number} size
+ */
+const getSize = (count) => {
+  if (count < LOW_ITEM_THRESHOLD) {
+    return HIGH_FONT_SIZE;
+  }
+
+  if (count > HIGH_ITEM_THRESHOLD) {
+    return 0;
+  }
+
+  return LOW_FONT_SIZE;
+};
 
 const defaultRegalAndChaos = [
   {
@@ -64,7 +89,7 @@ export default function ({
   lowestSlot = 0,
   regalAndChaos = defaultRegalAndChaos,
 }) {
-  const [prevItemTotals, setPrevItemTotals] = useState(0);
+  const isFirstRun = useRef(true);
   const [voices, setVoices] = useState([]);
   const [selectedVoice, setSelectedVoice] = useState(
     localStorage.getItem(VOICE_CHARACTER_STORE) || ""
@@ -73,9 +98,15 @@ export default function ({
     parseFloat(localStorage.getItem(VOICE_VOLUME_STORE) || 0.3)
   );
 
-  const itemTotals = regalAndChaos.reduce((prev, curr) => {
-    return prev + curr.count;
-  }, 0);
+  const itemSizes = regalAndChaos.reduce((prev, curr) => {
+    prev[curr.slot] = getSize(curr.count);
+    return prev;
+  }, {});
+
+  const itemSizeString = Object.keys(itemSizes)
+    .sort((a, b) => a.localeCompare(b))
+    .map((a) => itemSizes[a])
+    .join("-");
 
   useEffect(() => {
     const bb = async () => {
@@ -98,14 +129,20 @@ export default function ({
   }, []);
 
   useEffect(() => {
+    if (isFirstRun.current) {
+      isFirstRun.current = false;
+      return;
+    }
+
     const { agentPort } = getSettings();
-    if (agentPort && itemTotals !== prevItemTotals) {
-      const itemCountsString = JSON.stringify(
-        regalAndChaos.reduce((prev, curr) => {
-          prev[curr.slot] = curr.count;
-          return prev;
-        }, {})
+    if (agentPort) {
+      const lastChaosFilterSizes = localStorage.getItem(
+        LAST_CHAOS_FILTER_SIZES_STORE
       );
+      if (lastChaosFilterSizes === itemSizeString) {
+        return;
+      }
+      localStorage.setItem(LAST_CHAOS_FILTER_SIZES_STORE, itemSizeString);
 
       fetch(`http://localhost:${agentPort}/chaos-filter`, {
         method: "POST",
@@ -113,17 +150,16 @@ export default function ({
         headers: {
           "Content-Type": "application/json",
         },
-        body: itemCountsString,
+        body: JSON.stringify(itemSizes),
       }).then(() => {
         if (voiceVolume > 0) {
-          setPrevItemTotals(itemTotals);
           sayWithVoice("Loot filter updated.", selectedVoice, {
             volume: voiceVolume,
           });
         }
       });
     }
-  }, [itemTotals]);
+  }, [itemSizeString]);
 
   return (
     <Container>
