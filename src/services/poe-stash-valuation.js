@@ -61,11 +61,32 @@ export const getSummary = async () => {
   await updatePoeNinjaData({ league });
 
   const allTabs = await fetchStashTabHeaders({ account, league, poesessid });
+  const guildTabs = (
+    await fetchStashTabHeaders(
+      { account, league, poesessid },
+      "get-guild-stash-items"
+    )
+  ).map((a) => {
+    return {
+      ...a,
+      isGuild: true,
+    };
+  });
+
   const specialHydratedTabs = await hydrateTabList(getSpecialTabs(allTabs), {
     account,
     league,
     poesessid,
   });
+
+  const specialHydratedTabsGuild = await hydrateTabList(
+    getSpecialTabs(guildTabs),
+    {
+      account,
+      league,
+      poesessid,
+    }
+  );
 
   const chaosHydratedTabs = await hydrateTabList(getChaosRecipeTabs(allTabs), {
     account,
@@ -73,11 +94,26 @@ export const getSummary = async () => {
     poesessid,
   });
 
-  const special = await getSpecialTabsValue(specialHydratedTabs);
-  const chaos = getChaosRecipeTabsValue(chaosHydratedTabs);
+  const chaosHydratedTabsGuild = await hydrateTabList(
+    getChaosRecipeTabs(guildTabs),
+    {
+      account,
+      league,
+      poesessid,
+    }
+  );
+
+  const special = await getSpecialTabsValue([
+    ...specialHydratedTabs,
+    ...specialHydratedTabsGuild,
+  ]);
+  const chaos = getChaosRecipeTabsValue([
+    ...chaosHydratedTabs,
+    ...chaosHydratedTabsGuild,
+  ]);
 
   return {
     ...(await summary(chaos, special)),
-    fullTabs: specialHydratedTabs,
+    fullTabs: [...specialHydratedTabs, ...specialHydratedTabsGuild],
   };
 };

@@ -103,7 +103,10 @@ export default function StashDetails({ summary }) {
               }}
               active={activeTabName ? activeTabName === tab.n : i === 0}
             >
-              <span>{tab.n}</span>
+              <span>
+                {tab.n}
+                {tab.isGuild && " (Guild)"}
+              </span>
               {totals && <span>{`${totals.c.toFixed(0)}c`}</span>}
               {debugMode && <span>{tab.type}</span>}
             </StashTabButton>

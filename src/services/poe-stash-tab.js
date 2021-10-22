@@ -7,9 +7,12 @@ import {
 } from "../constants";
 import { getPoeNinjaDatum } from "./poe-ninja";
 
-export const fetchStashTabHeaders = async ({ account, league, poesessid }) => {
+export const fetchStashTabHeaders = async (
+  { account, league, poesessid },
+  endpoint = "get-stash-items"
+) => {
   const res = await fetcher(
-    `https://www.pathofexile.com/character-window/get-stash-items?accountName=${account}&realm=pc&league=${league}&tabs=1`,
+    `https://www.pathofexile.com/character-window/${endpoint}?accountName=${account}&realm=pc&league=${league}&tabs=1`,
     {
       credentials: "include",
       headers: {
@@ -36,10 +39,11 @@ export const fetchStashTabHeaders = async ({ account, league, poesessid }) => {
 
 export const fetchStashTabItems = async (
   tabId,
-  { account, league, poesessid }
+  { account, league, poesessid },
+  endpoint = "get-stash-items"
 ) => {
   const res = await fetcher(
-    `https://www.pathofexile.com/character-window/get-stash-items?accountName=${account}&realm=pc&league=${league}&tabIndex=${tabId}`,
+    `https://www.pathofexile.com/character-window/${endpoint}?accountName=${account}&realm=pc&league=${league}&tabIndex=${tabId}`,
     {
       credentials: "include",
       headers: {
@@ -62,6 +66,9 @@ export const fetchStashTabItems = async (
 export const getSpecialTabs = (tabs) => {
   const { startsWithTabs, includesTabs, endsWithTabs } = getSettings();
   const specialTabs = tabs.filter((tab) => {
+    if (tab?.n.includes("(Remove-only)")) {
+      return false;
+    }
     return (
       !NORMAL_STASH_TABS.includes(tab.type) ||
       startsWithTabs
