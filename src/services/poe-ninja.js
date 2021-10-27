@@ -42,15 +42,21 @@ export const getPoeNinjaDatumUnique = async (name, links = 0) => {
 
 export const setPoeNinjaData = async (data) => {
   await Promise.all(
-    data.map(({ typeLine, each, name, rarity }) => {
+    data.map(({ typeLine, each, name, rarity, baseType }) => {
       if (name && rarity) {
-        return localforage.setItem(
+        localforage.setItem(
           `${POE_NINJA_DATA_KEY}-${rarity}-${name.replace(/ /g, "_")}`,
           each
         );
+        if (baseType)
+          localforage.setItem(
+            `${POE_NINJA_DATA_KEY}-BASE_TYPE-${name.replace(/ /g, "_")}`,
+            baseType
+          );
+        return;
       }
 
-      return localforage.setItem(
+      localforage.setItem(
         `${POE_NINJA_DATA_KEY}-${typeLine.replace(/ /g, "_")}`,
         each
       );
@@ -58,11 +64,12 @@ export const setPoeNinjaData = async (data) => {
   );
 };
 
-export const updatePoeNinjaData = async ({ league }) => {
+export const updatePoeNinjaData = async ({ league }, force = false) => {
   // Check that the data isn't too old
   if (
+    !force &&
     Date.now() - parseInt(localStorage.getItem(POE_NINJA_TIMESTAMP_KEY), 10) <
-    POE_NINJA_REFRESH_AGE
+      POE_NINJA_REFRESH_AGE
   ) {
     return;
   }
@@ -116,6 +123,7 @@ export const updatePoeNinjaData = async ({ league }) => {
             return {
               name: uName,
               rarity: "UNIQUE",
+              baseType: a?.baseType,
               each: a.chaosValue >= NON_CURRENCY_THRESHOLD ? a.chaosValue : 0,
             };
           })

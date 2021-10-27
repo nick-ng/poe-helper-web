@@ -11,6 +11,7 @@ import Dashboard from "./components/dashboard";
 import ItemSearch from "./components/item-search";
 import StashDetails from "./components/stash-details";
 import AtlasHelper from "./components/atlas-helper";
+import LootFilterHelper from "./components/loot-filter-helper";
 import NotFound from "./components/not-found";
 import Settings from "./components/settings";
 import Help from "./components/help";
@@ -86,6 +87,9 @@ export default function App() {
           </R>
           <R path="/atlas-helper">
             <AtlasHelper />
+          </R>
+          <R path="/loot-filter-helper">
+            <LootFilterHelper />
           </R>
           <R path="/help">
             <Help />
