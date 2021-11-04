@@ -97,7 +97,11 @@ export const hydrateTabList = (tabs, { account, league, poesessid }) => {
   return Promise.all(
     tabs.map(async (tab) => ({
       ...tab,
-      items: await fetchStashTabItems(tab.i, { account, league, poesessid }),
+      items: await fetchStashTabItems(
+        tab.i,
+        { account, league, poesessid },
+        tab.isGuild ? "get-guild-stash-items" : "get-stash-items"
+      ),
     }))
   );
 };
@@ -110,6 +114,7 @@ export const getSpecialTabsValue = async (hydratedTabs) => {
     hydratedTabs.map(async (tab) => {
       if (!SUPPORTED_TAB_TYPES.includes(tab.type)) {
         return {
+          isGuild: tab.isGuild,
           tabName: tab.n,
           chaosValue: 0,
           exValue: 0,
@@ -201,6 +206,7 @@ export const getSpecialTabsValue = async (hydratedTabs) => {
       );
 
       return {
+        isGuild: tab.isGuild,
         tabName: tab.n,
         chaosValue,
         exValue: chaosValue / chaosPerEx,

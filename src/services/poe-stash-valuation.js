@@ -25,6 +25,9 @@ export const summary = async (chaosRecipeTab, specialTab) => {
   let totalChaosNetWorth = 0;
   let totalExNetWorth = 0;
   specialTab?.tabs?.forEach((curr) => {
+    if (curr.isGuild) {
+      return;
+    }
     totalChaosNetWorth = totalChaosNetWorth + curr.chaosValue;
     totalExNetWorth = totalExNetWorth + curr.exValue;
   });
