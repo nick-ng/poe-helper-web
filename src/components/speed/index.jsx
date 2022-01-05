@@ -54,7 +54,7 @@ export default function Speed() {
   const names = namesString.split("\n").filter((a) => a);
 
   useEffect(() => {
-    const speedNamesString = localStorage.getItem(SPEED_NAMES_STORE);
+    const speedNamesString = localStorage.getItem(SPEED_NAMES_STORE) || "";
     setNamesString(speedNamesString);
     setRandomPart(getRandomPart());
   }, []);
