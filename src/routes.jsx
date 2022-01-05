@@ -14,6 +14,7 @@ import AtlasHelper from "./components/atlas-helper";
 import LootFilterHelper from "./components/loot-filter-helper";
 import NotFound from "./components/not-found";
 import Settings from "./components/settings";
+import Speed from "./components/speed";
 import Help from "./components/help";
 
 const GlobalStyle = createGlobalStyle`
@@ -90,6 +91,9 @@ export default function App() {
           </R>
           <R path="/loot-filter-helper">
             <LootFilterHelper />
+          </R>
+          <R path="/speed">
+            <Speed />
           </R>
           <R path="/help">
             <Help />
