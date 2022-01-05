@@ -75,6 +75,13 @@ export default function Speed() {
       />
       <MiniHeading>Random Part</MiniHeading>
       <div>{randomPart}</div>
+      <button
+        onClick={() => {
+          setRandomPart(getRandomPart());
+        }}
+      >
+        Reroll
+      </button>
       <MiniHeading>Copy to Clipboard</MiniHeading>
       <ul>
         {names.map((name) => {
