@@ -24,6 +24,14 @@ async function getGemInfo(gemUrl) {
   const dom = await JSDOM.fromURL(url);
   const gem = gemUrl.replace("/us/", "");
 
+  const imageList = [
+    ...dom.window.document.querySelectorAll("div.itembox-gem img"),
+  ]
+    .map((a) => a.getAttribute("src"))
+    .filter((a) => a.match(/poecdn/i));
+
+  const imageURL = imageList.pop();
+
   const nodeList = [
     ...dom.window.document.querySelectorAll("div[id^=GemQuest] table tr"),
   ];
@@ -38,6 +46,7 @@ async function getGemInfo(gemUrl) {
     if (row[2] === "Quest Reward") {
       return {
         gem,
+        imageURL,
         type: "reward",
         act: row[0],
         quest: row[1],
@@ -47,6 +56,7 @@ async function getGemInfo(gemUrl) {
 
     return {
       gem,
+      imageURL,
       type: "vendor",
       act: row[0],
       quest: row[1],
