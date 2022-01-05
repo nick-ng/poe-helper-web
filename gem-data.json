@@ -1,0 +1,8243 @@
+[
+ {
+  "gem": "Perforate",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist"
+  ]
+ },
+ {
+  "gem": "Perforate",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Cleave",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist"
+  ]
+ },
+ {
+  "gem": "Cleave",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Glacial_Hammer",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Twilight Strand",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Glacial_Hammer",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Ground_Slam",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Ground_Slam",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Heavy_Strike",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Twilight Strand",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Heavy_Strike",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Molten_Strike",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Molten_Strike",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Shield_Crush",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Smite",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Smite",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Ancestral_Protector",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Ancestral_Protector",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Blood_and_Sand",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist"
+  ]
+ },
+ {
+  "gem": "Blood_and_Sand",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Decoy_Totem",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Decoy_Totem",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Devouring_Totem",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Holy_Flame_Totem",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Holy_Flame_Totem",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Marauder",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Molten_Shell",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Molten_Shell",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Steelskin",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Steelskin",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Rejuvenation_Totem",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Reckoning",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Vigilant_Strike",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Vigilant_Strike",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "War_Banner",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist"
+  ]
+ },
+ {
+  "gem": "War_Banner",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Enduring_Cry",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Enduring_Cry",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Intimidating_Cry",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Intimidating_Cry",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Leap_Slam",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Leap_Slam",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Shield_Charge",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Shield_Charge",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Vitality",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Vitality",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Absolution",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Absolution",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Exsanguinate",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Exsanguinate",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Marauder",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Chain_Hook",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Chain_Hook",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Infernal_Blow",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Infernal_Blow",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Searing_Bond",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Searing_Bond",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Marauder",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Sunder",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Sunder",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Earthshatter",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Earthshatter",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Sweep",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Sweep",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Static_Strike",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Static_Strike",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Ancestral_Cry",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Duelist",
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Ancestral_Cry",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Defiance_Banner",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Duelist"
+  ]
+ },
+ {
+  "gem": "Defiance_Banner",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Flesh_and_Stone",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Duelist"
+  ]
+ },
+ {
+  "gem": "Flesh_and_Stone",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Corrupting_Fever",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Corrupting_Fever",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Herald_of_Purity",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Herald_of_Purity",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Herald_of_Ash",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Herald_of_Ash",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Seismic_Cry",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Duelist",
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Seismic_Cry",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Anger",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Marauder",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Anger",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Determination",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Determination",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Battlemages_Cry",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Battlemages_Cry",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Dread_Banner",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist"
+  ]
+ },
+ {
+  "gem": "Dread_Banner",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Purity_of_Fire",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Generals_Cry",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Generals_Cry",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Infernal_Cry",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Infernal_Cry",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Petrified_Blood",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Petrified_Blood",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Pride",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Pride",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Punishment",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Punishment",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Rallying_Cry",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist"
+  ]
+ },
+ {
+  "gem": "Rallying_Cry",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Vengeance",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Vengeance",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Vulnerability",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Vulnerability",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Warlords_Mark",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Warlords_Mark",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Animate_Guardian",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Boneshatter",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Boneshatter",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Reap",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Reap",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Marauder",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Bladestorm",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist"
+  ]
+ },
+ {
+  "gem": "Bladestorm",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Dominating_Blow",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Dominating_Blow",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Consecrated_Path",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Consecrated_Path",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Ice_Crash",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Ice_Crash",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Earthquake",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Earthquake",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Rage_Vortex",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Rage_Vortex",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Shockwave_Totem",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Shockwave_Totem",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Marauder",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Ancestral_Warchief",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Ancestral_Warchief",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Tectonic_Slam",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Marauder",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Tectonic_Slam",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Berserk",
+  "type": "reward",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Berserk",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Protective_Link",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Summon_Flame_Golem",
+  "type": "reward",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Summon_Flame_Golem",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Flame_Link",
+  "type": "reward",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Flame_Link",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Immortal_Call",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Summon_Stone_Golem",
+  "type": "reward",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Summon_Stone_Golem",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Burning_Arrow",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Twilight Strand",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Burning_Arrow",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Cobra_Lash",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Cobra_Lash",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Double_Strike",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Twilight Strand",
+  "classes": [
+   "Duelist"
+  ]
+ },
+ {
+  "gem": "Double_Strike",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Dual_Strike",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Ethereal_Knives",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Ethereal_Knives",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Marauder",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Spectral_Throw",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Twilight Strand",
+  "classes": [
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Spectral_Throw",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Ice_Shot",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Ice_Shot",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Frost_Blades",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Frost_Blades",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Splitting_Steel",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Splitting_Steel",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Caustic_Arrow",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Caustic_Arrow",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Galvanic_Arrow",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Galvanic_Arrow",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Explosive_Trap",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Explosive_Trap",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Split_Arrow",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Split_Arrow",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Viper_Strike",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Twilight Strand",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Viper_Strike",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Animate_Weapon",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Bear_Trap",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Bear_Trap",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Detonate_Dead",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Detonate_Dead",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Ranger",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Puncture",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Puncture",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Dash",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Dash",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Riposte",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Riposte",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Shrapnel_Ballista",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Shrapnel_Ballista",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Precision",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Precision",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Unearth",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Unearth",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Blink_Arrow",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Blink_Arrow",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Flicker_Strike",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Smoke_Mine",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Smoke_Mine",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Whirling_Blades",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Whirling_Blades",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Withering_Step",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Withering_Step",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Barrage",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Blade_Trap",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Siege_Ballista",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Siege_Ballista",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Lacerate",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist"
+  ]
+ },
+ {
+  "gem": "Lacerate",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Elemental_Hit",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Elemental_Hit",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Fire_Trap",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Fire_Trap",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Lightning_Arrow",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Lightning_Arrow",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Lightning_Strike",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Lightning_Strike",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Poisonous_Concoction",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Poisonous_Concoction",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Rain_of_Arrows",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Rain_of_Arrows",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Toxic_Rain",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Toxic_Rain",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Reave",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Reave",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Shattering_Steel",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist"
+  ]
+ },
+ {
+  "gem": "Shattering_Steel",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Venom_Gyre",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Venom_Gyre",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Spectral_Helix",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Spectral_Helix",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Blade_Vortex",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Blade_Vortex",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Volatile_Dead",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Volatile_Dead",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Blood_Rage",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Blood_Rage",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Blade_Blast",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Blade_Blast",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Desecrate",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Desecrate",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Ensnaring_Arrow",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Ensnaring_Arrow",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Frenzy",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Frenzy",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Herald_of_Agony",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Herald_of_Agony",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Herald_of_Ice",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Herald_of_Ice",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Arctic_Armour",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Arctic_Armour",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Purity_of_Ice",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Grace",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Grace",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Haste",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Hatred",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Hatred",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Poachers_Mark",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Poachers_Mark",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Plague_Bearer",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Plague_Bearer",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Plague_Bearer",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Duelist"
+  ]
+ },
+ {
+  "gem": "Snipers_Mark",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Snipers_Mark",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Snipers_Mark",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Temporal_Chains",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Temporal_Chains",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Blast_Rain",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Blast_Rain",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Blade_Flurry",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Blade_Flurry",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Charged_Dash",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Charged_Dash",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Cremation",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Cremation",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Cyclone",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Cyclone",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Wild_Strike",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Wild_Strike",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Explosive_Arrow",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Explosive_Concoction",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Explosive_Concoction",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Flamethrower_Trap",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Flamethrower_Trap",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Ice_Trap",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Lancing_Steel",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist"
+  ]
+ },
+ {
+  "gem": "Lancing_Steel",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Pestilent_Strike",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Pestilent_Strike",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Artillery_Ballista",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Artillery_Ballista",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Storm_Rain",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Storm_Rain",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Bladefall",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Bladefall",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Seismic_Trap",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Seismic_Trap",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Spectral_Shield_Throw",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Spectral_Shield_Throw",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist"
+  ]
+ },
+ {
+  "gem": "Tornado_Shot",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Tornado_Shot",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Scourge_Arrow",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Scourge_Arrow",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Ambush",
+  "type": "reward",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Ambush",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Temporal_Rift",
+  "type": "reward",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Temporal_Rift",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Summon_Ice_Golem",
+  "type": "reward",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Summon_Ice_Golem",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Vampiric_Link",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Phase_Run",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Tornado",
+  "type": "reward",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Tornado",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Intuitive_Link",
+  "type": "reward",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Intuitive_Link",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Blight",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Blight",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Rolling_Magma",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Rolling_Magma",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Fireball",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Twilight Strand",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Fireball",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Frostbolt",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Frostbolt",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Freezing_Pulse",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Freezing_Pulse",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Stormblast_Mine",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Stormblast_Mine",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Lightning_Tendrils",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Lightning_Tendrils",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Lightning_Tendrils",
+  "type": "vendor",
+  "act": "Act",
+  "quest": "Quest Complete",
+  "classes": [
+   "Character"
+  ]
+ },
+ {
+  "gem": "Lightning_Tendrils",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Lightning_Tendrils",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Lightning_Tendrils",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Lightning_Tendrils",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Lightning_Tendrils",
+  "type": "vendor",
+  "act": "Act",
+  "quest": "Quest Complete",
+  "classes": [
+   "Character"
+  ]
+ },
+ {
+  "gem": "Lightning_Tendrils",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Lightning_Tendrils",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Purifying_Flame",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Purifying_Flame",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Raise_Zombie",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Raise_Zombie",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Spark",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Kinetic_Bolt",
+  "type": "reward",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Kinetic_Bolt",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Contagion",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Contagion",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Conversion_Trap",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Flame_Wall",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Flame_Wall",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Frost_Bomb",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Frost_Bomb",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Frost_Wall",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Duelist",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Frostblink",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Frostblink",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Summon_Holy_Relic",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Summon_Holy_Relic",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Orb_of_Storms",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Orb_of_Storms",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Summon_Raging_Spirit",
+  "type": "reward",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Summon_Raging_Spirit",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Breaking Some Eggs",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Bodyswap",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Bodyswap",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Clarity",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Clarity",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Flame_Dash",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Flame_Dash",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Siphoning_Trap",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Siphoning_Trap",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Lightning_Warp",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Lightning_Warp",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Summon_Skeletons",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Summon_Skeletons",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Wither",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Wither",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Arc",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Arc",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Creeping_Frost",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Creeping_Frost",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Bone_Offering",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Storm_Brand",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Storm_Brand",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Icicle_Mine",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Icicle_Mine",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Blazing_Salvo",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Blazing_Salvo",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Scorching_Ray",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Scorching_Ray",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Incinerate",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Flame_Surge",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Flesh_Offering",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Flesh_Offering",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Ice_Nova",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Ice_Nova",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Ice_Spear",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Lightning_Trap",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Lightning_Trap",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Manabond",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Manabond",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Power_Siphon",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Essence_Drain",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Essence_Drain",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Spirit_Offering",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Storm_Burst",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Storm_Burst",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Storm_Call",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Storm_Call",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Voltaxic_Burst",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Voltaxic_Burst",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Wintertide_Brand",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Wintertide_Brand",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Arcane_Cloak",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Arcane_Cloak",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Cold_Snap",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Cold_Snap",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Herald_of_Thunder",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Herald_of_Thunder",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Wave_of_Conviction",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Wave_of_Conviction",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Brand_Recall",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Brand_Recall",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Righteous_Fire",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Summon_Skitterbots",
+  "type": "reward",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Summon_Skitterbots",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Forbidden_Rite",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Intruders in Black",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Tempest_Shield",
+  "type": "vendor",
+  "act": "2",
+  "quest": "The Root of the Problem",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Assassins_Mark",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Assassins_Mark",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Convocation",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Convocation",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Conductivity",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Conductivity",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Bane",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Bane",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Malevolence",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Malevolence",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Despair",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Ranger",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Despair",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Discipline",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Discipline",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Elemental_Weakness",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Elemental_Weakness",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Enfeeble",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Enfeeble",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Flammability",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Flammability",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Frostbite",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Frostbite",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Purity_of_Lightning",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Purity_of_Elements",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Purity_of_Elements",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Zealotry",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Zealotry",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Spellslinger",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Spellslinger",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Energy_Blade",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Energy_Blade",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Wrath",
+  "type": "reward",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Wrath",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Lost in Love",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Armageddon_Brand",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Armageddon_Brand",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Ball_Lightning",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Ball_Lightning",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Flameblast",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Flameblast",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Kinetic_Blast",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Kinetic_Blast",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Discharge",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Crackling_Lance",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Crackling_Lance",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Divine_Ire",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Divine_Ire",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Hexblast",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Hexblast",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Pyroclast_Mine",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Pyroclast_Mine",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Firestorm",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Firestorm",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Eye_of_Winter",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Eye_of_Winter",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Winter_Orb",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Vortex",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Lightning_Spire_Trap",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Lightning_Spire_Trap",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Penance_Brand",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Penance_Brand",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Raise_Spectre",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Raise_Spectre",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Dark_Pact",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Shock_Nova",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Shock_Nova",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Soulrend",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Soulrend",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Stormbind",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Stormbind",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Summon_Reaper",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Summon_Reaper",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Glacial_Cascade",
+  "type": "reward",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Glacial_Cascade",
+  "type": "vendor",
+  "act": "3",
+  "quest": "Sever the Right Hand",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Void_Sphere",
+  "type": "reward",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Void_Sphere",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Summon_Chaos_Golem",
+  "type": "reward",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Summon_Chaos_Golem",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Sigil_of_Power",
+  "type": "reward",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Sigil_of_Power",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Destructive_Link",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Frost_Shield",
+  "type": "reward",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Frost_Shield",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Hydrosphere",
+  "type": "reward",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Hydrosphere",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Summon_Lightning_Golem",
+  "type": "reward",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Summon_Lightning_Golem",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Soul_Link",
+  "type": "reward",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Soul_Link",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Summon_Carrion_Golem",
+  "type": "reward",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Summon_Carrion_Golem",
+  "type": "vendor",
+  "act": "4",
+  "quest": "Breaking the Seal",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Arcanist_Brand",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Arcanist_Brand",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Chance_to_Bleed_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Twilight Strand",
+  "classes": [
+   "Duelist"
+  ]
+ },
+ {
+  "gem": "Chance_to_Bleed_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Chance_to_Bleed_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Chance_to_Bleed_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Duelist"
+  ]
+ },
+ {
+  "gem": "Ruthless_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Twilight Strand",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Ruthless_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Duelist",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Ruthless_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Duelist",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Ruthless_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Ancestral_Call_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Ancestral_Call_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Maim_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist"
+  ]
+ },
+ {
+  "gem": "Maim_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Added_Fire_Damage_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Added_Fire_Damage_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Earthbreaker_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Knockback_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Lifetap_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Lifetap_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Life_Gain_on_Hit_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Ballista_Totem_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Stun_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Melee_Splash_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Melee_Splash_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Spell_Totem_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Damage_on_Full_Life_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Bloodlust_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Cold_to_Fire_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Endurance_Charge_on_Melee_Stun_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Cruelty_Support",
+  "type": "reward",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Cruelty_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Melee_Physical_Damage_Support",
+  "type": "reward",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Melee_Physical_Damage_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Iron_Grip_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Iron_Will_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Rage_Support",
+  "type": "reward",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Rage_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Shockwave_Support",
+  "type": "reward",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Marauder",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Shockwave_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Elemental_Damage_with_Attacks_Support",
+  "type": "reward",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Elemental_Damage_with_Attacks_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Arrogance_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Arrogance_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Bloodthirst_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Bloodthirst_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Fire_Penetration_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Fire_Penetration_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Fortify_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Fortify_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Generosity_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Burning_Damage_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Burning_Damage_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Increased_Duration_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Increased_Duration_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Life_Leech_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Life_Leech_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Pulverise_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Pulverise_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Less_Duration_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Inspiration_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Urgent_Orders_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Urgent_Orders_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Multiple_Totems_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Marauder",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Multiple_Totems_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Brutality_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Brutality_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Cast_on_Melee_Kill_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Cast_when_Damage_Taken_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Behead_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Duelist",
+   "Marauder"
+  ]
+ },
+ {
+  "gem": "Behead_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Fist_of_War_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Fist_of_War_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Multistrike_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Multistrike_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Onslaught_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Twilight Strand",
+  "classes": [
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Onslaught_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Onslaught_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Onslaught_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Chance_to_Poison_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Chance_to_Poison_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Ranger",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Pierce_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Twilight Strand",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Pierce_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Duelist",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Pierce_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Duelist",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Pierce_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Mirage_Archer_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Duelist",
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Mirage_Archer_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Volley_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Volley_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Swift_Assembly_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Swift_Assembly_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Multiple_Traps_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Multiple_Traps_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Added_Cold_Damage_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Added_Cold_Damage_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Blind_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Chance_to_Flee_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Arrow_Nova_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Arrow_Nova_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Additional_Accuracy_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Lesser_Multiple_Projectiles_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Lesser_Multiple_Projectiles_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Trap_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Void_Manipulation_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Ranger",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Void_Manipulation_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Nightblade_Support",
+  "type": "reward",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Nightblade_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Culling_Strike_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Close_Combat_Support",
+  "type": "reward",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Close_Combat_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Deadly_Ailments_Support",
+  "type": "reward",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Deadly_Ailments_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Faster_Attacks_Support",
+  "type": "reward",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Faster_Attacks_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Point_Blank_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Vicious_Projectiles_Support",
+  "type": "reward",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Vicious_Projectiles_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion"
+  ]
+ },
+ {
+  "gem": "Trap_and_Mine_Damage_Support",
+  "type": "reward",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Trap_and_Mine_Damage_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Mana_Leech_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Cold_Penetration_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Cold_Penetration_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Hypothermia_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Hypothermia_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Faster_Projectiles_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Faster_Projectiles_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Focused_Ballista_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Focused_Ballista_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Fork_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Fork_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Ice_Bite_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Ice_Bite_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Critical_Strike_Affliction_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Critical_Strike_Affliction_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Charged_Traps_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Charged_Traps_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Swift_Affliction_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Swift_Affliction_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Second_Wind_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Second_Wind_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Slower_Projectiles_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Advanced_Traps_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Impale_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Impale_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Cast_On_Critical_Strike_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Cast_on_Death_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Cluster_Traps_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Cluster_Traps_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Greater_Multiple_Projectiles_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Greater_Multiple_Projectiles_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Greater_Volley_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Greater_Volley_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Barrage_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Barrage_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Vile_Toxins_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Vile_Toxins_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Withering_Touch_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Ranger",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Withering_Touch_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Chain_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Chain_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Arcane_Surge_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Twilight Strand",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Arcane_Surge_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Arcane_Surge_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Arcane_Surge_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Elemental_Proliferation_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Twilight Strand",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Elemental_Proliferation_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Elemental_Proliferation_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Elemental_Proliferation_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Enemy at the Gate",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Infused_Channelling_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Infused_Channelling_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Summon_Phantasm_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Scion",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Summon_Phantasm_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Spell_Cascade_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Spell_Cascade_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "Mercy Mission",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Minion_Damage_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Minion_Damage_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Added_Lightning_Damage_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Added_Lightning_Damage_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Combustion_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Combustion_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Marauder",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Efficacy_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Efficacy_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Increased_Critical_Strikes_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Infernal_Legion_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Infernal_Legion_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Blastchain_Mine_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Unbound_Ailments_Support",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Scion",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Unbound_Ailments_Support",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Caged Brute",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Predator_Support",
+  "type": "reward",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Predator_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Minion_Life_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Minion_Speed_Support",
+  "type": "reward",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Minion_Speed_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Concentrated_Effect_Support",
+  "type": "reward",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Concentrated_Effect_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Controlled_Destruction_Support",
+  "type": "reward",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Controlled_Destruction_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Elemental_Focus_Support",
+  "type": "reward",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Elemental_Focus_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Faster_Casting_Support",
+  "type": "reward",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Faster_Casting_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Increased_Critical_Damage_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Physical_to_Lightning_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Marauder",
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Power_Charge_On_Critical_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Trinity_Support",
+  "type": "reward",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Ranger",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Trinity_Support",
+  "type": "vendor",
+  "act": "2",
+  "quest": "Sharp and Cruel",
+  "classes": [
+   "Duelist",
+   "Scion",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Archmage_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Archmage_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Feeding_Frenzy_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Feeding_Frenzy_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Innervate_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Innervate_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Ranger",
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Blasphemy_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Blasphemy_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "High-Impact_Mine_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "High-Impact_Mine_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Meat_Shield_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Meat_Shield_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Energy_Leech_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Energy_Leech_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Item_Rarity_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Charged_Mines_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Charged_Mines_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Lightning_Penetration_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Lightning_Penetration_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Pinpoint_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Pinpoint_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Elemental_Army_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Swiftbrand_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Swiftbrand_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Intensify_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Intensify_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Impending_Doom_Support",
+  "type": "reward",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Impending_Doom_Support",
+  "type": "vendor",
+  "act": "3",
+  "quest": "A Fixture of Fate",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Minefield_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Shadow"
+  ]
+ },
+ {
+  "gem": "Minefield_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Bonechill_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Bonechill_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Hextouch_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Cast_when_Stunned_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Cast_while_Channelling_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Decay_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Scion",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Decay_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Spell_Echo_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Spell_Echo_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Ignite_Proliferation_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Templar"
+  ]
+ },
+ {
+  "gem": "Ignite_Proliferation_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Immolate_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Scion",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Immolate_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Marauder",
+   "Scion",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Increased_Area_of_Effect_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Increased_Area_of_Effect_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "All",
+   "Classes"
+  ]
+ },
+ {
+  "gem": "Unleash_Support",
+  "type": "reward",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Unleash_Support",
+  "type": "vendor",
+  "act": "4",
+  "quest": "The Eternal Nightmare",
+  "classes": [
+   "Scion",
+   "Shadow",
+   "Templar",
+   "Witch"
+  ]
+ },
+ {
+  "gem": "Elemental_Hit",
+  "type": "reward",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Ranger"
+  ]
+ },
+ {
+  "gem": "Elemental_Hit",
+  "type": "vendor",
+  "act": "1",
+  "quest": "The Siren's Cadence",
+  "classes": [
+   "Duelist",
+   "Ranger",
+   "Scion",
+   "Shadow"
+  ]
+ }
+]
