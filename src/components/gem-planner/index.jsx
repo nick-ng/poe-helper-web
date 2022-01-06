@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import styled from "styled-components";
 
 import { GEM_PLANNER_STORE } from "../../constants";
@@ -31,6 +31,25 @@ const Container = styled.div``;
 export default function GemPlanner() {
   const [gemData, setGemData] = useState([]);
   const [playerClass, setPlayerClass] = useState("Scion");
+  const [questSelection, setQuestSelection] = useState([]);
+  const [vendorSelection, setVendorSelection] = useState([]);
+  const [doingLibrary, setDoingLibrary] = useState(false);
+
+  const handleGemSelection = (gemName, rewardType, selected) => {
+    if (rewardType === "vendor") {
+      if (selected) {
+        setVendorSelection((prev) => prev.concat([gemName]));
+      } else {
+        setVendorSelection((prev) => prev.filter((a) => a !== gemName));
+      }
+    }
+
+    if (selected) {
+      setQuestSelection((prev) => prev.concat([gemName]));
+    } else {
+      setQuestSelection((prev) => prev.filter((a) => a !== gemName));
+    }
+  };
 
   useEffect(() => {
     const fetchGemData = async () => {
@@ -46,10 +65,14 @@ export default function GemPlanner() {
     fetchGemData();
   }, []);
 
-  const filteredGems = gemData.filter((gemDatum) => {
-    const { classes } = gemDatum;
-    return classes.includes(playerClass) || classes.includes("All");
-  });
+  const filteredGems = useMemo(
+    () =>
+      gemData.filter((gemDatum) => {
+        const { classes } = gemDatum;
+        return classes.includes(playerClass) || classes.includes("All");
+      }),
+    [gemData, playerClass]
+  );
 
   return (
     <Container>

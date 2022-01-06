@@ -31,6 +31,9 @@ const Nav = () => (
     <NavLink icon="fa-globe" to="/atlas-helper">
       Atlas Horizon Orb Helper
     </NavLink>
+    <NavLink icon="fa-diamond" to="/gem-planner">
+      Gem Planner
+    </NavLink>
     <NavLink icon="fa-cog" to="/settings">
       Settings
     </NavLink>
