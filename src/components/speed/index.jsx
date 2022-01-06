@@ -47,6 +47,16 @@ const MiniHeading = styled.div`
   margin-bottom: 0.2em;
 `;
 
+const ButtonDisplay = styled.div`
+  button {
+    display: block;
+  }
+
+  button + button {
+    margin-top: 0.3em;
+  }
+`;
+
 export default function Speed() {
   const [namesString, setNamesString] = useState("");
   const [randomPart, setRandomPart] = useState("");
@@ -83,17 +93,21 @@ export default function Speed() {
         Reroll
       </button>
       <MiniHeading>Copy to Clipboard</MiniHeading>
-      <ul>
+      <ButtonDisplay>
         {names.map((name) => {
+          const fullName = `${name}_${randomPart}`;
           return (
-            <li key={name}>
-              <button>
-                {name}_{randomPart}
-              </button>
-            </li>
+            <button
+              key={fullName}
+              onClick={() => {
+                navigator.clipboard.writeText(fullName);
+              }}
+            >
+              {fullName}
+            </button>
           );
         })}
-      </ul>
+      </ButtonDisplay>
       <h3>Links</h3>
       <ul>
         <li>
