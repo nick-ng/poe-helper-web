@@ -16,6 +16,7 @@ import NotFound from "./components/not-found";
 import Settings from "./components/settings";
 import GemPlanner from "./components/gem-planner";
 import Speed from "./components/speed";
+import PoeRacingTrackers from "./components/poe-racing-trackers";
 import Help from "./components/help";
 
 const GlobalStyle = createGlobalStyle`
@@ -95,6 +96,9 @@ export default function App() {
           </R>
           <R path="/speed">
             <Speed />
+          </R>
+          <R path="/poe-racing">
+            <PoeRacingTrackers />
           </R>
           <R path="/gem-planner">
             <GemPlanner />
