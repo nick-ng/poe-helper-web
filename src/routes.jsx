@@ -94,7 +94,7 @@ export default function App() {
           <R path="/loot-filter-helper">
             <LootFilterHelper />
           </R>
-          <R path="/speed">
+          <R path={["/speed", "/practice"]}>
             <Speed />
           </R>
           <R path="/poe-racing">

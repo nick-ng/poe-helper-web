@@ -34,6 +34,12 @@ const Nav = () => (
     <NavLink icon="fa-diamond" to="/gem-planner">
       Gem Planner
     </NavLink>
+    <NavLink icon="fa-forward" to="/practice">
+      Practice
+    </NavLink>
+    <NavLink icon="fa-rocket" to="/poe-racing">
+      PoE Racing Trackers
+    </NavLink>
     <NavLink icon="fa-cog" to="/settings">
       Settings
     </NavLink>
