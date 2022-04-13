@@ -40,7 +40,7 @@ const Container = styled.div`
 const RefreshBar = styled.div`
   position: fixed;
   bottom: 0;
-  left: 0;
+  right: 0;
   width: 8px;
 
   background-color: grey;
