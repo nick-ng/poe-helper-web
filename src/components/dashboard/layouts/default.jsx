@@ -7,7 +7,7 @@ import {
 } from "../../../constants";
 
 import { getSettings } from "../../../utils";
-import { getUrls } from "./url-list";
+import { getUrls } from "../../cheat-sheet/links";
 
 import DebugToggle from "../../common/debug-toggle";
 import {

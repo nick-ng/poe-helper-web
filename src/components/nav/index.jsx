@@ -43,6 +43,9 @@ const Nav = () => (
     <NavLink icon="fa-cog" to="/settings">
       Settings
     </NavLink>
+    <NavLink icon="fa-sticky-note" to="/cheat-sheet">
+      Cheat Sheet
+    </NavLink>
     <NavLink icon="fa-question" to="/help">
       Help
     </NavLink>

@@ -10,7 +10,8 @@
     "dev": "cross-env NODE_ENV=development webpack serve",
     "pretty": "pretty-quick --staged",
     "start": "npm run dev",
-    "update-gems": "node ./scripts/update-gems.js"
+    "update-gems": "node ./scripts/update-gems.js",
+    "update-desecrate": "node ./scripts/update-desecrate.js"
   },
   "repository": {
     "type": "git",

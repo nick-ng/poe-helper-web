@@ -1,3 +1,6 @@
+import React from "react";
+import { getSettings } from "../../utils";
+
 export const getUrls = ({ league }) => {
   return [
     {
@@ -21,7 +24,7 @@ export const getUrls = ({ league }) => {
       title: "PoEDB",
     },
     {
-      url: "https://poedb.tw/us/ImmortalSyndicate#SafehouseReward",
+      url: "https://poedb.tw/us/Betrayal_league#SafehouseReward",
       title: "Syndicate Rewards",
     },
     {
@@ -30,3 +33,19 @@ export const getUrls = ({ league }) => {
     },
   ];
 };
+
+export default function Links() {
+  return (
+    <div>
+      <ul>
+        {getUrls(getSettings()).map(({ url, title }) => (
+          <li>
+            <a key={url} href={url} target="_blank">
+              {title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}

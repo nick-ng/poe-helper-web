@@ -71,7 +71,7 @@ export default function Speed() {
 
   return (
     <Container>
-      <h2>Speed Running Stuff</h2>
+      <h2>Practice Stuff</h2>
       <h3>Name Generator</h3>
 
       <MiniHeading>Base Part</MiniHeading>
