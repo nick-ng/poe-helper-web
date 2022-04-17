@@ -7,7 +7,7 @@ const Form = styled.form`
   }
 `;
 
-export default function EZForm({ label, submitHandler }) {
+export default function EZForm({ label, submitHandler, ...props }) {
   const [value, setValue] = useState("");
 
   return (
@@ -23,6 +23,7 @@ export default function EZForm({ label, submitHandler }) {
         onChange={(e) => {
           setValue(e.target.value);
         }}
+        {...props}
       />
     </Form>
   );

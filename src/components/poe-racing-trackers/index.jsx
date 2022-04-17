@@ -45,7 +45,7 @@ export default function PoeRacingTrackers() {
   const [charactersJSON, setCharactersJSON] = useState(() =>
     localStorage.getItem(POE_RACING_CHARACTERS_STORE)
   );
-  const [league, setLeague] = useState(() =>
+  const [defaultLeague, setDefaultLeague] = useState(() =>
     localStorage.getItem(POE_RACING_LEAGUE_STORE)
   );
   const [trackerSize, setTrackerSize] = useState(() =>
@@ -64,7 +64,7 @@ export default function PoeRacingTrackers() {
         }}
       >
         <EZForm
-          label="Change League"
+          label="Change Default League"
           submitHandler={(newLeague) => {
             setLeague(newLeague);
             localStorage.setItem(POE_RACING_LEAGUE_STORE, newLeague);
@@ -75,7 +75,6 @@ export default function PoeRacingTrackers() {
           <div>Tracker Size</div>
           <div>
             <label>
-              1
               <input
                 type="radio"
                 name="tracker-size"
@@ -86,9 +85,9 @@ export default function PoeRacingTrackers() {
                   localStorage.setItem(POE_RACING_SIZE_STORE, 1);
                 }}
               />
+              1
             </label>{" "}
             <label>
-              2
               <input
                 type="radio"
                 name="tracker-size"
@@ -99,9 +98,9 @@ export default function PoeRacingTrackers() {
                   localStorage.setItem(POE_RACING_SIZE_STORE, 2);
                 }}
               />
+              2
             </label>{" "}
             <label>
-              3
               <input
                 type="radio"
                 name="tracker-size"
@@ -112,6 +111,7 @@ export default function PoeRacingTrackers() {
                   localStorage.setItem(POE_RACING_SIZE_STORE, 3);
                 }}
               />
+              3
             </label>
           </div>
         </div>
@@ -120,7 +120,7 @@ export default function PoeRacingTrackers() {
         <a href="https://poe-racing.com/" target="_blank">
           PoE Racing
         </a>{" "}
-        Trackers: {league}
+        Trackers: {defaultLeague}
       </h1>
       <EZForm
         label="Add Character"
@@ -133,10 +133,17 @@ export default function PoeRacingTrackers() {
           localStorage.setItem(POE_RACING_CHARACTERS_STORE, newCharactersJSON);
           return "";
         }}
+        placeholder="Character:League (Character name and league are case-sensitive)"
+        style={{ width: "30em" }}
       />
       <AllTrackers>
         {characters.map((character) => {
-          const poeRacingUrl = `https://tracker.poe-racing.com/?size=${trackerSize}&special=EXPERIENCE&event=${league}&character=${character}`;
+          const [characterName, league] = character
+            .split(":")
+            .map((a) => a.trim());
+          const poeRacingUrl = `https://tracker.poe-racing.com/?size=${trackerSize}&special=EXPERIENCE&event=${
+            league || defaultLeague
+          }&character=${characterName}`;
           return (
             <PoeRacingTracker key={`${character}-poe-racing-tracker`}>
               <div
