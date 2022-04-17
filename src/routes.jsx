@@ -15,7 +15,6 @@ import LootFilterHelper from "./components/loot-filter-helper";
 import NotFound from "./components/not-found";
 import Settings from "./components/settings";
 import GemPlanner from "./components/gem-planner";
-import Speed from "./components/speed";
 import PoeRacingTrackers from "./components/poe-racing-trackers";
 import CheatSheet from "./components/cheat-sheet";
 import Help from "./components/help";
@@ -94,9 +93,6 @@ export default function App() {
           </R>
           <R path="/loot-filter-helper">
             <LootFilterHelper />
-          </R>
-          <R path={["/speed", "/practice"]}>
-            <Speed />
           </R>
           <R path="/poe-racing">
             <PoeRacingTrackers />

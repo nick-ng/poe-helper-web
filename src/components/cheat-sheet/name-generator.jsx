@@ -57,7 +57,7 @@ const ButtonDisplay = styled.div`
   }
 `;
 
-export default function Speed() {
+export default function NameGenerator() {
   const [namesString, setNamesString] = useState("");
   const [randomPart, setRandomPart] = useState("");
 
@@ -71,9 +71,7 @@ export default function Speed() {
 
   return (
     <Container>
-      <h2>Practice Stuff</h2>
       <h3>Name Generator</h3>
-
       <MiniHeading>Base Part</MiniHeading>
       <textarea
         onChange={(e) => {
@@ -108,14 +106,6 @@ export default function Speed() {
           );
         })}
       </ButtonDisplay>
-      <h3>Links</h3>
-      <ul>
-        <li>
-          <a href="https://www.poelab.com/" target="_blank">
-            poelab
-          </a>
-        </li>
-      </ul>
     </Container>
   );
 }

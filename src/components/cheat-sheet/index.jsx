@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+import NameGenerator from "./name-generator";
 import FlaskAffixes from "./flask-affixes";
 import CraftingIlvl from "./crafting-ilvl";
 import ResistOvercap from "./resist-overcap";
@@ -48,6 +49,7 @@ const Container = styled.div`
 export default function CheatSheet() {
   return (
     <Container>
+      <NameGenerator />
       <Links />
       <FlaskAffixes />
       <CraftingIlvl />

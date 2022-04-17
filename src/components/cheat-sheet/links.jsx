@@ -37,6 +37,7 @@ export const getUrls = ({ league }) => {
 export default function Links() {
   return (
     <div>
+      <h3>Links</h3>
       <ul>
         {getUrls(getSettings()).map(({ url, title }) => (
           <li>
