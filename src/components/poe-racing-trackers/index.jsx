@@ -149,6 +149,11 @@ export default function PoeRacingTrackers() {
               <div
                 style={{
                   maxWidth: `${trackerSizes[trackerSize].width}px`,
+                  height: "25px",
+                  display: "flex",
+                  alignItems: "flex-end",
+                  justifyContent: "center",
+                  marginBottom: "3px",
                 }}
               >
                 {character}
