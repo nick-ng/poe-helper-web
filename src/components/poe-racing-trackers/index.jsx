@@ -66,7 +66,7 @@ export default function PoeRacingTrackers() {
         <EZForm
           label="Change Default League"
           submitHandler={(newLeague) => {
-            setLeague(newLeague);
+            setDefaultLeague(newLeague);
             localStorage.setItem(POE_RACING_LEAGUE_STORE, newLeague);
             return "";
           }}
