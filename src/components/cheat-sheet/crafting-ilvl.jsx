@@ -10,6 +10,7 @@ export default function CraftingIlvl() {
             <th>Slot</th>
             <th>ilvl</th>
             <th>Tier</th>
+            <th>Regex</th>
           </tr>
         </thead>
         <tbody>
@@ -17,6 +18,7 @@ export default function CraftingIlvl() {
             <td>Ring</td>
             <td>44</td>
             <td>T1 Life</td>
+            <td></td>
           </tr>
           <tr>
             <td>Amulet</td>
@@ -42,6 +44,12 @@ export default function CraftingIlvl() {
             <td>Amulet, Belt, Ring</td>
             <td>84</td>
             <td>T1 Ele. Res.</td>
+          </tr>
+          <tr>
+            <td>Jewels</td>
+            <td>33-59</td>
+            <td>Corrupted Blood Corruption</td>
+            <td>"level: (3[3-9]|[4-5][0-9])"</td>
           </tr>
         </tbody>
       </table>
